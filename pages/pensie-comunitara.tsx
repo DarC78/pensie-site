@@ -5,6 +5,144 @@ export default function PensieComunitaraPage() {
     <>
       <Head>
         <title>Pensia comunitară – Ghid complet pentru românii din străinătate | DosarPensie</title>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Pensia comunitară – ghid complet pentru românii care au lucrat în străinătate",
+              "description":
+                "Ghid complet despre pensia comunitară pentru românii care au lucrat în străinătate (UE și UK): procedură, calcul, acte necesare, exemple concrete și întrebări frecvente.",
+              "author": {
+                "@type": "Organization",
+                "name": "DosarPensie",
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "DosarPensie",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://dosarpensie.com/logo.png"
+                }
+              },
+              "mainEntityOfPage": "https://dosarpensie.com/pensie-comunitara",
+              "datePublished": "2025-01-01",
+              "dateModified": new Date().toISOString(),
+            }),
+          }}
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Pot primi pensie din două sau mai multe țări?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text":
+                      "Da. Dacă ai lucrat legal în mai multe state, fiecare îți va calcula și plăti partea lui de pensie. Vei primi plăți separate, de obicei în același cont bancar."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Ce se întâmplă dacă am lucrat doar 1–2 ani într-o țară?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text":
+                      "Perioadele scurte pot conta la totalizarea stagiilor necesare pentru acordarea pensiei. Chiar dacă statul nu îți plătește o pensie separată, anii pot ajuta la îndeplinirea stagiului minim."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Unde depun cererea dacă locuiesc în alt stat decât România?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text":
+                      "De regulă, cererea se depune în statul de domiciliu la momentul pensionării. Autoritatea locală contactează toate țările în care ai lucrat."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Procedura pentru UK este diferită după Brexit?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text":
+                      "Da, UK nu mai este în UE, dar există acorduri de coordonare care protejează drepturile persoanelor care au lucrat în Regatul Unit și în statele UE. Procedura este similară, dar poate dura mai mult."
+                  }
+                }
+              ]
+            }),
+          }}
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Acasă",
+                  "item": "https://dosarpensie.com"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Pensia Comunitară",
+                  "item": "https://dosarpensie.com/pensie-comunitara"
+                }
+              ]
+            }),
+          }}
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "QAPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Ce este pensia comunitară și cine are dreptul la ea?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text":
+                      "Pensia comunitară este procedura prin care anii lucrați în mai multe țări din UE și UK sunt totalizați pentru stabilirea dreptului la pensie. Fiecare stat îți plătește partea lui."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Cum se calculează pensia dacă am lucrat în mai multe țări?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text":
+                      "Fiecare stat calculează pensia națională și o pensie comunitară teoretică, apoi aplică un procent din aceasta în funcție de anii lucrați în acel stat."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Unde depun cererea pentru pensia comunitară?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text":
+                      "Depui cererea în țara în care locuiești la momentul pensionării. Autoritatea locală contactează celelalte state în care ai lucrat."
+                  }
+                }
+              ]
+            }),
+          }}
+        />
         <meta
           name="description"
           content="Ghid complet despre pensia comunitară pentru românii care au lucrat în străinătate (UE și UK): ce este, cine are dreptul, cum se calculează și ce acte sunt necesare."
@@ -183,6 +321,12 @@ export default function PensieComunitaraPage() {
                 își coordoneze sistemele de pensii, astfel încât o persoană care a lucrat în mai
                 multe țări să nu piardă anii de muncă.
               </p>
+              <p className="text-slate-800">
+                Pe scurt, <strong>pensia comunitară este procedura prin care anii lucrați în mai multe
+                țări din UE și UK sunt totalizați</strong> pentru stabilirea dreptului la pensie. Nu
+                există o „pensie unică europeană”, ci fiecare țară îți plătește partea ei. Procedura 
+                se aplică oricui a lucrat legal și a plătit contribuții într-un stat membru.
+              </p>
               <p>
                 Ideea de bază este simplă: <strong>fiecare stat în care ai contribuit îți plătește
                 partea lui de pensie</strong>, dar la calcul se ține cont și de anii lucrați în
@@ -237,6 +381,12 @@ export default function PensieComunitaraPage() {
                   de vârstă în România, dar nu încă în alt stat. Asta înseamnă că vei primi pensia
                   dintr-o țară mai devreme, și din cealaltă mai târziu.
                 </p>
+                <p className="text-slate-700">
+                  Mulți români întreabă: <strong>„Câți ani trebuie să lucrez în străinătate ca să primesc
+                  pensie?”</strong> Chiar și perioade scurte, de 1–2 ani, pot fi utile. Chiar dacă statul 
+                  respectiv nu îți plătește o pensie separată, acei ani contează la totalizarea stagiilor 
+                  pentru a vedea dacă îndeplinești condițiile minime într-o altă țară.
+                </p>
               </div>
             </div>
           </section>
@@ -271,6 +421,12 @@ export default function PensieComunitaraPage() {
 
               <div className="rounded-2xl bg-softBg border border-sky-100 p-4 text-sm space-y-2">
                 <p className="font-semibold text-slate-900">Exemplu simplificat</p>
+                <p className="text-slate-700">
+                  O întrebare foarte frecventă este: <strong>„Cum se calculează pensia dacă am lucrat în 
+                  două sau mai multe țări?”</strong> Fiecare stat face două calcule: o pensie națională 
+                  (doar pentru anii lucrați acolo) și o pensie comunitară teoretică. Apoi îți plătește 
+                  procentual partea corespunzătoare anilor reali lucrați în acel stat.
+                </p>
                 <p>
                   Să spunem că ai 20 de ani lucrați în România și 10 ani în Italia. România calculează
                   o pensie teoretică pentru 30 de ani lucrați integral în România, apoi îți plătește
@@ -296,6 +452,13 @@ export default function PensieComunitaraPage() {
                 Procedura poate părea complicată, mai ales când sunt implicate 2–3 țări. Încercăm
                 să o simplificăm în pași clari, astfel încât să îi poți explica și părinților sau
                 bunicilor.
+              </p>
+
+              <p className="text-slate-700">
+                Una dintre cele mai întâlnite întrebări este: <strong>„Unde depun cererea pentru 
+                pensia comunitară?”</strong> Regula este simplă: depui cererea în <strong>țara în care 
+                locuiești la momentul pensionării</strong>. De acolo, instituția competentă va 
+                contacta România și celelalte state în care ai lucrat.
               </p>
 
               <h3 className="text-lg font-semibold text-slate-900">
@@ -368,6 +531,11 @@ export default function PensieComunitaraPage() {
                 </ul>
               </div>
             </div>
+            <p className="text-slate-700">
+              Durata procedurii depinde de numărul de țări implicate. În general, 
+              <strong>procesul durează între 3 și 12 luni</strong>, dar poate fi mai lung dacă sunt 
+              implicate 3 sau mai multe state sau dacă lipsesc documente.
+            </p>
           </section>
 
           {/* 5. EXEMPLE */}
@@ -509,6 +677,11 @@ export default function PensieComunitaraPage() {
                     în statele membre. Procedura poate fi puțin mai lentă, dar principiul de bază –
                     fiecare stat plătește partea lui – rămâne valabil.
                   </p>
+                  <p className="text-slate-700">
+                    După Brexit, UK nu mai este membru UE, dar există acorduri speciale care asigură 
+                    <strong>totalizarea stagiilor lucrate în România și UK</strong>. Procedura este similară 
+                    cu cea europeană, dar uneori poate dura mai mult.
+                  </p>
                 </div>
               </div>
 
@@ -522,6 +695,12 @@ export default function PensieComunitaraPage() {
                   Cheia este să îți pregătești bine documentele și să fii pregătit pentru un proces
                   administrativ care poate dura, dar care merită.
                 </p>
+                <p className="text-slate-700">
+                  Dacă locuiești în România, <strong>poți primi în continuare pensie din toate țările în 
+                  care ai contribuit</strong>. Plățile sunt trimise direct în contul tău bancar, în moneda 
+                  statului care plătește pensia.
+                </p>
+
               </div>
             </div>
           </section>
