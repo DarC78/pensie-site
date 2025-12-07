@@ -164,7 +164,11 @@ export default function Home() {
                 {
                   title: 'Pensia comunitară (UE / UK)',
                   desc: 'Cum se cumulează anii lucrați în alte țări și cum se depozitează cererea.',
-                  href: '#',
+                  href: {
+                    title: 'Pensia comunitară (UE / UK)',
+                    desc: 'Cum se cumulează anii lucrați în alte țări și cum se depozitează cererea.',
+                    href: '/pensie-comunitara',
+                  },
                 },
                 {
                   title: 'Stagiul minim de cotizare',
@@ -258,7 +262,7 @@ export default function Home() {
                 de pensii și cât poate dura procesul.
               </p>
               <a
-                href="#"
+                href="/pensie-comunitara"
                 className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-primaryDark transition-colors"
               >
                 Ghid pensie comunitară
