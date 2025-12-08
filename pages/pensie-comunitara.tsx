@@ -5,6 +5,20 @@ export default function PensieComunitaraPage() {
     <>
       <Head>
         <title>Pensia comunitară – Ghid complet pentru românii din străinătate | DosarPensie</title>
+
+        <meta
+          name="description"
+          content="Ghid complet despre pensia comunitară pentru românii care au lucrat în UE și UK: explicații simple, acte necesare, calcul, pași, exemple și răspunsuri la cele mai frecvente întrebări."
+        />
+
+        <meta
+          property="og:image"
+          content="https://dosarpensie.com/images/pensie-comunitara-cover.jpg"
+        />
+        <meta
+          property="twitter:image"
+          content="https://dosarpensie.com/images/pensie-comunitara-cover.jpg"
+        />
         
         <script
           type="application/ld+json"
@@ -108,11 +122,44 @@ export default function PensieComunitaraPage() {
           }}
         />
 
-        
-        <meta
-          name="description"
-          content="Ghid complet despre pensia comunitară pentru românii care au lucrat în UE și UK: explicații simple, acte necesare, calcul, pași, exemple și răspunsuri la cele mai frecvente întrebări."
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Adrian Defta",
+              "jobTitle": "Expert Pensii",
+              "url": "https://dosarpensie.com/despre-adrian-defta",
+              "sameAs": [
+                "https://www.facebook.com/",
+                "https://www.linkedin.com/"
+              ]
+            })
+          }}
         />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Ce este pensia comunitară" },
+                { "@type": "ListItem", "position": 2, "name": "Cine are dreptul" },
+                { "@type": "ListItem", "position": 3, "name": "Cum se calculează" },
+                { "@type": "ListItem", "position": 4, "name": "Procedura de depunere" },
+                { "@type": "ListItem", "position": 5, "name": "Exemple" },
+                { "@type": "ListItem", "position": 6, "name": "Greșeli frecvente" },
+                { "@type": "ListItem", "position": 7, "name": "Întrebări frecvente" }
+              ]
+            })
+          }}
+        />
+
+        
+        
       </Head>
 
       <div className="min-h-screen bg-white">
@@ -228,6 +275,14 @@ export default function PensieComunitaraPage() {
               </aside>
             </div>
           </section>
+
+          <nav className="text-xs text-primary space-x-3 mt-2">
+            <a href="/">Acasă</a>
+            <span>•</span>
+            <a href="/ghiduri">Toate ghidurile</a>
+            <span>•</span>
+            <a href="/pensie-strainatate">Pensie în străinătate</a>
+          </nav>
 
           {/* CUPRINS */}
           <section className="bg-white border-b border-slate-100">
@@ -680,6 +735,24 @@ export default function PensieComunitaraPage() {
 
               </div>
             </div>
+          </section>
+
+          <section className="section-container py-10 text-center text-slate-700 text-sm">
+            <p className="font-semibold text-slate-900 mb-2">
+              Ai nevoie de ajutor în situația ta specifică?
+            </p>
+            <p className="mb-3">
+              Îmi poți trimite situația ta pe email și te ajut cu un răspuns ghid personalizat.
+            </p>
+            <a
+              href="mailto:contact@dosarpensie.com"
+              className="inline-flex items-center rounded-full bg-primary text-white px-5 py-2 text-xs font-semibold shadow hover:bg-primaryDark"
+            >
+              Scrie-mi cazul tău →
+            </a>
+            <p className="mt-2 text-xs text-slate-500">
+              Răspunsurile sunt orientative și nu înlocuiesc comunicările oficiale ale Casei de Pensii.
+            </p>
           </section>
         </main>
 
