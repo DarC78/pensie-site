@@ -5,6 +5,7 @@ export default function PensieComunitaraPage() {
     <>
       <Head>
         <title>Pensia comunitară – Ghid complet pentru românii din străinătate | DosarPensie</title>
+        <link rel="canonical" href="https://dosarpensie.com/pensie-comunitara" />
 
         <meta
           name="description"
@@ -40,11 +41,11 @@ export default function PensieComunitaraPage() {
                 "name": "DosarPensie",
                 "logo": {
                   "@type": "ImageObject",
-                  "url": "https://dosarpensie.com/logo.png"
+                  "url": "https://dosarpensie.com/favicon.ico"
                 }
               },
               "mainEntityOfPage": "https://dosarpensie.com/pensie-comunitara",
-              "datePublished": "2025-01-01",
+              "datePublished": "2025-12-08",
               "dateModified": new Date().toISOString(),
             }),
           }}
@@ -203,6 +204,14 @@ export default function PensieComunitaraPage() {
                   Ultima actualizare: {new Date().toLocaleDateString('ro-RO')}
                 </p>
 
+                <nav className="text-xs text-primary space-x-3 mt-2">
+                  <a href="/">Acasă</a>
+                  <span>•</span>
+                  <a href="/ghiduri">Toate ghidurile</a>
+                  <span>•</span>
+                  <a href="/pensie-strainatate">Pensie în străinătate</a>
+                </nav>
+
                 <p className="text-base lg:text-lg text-slate-700">
                   Ai lucrat o parte din viață în România și o parte în alte țări – UE sau UK – și
                   acum te întrebi cum se calculează pensia? În acest ghid îți explicăm, pe limba
@@ -276,13 +285,7 @@ export default function PensieComunitaraPage() {
             </div>
           </section>
 
-          <nav className="text-xs text-primary space-x-3 mt-2">
-            <a href="/">Acasă</a>
-            <span>•</span>
-            <a href="/ghiduri">Toate ghidurile</a>
-            <span>•</span>
-            <a href="/pensie-strainatate">Pensie în străinătate</a>
-          </nav>
+          
 
           {/* CUPRINS */}
           <section className="bg-white border-b border-slate-100">
@@ -561,13 +564,14 @@ export default function PensieComunitaraPage() {
                     mult, în funcție de numărul de țări implicate.
                   </li>
                 </ul>
+                <p className="text-slate-700">
+                  Durata procedurii depinde de numărul de țări implicate. În general, 
+                  <strong>procesul durează între 3 și 12 luni</strong>, dar poate fi mai lung dacă sunt 
+                  implicate 3 sau mai multe state sau dacă lipsesc documente.
+                </p>
               </div>
             </div>
-            <p className="text-slate-700">
-              Durata procedurii depinde de numărul de țări implicate. În general, 
-              <strong>procesul durează între 3 și 12 luni</strong>, dar poate fi mai lung dacă sunt 
-              implicate 3 sau mai multe state sau dacă lipsesc documente.
-            </p>
+            
           </section>
 
           {/* 5. EXEMPLE */}
@@ -584,12 +588,12 @@ export default function PensieComunitaraPage() {
 
               <div className="grid lg:grid-cols-3 gap-6 text-sm">
                 <div className="rounded-2xl bg-softBg border border-sky-100 p-4 space-y-2">
-                  <p className="text-xs font-semibold text-primary uppercase tracking-[0.15em]">
+                  <h3 className="text-sm font-semibold text-primary uppercase tracking-[0.15em]">
                     Exemplu 1
-                  </p>
-                  <p className="font-semibold text-slate-900">
+                  </h3>
+                  <h4 className="font-semibold text-slate-900">
                     20 de ani România + 10 ani Italia
-                  </p>
+                  </h4>
                   <p>
                     România calculează o pensie teoretică pentru 30 de ani lucrați integral în
                     România, apoi îți plătește 20/30. Italia face același lucru pentru sistemul
@@ -597,12 +601,12 @@ export default function PensieComunitaraPage() {
                   </p>
                 </div>
                 <div className="rounded-2xl bg-softBg border border-sky-100 p-4 space-y-2">
-                  <p className="text-xs font-semibold text-primary uppercase tracking-[0.15em]">
+                  <h3 className="text-sm font-semibold text-primary uppercase tracking-[0.15em]">
                     Exemplu 2
-                  </p>
-                  <p className="font-semibold text-slate-900">
+                  </h3>
+                  <h4 className="font-semibold text-slate-900">
                     15 ani România + 5 ani UK (după aderarea României la UE)
-                  </p>
+                  </h4>
                   <p>
                     România ia în calcul anii lucrați în UK pentru a vedea dacă îndeplinești
                     stagiul minim. UK aplică regulile din acordul cu UE și calculează partea lui de
@@ -610,12 +614,12 @@ export default function PensieComunitaraPage() {
                   </p>
                 </div>
                 <div className="rounded-2xl bg-softBg border border-sky-100 p-4 space-y-2">
-                  <p className="text-xs font-semibold text-primary uppercase tracking-[0.15em]">
+                  <h3 className="text-sm font-semibold text-primary uppercase tracking-[0.15em]">
                     Exemplu 3
-                  </p>
-                  <p className="font-semibold text-slate-900">
+                  </h3>
+                  <h4 className="font-semibold text-slate-900">
                     10 ani România + 5 ani Spania + 5 ani Germania
-                  </p>
+                  </h4>
                   <p>
                     Fiecare stat calculează partea lui și îți plătește separat. Poți ajunge să ai
                     trei decizii de pensie și trei plăți lunare, eventual în aceeași bancă, dacă
@@ -718,9 +722,9 @@ export default function PensieComunitaraPage() {
               </div>
 
               <div className="mt-6 rounded-2xl bg-softBg border border-slate-100 p-4 text-sm text-slate-700">
-                <p className="font-semibold text-slate-900 mb-1">
+                <h3 className="font-semibold text-slate-900 mb-1">
                   Concluzie: pensia comunitară nu este un „bonus”, ci dreptul tău
-                </p>
+                </h3>
                 <p>
                   Dacă ai muncit cinstit, cu acte, în mai multe țări, ai dreptul ca toți anii tăi
                   să fie luați în calcul. Nu este un favor, ci rezultatul contribuțiilor plătite.
@@ -738,9 +742,10 @@ export default function PensieComunitaraPage() {
           </section>
 
           <section className="section-container py-10 text-center text-slate-700 text-sm">
-            <p className="font-semibold text-slate-900 mb-2">
+            <h2 className="text-xl font-bold text-slate-900 mb-4">
               Ai nevoie de ajutor în situația ta specifică?
-            </p>
+            </h2>
+            
             <p className="mb-3">
               Îmi poți trimite situația ta pe email și te ajut cu un răspuns ghid personalizat.
             </p>
