@@ -1,6 +1,15 @@
 import Head from 'next/head'
 import { useState } from 'react'
 
+/* --------------------------------------------------
+   CONSTANTE SEO
+-------------------------------------------------- */
+const SITE_URL = 'https://dosarpensie.com'
+const OG_IMAGE = `${SITE_URL}/images/pensie-comunitara-cover.jpg`
+
+/* --------------------------------------------------
+   TIPURI + COMPONENTE EXISTENTE
+-------------------------------------------------- */
 type Article = {
   id: string
   category: string
@@ -32,6 +41,9 @@ function Logo() {
   )
 }
 
+/* --------------------------------------------------
+   MENIURI + DATE ARTICOLE
+-------------------------------------------------- */
 const mainSections = [
   'Ghiduri pensie',
   'Pensie comunitară',
@@ -85,11 +97,12 @@ const subMenus: Record<SectionKey, string[]> = {
 const featuredArticle: Article = {
   id: 'feat-1',
   category: 'Pensie comunitară',
-  title: 'Pensia comunitară: ghid complet pentru românii care au lucrat în UE și UK',
+  title:
+    'Pensia comunitară: ghid complet pentru românii care au lucrat în UE și UK',
   excerpt:
     'Ai lucrat în 2 sau mai multe țări și nu știi de unde să începi cu pensia? Îți explicăm pas cu pas cum se adună anii și cum depui cererea.',
   href: '/pensie-comunitara',
-  image: '/images/pensie-comunitara-cover.jpg', // înlocuiește cu o imagine reală
+  image: '/images/pensie-comunitara-cover.jpg',
   time: 'Actualizat azi',
 }
 
@@ -97,7 +110,8 @@ const topArticles: Article[] = [
   {
     id: 'top-1',
     category: 'Dosar pensie',
-    title: 'Dosarul de pensionare în 2025: lista completă de acte, explicată simplu',
+    title:
+      'Dosarul de pensionare în 2025: lista completă de acte, explicată simplu',
     excerpt:
       'Vezi lista de documente necesare pentru dosarul de pensie, plus exemple de situații speciale (ani lipsă, muncă în străinătate).',
     href: '#',
@@ -115,7 +129,8 @@ const topArticles: Article[] = [
   {
     id: 'top-3',
     category: 'Pensie în străinătate',
-    title: 'Locuiești în străinătate, dar ai ani lucrați în România? Cum îți păstrezi drepturile',
+    title:
+      'Locuiești în străinătate, dar ai ani lucrați în România? Cum îți păstrezi drepturile',
     excerpt:
       'Ce trebuie să faci ca să nu pierzi drepturile din România, dacă trăiești deja în alt stat și te apropii de vârsta de pensie.',
     href: '#',
@@ -128,7 +143,6 @@ const latestArticles: Article[] = [
     id: 'lat-1',
     category: 'Actualizare',
     title: 'Cum se schimbă pensia comunitară după noile reguli de coordonare UE',
-    excerpt: '',
     href: '#',
     image: '',
     time: '12:40',
@@ -137,7 +151,6 @@ const latestArticles: Article[] = [
     id: 'lat-2',
     category: 'Exemplu practic',
     title: 'Studiu de caz: 20 ani România + 10 ani Spania – cât iese pensia?',
-    excerpt: '',
     href: '#',
     image: '',
     time: '12:10',
@@ -145,8 +158,8 @@ const latestArticles: Article[] = [
   {
     id: 'lat-3',
     category: 'Întrebări frecvente',
-    title: 'Pot primi pensie din două țări dacă am lucrat doar câțiva ani în fiecare?',
-    excerpt: '',
+    title:
+      'Pot primi pensie din două țări dacă am lucrat doar câțiva ani în fiecare?',
     href: '#',
     image: '',
     time: '11:45',
@@ -154,30 +167,81 @@ const latestArticles: Article[] = [
   {
     id: 'lat-4',
     category: 'Diaspora',
-    title: 'Pașii pentru românii care se întorc în țară și vor să-și pună actele de pensie în ordine',
-    excerpt: '',
+    title:
+      'Pașii pentru românii care se întorc în țară și vor să-și pună actele de pensie în ordine',
     href: '#',
     image: '',
     time: '11:20',
   },
 ]
 
+/* --------------------------------------------------
+   PAGINA PRINCIPALĂ
+-------------------------------------------------- */
 export default function HomePage() {
   const [activeSection, setActiveSection] =
     useState<SectionKey>('Pensie comunitară')
 
+  /* Schema.org */
+  const websiteJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'dosarpensie.com',
+    url: SITE_URL,
+  }
+
+  const organizationJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'dosarpensie.com',
+    url: SITE_URL,
+    logo: `${SITE_URL}/favicon.ico`,
+  }
+
   return (
     <>
       <Head>
-        <title>dosarpensie.com – Ghiduri clare despre pensie pentru România și diaspora</title>
+        <title>
+          dosarpensie.com – Ghiduri clare despre pensii în România, UE și UK
+        </title>
+
         <meta
           name="description"
-          content="Ghiduri clare despre pensii în România, pensie comunitară UE și UK, recalculare, dosar de pensionare și întrebări frecvente pentru românii din țară și din străinătate."
+          content="Ghiduri clare despre pensii, pensie comunitară UE și UK, dosar de pensionare, recalculare și drepturile românilor din diaspora."
+        />
+
+        <link rel="canonical" href={SITE_URL} />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="dosarpensie.com – Ghiduri clare despre pensie" />
+        <meta
+          property="og:description"
+          content="Tot ce trebuie să știi despre pensia din România, UE și UK. Explicații simple pentru românii de peste tot."
+        />
+        <meta property="og:url" content={SITE_URL} />
+        <meta property="og:image" content={OG_IMAGE} />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={OG_IMAGE} />
+
+        {/* Schema.org */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
       </Head>
 
+      {/* ----- RESTUL PAGINII RĂMÂNE EXACT CA LA TINE ----- */}
+
       <div className="min-h-screen bg-slate-50 text-slate-900">
-        {/* BANDA 1 – HEADER CU LOGO */}
+        {/* BANDA 1 – HEADER */}
         <header className="w-full border-b border-slate-200 bg-white">
           <div className="section-container flex items-center justify-between py-3 gap-4">
             <Logo />
@@ -195,7 +259,7 @@ export default function HomePage() {
           </div>
         </header>
 
-        {/* BANDA 2 – MENIU PRINCIPAL */}
+        {/* BANDA 2 – MENIU */}
         <nav className="w-full border-b border-slate-200 bg-slate-900 text-slate-100 sticky top-0 z-40">
           <div className="section-container flex overflow-x-auto gap-4 py-2 text-[13px] sm:text-sm">
             {mainSections.map((section) => (
@@ -215,7 +279,7 @@ export default function HomePage() {
           </div>
         </nav>
 
-        {/* BANDA 3 – SUBMENIU PENTRU SECȚIUNEA ACTIVĂ */}
+        {/* BANDA 3 – SUBMENIU */}
         <div className="w-full border-b border-slate-200 bg-white">
           <div className="section-container flex overflow-x-auto gap-3 py-2 text-[12px] sm:text-[13px] text-slate-600">
             {subMenus[activeSection].map((item) => (
@@ -230,11 +294,10 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* CONȚINUT PRINCIPAL – STIL HOTNEWS ÎMBUNĂTĂȚIT */}
+        {/* CONTINUT PRINCIPAL */}
         <main className="section-container py-6 lg:py-8 grid lg:grid-cols-[2.3fr,1fr] gap-6 lg:gap-8">
-          {/* Coloana principală */}
           <section className="space-y-6">
-            {/* Articol mare – featured */}
+            {/* Featured article */}
             <article className="rounded-3xl bg-white shadow-sm border border-slate-100 overflow-hidden grid md:grid-cols-[1.6fr,1.4fr]">
               <div className="relative">
                 <img
@@ -260,14 +323,13 @@ export default function HomePage() {
                     href={featuredArticle.href}
                     className="inline-flex items-center gap-1 rounded-full bg-primary px-4 py-1.5 text-xs font-semibold text-white hover:bg-primaryDark transition-colors"
                   >
-                    Deschide ghidul complet
-                    <span aria-hidden>→</span>
+                    Deschide ghidul complet →
                   </a>
                 </div>
               </div>
             </article>
 
-            {/* Rând cu 3 articole importante */}
+            {/* TOP 3 ARTICLES */}
             <div className="grid md:grid-cols-3 gap-4">
               {topArticles.map((article) => (
                 <article
@@ -298,11 +360,9 @@ export default function HomePage() {
                 </article>
               ))}
             </div>
-
-            {/* Alte secțiuni pot fi adăugate aici (ghiduri, editoriale etc.) */}
           </section>
 
-          {/* Sidebar – “Ultima oră” / noutăți */}
+          {/* SIDEBAR */}
           <aside className="space-y-4">
             <div className="rounded-2xl bg-white border border-slate-100 shadow-sm">
               <div className="border-b border-slate-100 px-4 py-3 flex items-center justify-between">
@@ -336,7 +396,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* mic box de abonare / contact */}
+            {/* CONTACT */}
             <div
               id="contact"
               className="rounded-2xl bg-slate-900 text-slate-50 p-4 space-y-2 text-sm"
@@ -362,9 +422,13 @@ export default function HomePage() {
         {/* FOOTER */}
         <footer className="bg-slate-900 text-slate-300 text-xs py-5 mt-4">
           <div className="section-container flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-            <p>© {new Date().getFullYear()} dosarpensie.com – ghiduri independente despre pensie.</p>
+            <p>
+              © {new Date().getFullYear()} dosarpensie.com – ghiduri independente
+              despre pensie.
+            </p>
             <p className="text-slate-400">
-              Informațiile sunt generale și nu înlocuiesc comunicările oficiale ale caselor de pensii.
+              Informațiile sunt generale și nu înlocuiesc comunicările oficiale ale
+              caselor de pensii.
             </p>
           </div>
         </footer>
