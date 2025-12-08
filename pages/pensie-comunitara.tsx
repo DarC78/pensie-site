@@ -5,6 +5,7 @@ export default function PensieComunitaraPage() {
     <>
       <Head>
         <title>Pensia comunitară – Ghid complet pentru românii din străinătate | DosarPensie</title>
+        
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -15,8 +16,10 @@ export default function PensieComunitaraPage() {
               "description":
                 "Ghid complet despre pensia comunitară pentru românii care au lucrat în străinătate (UE și UK): procedură, calcul, acte necesare, exemple concrete și întrebări frecvente.",
               "author": {
-                "@type": "Organization",
-                "name": "DosarPensie",
+                "@type": "Person",
+                "name": "Adrian Defta",
+                "jobTitle": "Expert Pensii",
+                "url": "https://dosarpensie.com/despre-adrian-defta"
               },
               "publisher": {
                 "@type": "Organization",
@@ -105,47 +108,10 @@ export default function PensieComunitaraPage() {
           }}
         />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "QAPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "Ce este pensia comunitară și cine are dreptul la ea?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text":
-                      "Pensia comunitară este procedura prin care anii lucrați în mai multe țări din UE și UK sunt totalizați pentru stabilirea dreptului la pensie. Fiecare stat îți plătește partea lui."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Cum se calculează pensia dacă am lucrat în mai multe țări?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text":
-                      "Fiecare stat calculează pensia națională și o pensie comunitară teoretică, apoi aplică un procent din aceasta în funcție de anii lucrați în acel stat."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Unde depun cererea pentru pensia comunitară?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text":
-                      "Depui cererea în țara în care locuiești la momentul pensionării. Autoritatea locală contactează celelalte state în care ai lucrat."
-                  }
-                }
-              ]
-            }),
-          }}
-        />
+        
         <meta
           name="description"
-          content="Ghid complet despre pensia comunitară pentru românii care au lucrat în străinătate (UE și UK): ce este, cine are dreptul, cum se calculează și ce acte sunt necesare."
+          content="Ghid complet despre pensia comunitară pentru românii care au lucrat în UE și UK: explicații simple, acte necesare, calcul, pași, exemple și răspunsuri la cele mai frecvente întrebări."
         />
       </Head>
 
@@ -186,6 +152,9 @@ export default function PensieComunitaraPage() {
                 <h1 className="text-3xl lg:text-4xl font-bold text-slate-900 leading-tight">
                   Pensia comunitară: ghid simplu pentru românii care au lucrat în străinătate
                 </h1>
+                <p className="text-xs text-slate-500">
+                  Ultima actualizare: {new Date().toLocaleDateString('ro-RO')}
+                </p>
 
                 <p className="text-base lg:text-lg text-slate-700">
                   Ai lucrat o parte din viață în România și o parte în alte țări – UE sau UK – și
@@ -230,6 +199,14 @@ export default function PensieComunitaraPage() {
                 <h2 className="text-base font-semibold text-slate-900">
                   Pe scurt, ce este pensia comunitară?
                 </h2>
+                <p className="text-sm text-primary">
+                  Vezi și:{" "}
+                  <a href="/dosar-pensie" className="underline hover:text-primaryDark">Dosarul de pensie – acte și pași</a>
+                  {" • "}
+                  <a href="/recalculare-pensie" className="underline hover:text-primaryDark">Recalcularea pensiei</a>
+                  {" • "}
+                  <a href="/pensie-strainatate" className="underline hover:text-primaryDark">Pensie pentru cei din străinătate</a>
+                </p>
                 <p>
                   Pensia comunitară nu este o pensie „specială”, ci o procedură prin care țările
                   din UE (și cele cu acorduri speciale, cum e UK) își pun la un loc informațiile
