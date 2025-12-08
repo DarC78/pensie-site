@@ -335,6 +335,63 @@ export default function HomePage() {
               </div>
             </article>
 
+            {/* GHIDURI RECOMANDATE */}
+              <section className="section-container py-10">
+                <h2 className="text-2xl font-bold text-slate-900 mb-6">
+                  Ghiduri recomandate pentru românii din străinătate
+                </h2>
+
+                <div className="grid md:grid-cols-3 gap-6">
+                  {/* CARD 1 */}
+                  <a
+                    href="/pensie-comunitara"
+                    className="block rounded-2xl border border-slate-200 p-5 hover:shadow-md transition bg-white"
+                  >
+                    <span className="text-xs uppercase tracking-wide text-primary font-semibold">
+                      Ghid esențial
+                    </span>
+                    <h3 className="text-lg font-semibold text-slate-900 mt-2">
+                      Pensia comunitară – cum se adună anii din străinătate
+                    </h3>
+                    <p className="text-sm text-slate-600 mt-2">
+                      Explicat pe limba românilor din diaspora: procedură, acte necesare, exemple și reguli UE + UK.
+                    </p>
+                  </a>
+
+                  {/* CARD 2 */}
+                  <a
+                    href="/pensie-mica-strainatate"
+                    className="block rounded-2xl border border-slate-200 p-5 hover:shadow-md transition bg-white"
+                  >
+                    <span className="text-xs uppercase tracking-wide text-primary font-semibold">
+                      Întrebări frecvente
+                    </span>
+                    <h3 className="text-lg font-semibold text-slate-900 mt-2">
+                      De ce primesc o pensie mică dacă am lucrat în străinătate?
+                    </h3>
+                    <p className="text-sm text-slate-600 mt-2">
+                      Ghid clar despre motivele reale ale pensiei mici și ce poți face ca să verifici calculele.
+                    </p>
+                  </a>
+
+                  {/* CARD 3 – rezervat pentru următorul articol satelit */}
+                  <a
+                    href="/pensie-totalizare-ue"
+                    className="block rounded-2xl border border-slate-200 p-5 hover:shadow-md transition bg-white"
+                  >
+                    <span className="text-xs uppercase tracking-wide text-primary font-semibold">
+                      Reguli UE + UK
+                    </span>
+                    <h3 className="text-lg font-semibold text-slate-900 mt-2">
+                      Totalizarea anilor lucrați în mai multe țări
+                    </h3>
+                    <p className="text-sm text-slate-600 mt-2">
+                      Cum se adună anii din România, UE, UK și alte state – explicat simplu, cu exemple.
+                    </p>
+                  </a>
+                </div>
+              </section>
+
             {/* TOP 3 ARTICLES */}
             <div className="grid md:grid-cols-3 gap-4">
               {topArticles.map((article) => (
