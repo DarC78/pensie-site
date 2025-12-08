@@ -14,7 +14,7 @@ type Article = {
   id: string
   category: string
   title: string
-  excerpt: string
+  excerpt?: string
   href: string
   image: string
   time?: string
@@ -191,11 +191,17 @@ export default function HomePage() {
   }
 
   const organizationJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'dosarpensie.com',
-    url: SITE_URL,
-    logo: `${SITE_URL}/favicon.ico`,
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "dosarpensie.com",
+    "url": SITE_URL,
+    "logo": `${SITE_URL}/favicon.ico`,
+    "founder": {
+      "@type": "Person",
+      "name": "Adrian Defta",
+      "jobTitle": "Expert Pensii",
+      "url": `${SITE_URL}/despre-adrian-defta`
+    }
   }
 
   return (
