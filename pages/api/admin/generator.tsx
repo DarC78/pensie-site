@@ -25,7 +25,7 @@ export default function AdminGeneratorPage() {
       setResult({ error: 'JSON invalid – verifică ghilimelele și virgulele.' })
       return
     }
-
+ 
     setLoading(true)
     try {
       const res = await fetch('/api/admin/create-article', {
