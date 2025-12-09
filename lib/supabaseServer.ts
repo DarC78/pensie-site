@@ -1,14 +1,16 @@
 // lib/supabaseServer.ts
 import { createClient } from '@supabase/supabase-js'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL as string
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY as string
+export function getSupabaseServer() {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY
 
-if (!supabaseUrl || !supabaseServiceKey) {
-  throw new Error('Supabase env vars missing')
+  if (!url || !key) {
+    throw new Error("Missing Supabase server env vars")
+  }
+
+  // IMPORTANT: create client la runtime pe server, nu la import-time
+  return createClient(url, key, {
+    auth: { persistSession: false }
+  })
 }
-
-// IMPORTANT: folosește acest client DOAR pe server
-export const supabaseServer = createClient(supabaseUrl, supabaseServiceKey, {
-  auth: { persistSession: false }
-})

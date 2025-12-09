@@ -1,6 +1,7 @@
 // pages/api/admin/create-article.ts
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { supabaseServer } from '../../../lib/supabaseServer'
+import { getSupabaseServer } from '../../../lib/supabaseServer'
+const supabase = getSupabaseServer()
 
 const ADMIN_KEY = process.env.ADMIN_KEY
 
@@ -40,7 +41,7 @@ export default async function handler(
         .json({ error: 'title, slug și contentHtml sunt obligatorii' })
     }
 
-    const { data, error } = await supabaseServer
+    const { data, error } = await supabase
       .from('articles')
       .upsert(
         {
