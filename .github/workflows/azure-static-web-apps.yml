@@ -22,18 +22,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "20"   # 🔥 Fix pentru warning Supabase
+          node-version: "20"
 
       - name: Install Dependencies
         run: npm install
 
       - name: Build Next.js App
         run: |
-          NEXT_PUBLIC_SUPABASE_URL=${{ secrets.NEXT_PUBLIC_SUPABASE_URL }} \
-          NEXT_PUBLIC_SUPABASE_ANON_KEY=${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }} \
-          SUPABASE_SERVICE_ROLE_KEY=${{ secrets.SUPABASE_SERVICE_ROLE_KEY }} \
-          OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} \
-          ADMIN_KEY=${{ secrets.ADMIN_KEY }} \
           npm run build
 
       - name: Deploy to Azure Static Web Apps
