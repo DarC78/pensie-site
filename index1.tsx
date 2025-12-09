@@ -10,7 +10,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col leading-tight">
               <span className="font-semibold text-slate-800">DosarPensie</span>
-              <span className="text-xs text-slate-500">Ghiduri clare despre pensie</span>
+              <span className="text-xs text-slate-500">Ghiduri clare despre pensie!</span>
             </div>
           </div>
         </div>
