@@ -66,7 +66,7 @@ Returnează JSON strict cu:
   "content_html": "<p>...</p>",
   "faq": [{ "q": "...", "a": "..." }]
 }
-`
+` 
 
     // 🔥 NOUL API — folosim response.output_text
     const response = await openai.responses.create({
