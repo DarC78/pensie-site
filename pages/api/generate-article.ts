@@ -9,7 +9,7 @@ const ADMIN_KEY = process.env.ADMIN_KEY
 // ---- SUPABASE SERVER CLIENT ----
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY! // ✔ ai cheia corectă
+  process.env.SUPABASE_SERVICE_ROLE_KEY! // SERVICE ROLE KEY – corect
 )
 
 // ---- OPENAI INIT ----
@@ -21,7 +21,6 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" })
   }
@@ -69,12 +68,18 @@ Returnează JSON strict cu:
 }
 `
 
+    // 🔥 NOUL API — folosim response.output_text
     const response = await openai.responses.create({
       model: "gpt-4.1-mini",
       input: prompt
     })
 
-    const json = JSON.parse(response.output[0].content[0].text)
+    const outputText = response.output_text
+    if (!outputText)
+      throw new Error("OpenAI nu a generat niciun output_text!")
+
+    // outputText conține direct JSON-ul
+    const json = JSON.parse(outputText)
 
     // ---- 2) SAVE TO SUPABASE ----
     const { data, error } = await supabase
@@ -99,7 +104,7 @@ Returnează JSON strict cu:
     })
 
   } catch (err: any) {
-    console.error(err)
+    console.error("❌ ERROR in generate-article:", err)
     return res.status(500).json({ error: err.message })
   }
 }
