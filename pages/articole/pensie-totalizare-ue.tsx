@@ -1,4 +1,4 @@
-import ArticleTemplate from '../_template'
+import ArticleTemplate from '../../components/ArticleTemplate'
 
 export default function Page() {
   return (
