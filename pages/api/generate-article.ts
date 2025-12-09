@@ -1,81 +1,101 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
-import { createClient } from '@supabase/supabase-js'
+// pages/api/generate-article.ts
+import type { NextApiRequest, NextApiResponse } from "next"
+import { createClient } from "@supabase/supabase-js"
+import OpenAI from "openai"
 
-// --- INIT SUPABASE ---
+// ---- SECURITY: ADMIN KEY ----
+const ADMIN_KEY = process.env.ADMIN_KEY
+
+// ---- SUPABASE SERVER CLIENT ----
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_KEY! // trebuie SERVICE KEY!
+  process.env.SUPABASE_SERVICE_ROLE_KEY! // ✔ ai cheia corectă
 )
 
-// --- INIT OPENAI ---
-import OpenAI from "openai"
+// ---- OPENAI INIT ----
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY!,
 })
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method !== 'POST') 
-    return res.status(405).json({ error: 'Method not allowed' })
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
 
-  const { title, slug, description, faq, contentBrief } = req.body
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Method not allowed" })
+  }
 
-  if (!title || !slug)
-    return res.status(400).json({ error: "Title + slug sunt obligatorii" })
+  const { adminKey, title, bullets } = req.body
+
+  // ---- AUTH ----
+  if (adminKey !== ADMIN_KEY) {
+    return res.status(401).json({ error: "Not authorized" })
+  }
+
+  if (!title || !bullets || bullets.length === 0) {
+    return res.status(400).json({ error: "Title + bullets required" })
+  }
+
+  // ---- SLUG generation ----
+  const slug = title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
 
   try {
-    // --- 1. GENERATE ARTICLE TSX CODE ---
+    // ---- 1) GENERATE ARTICLE CONTENT ----
     const prompt = `
-Creează o pagină Next.js (.tsx) pentru un articol SEO. Returnează DOAR CODUL .tsx, fără explicații.
+Scrie un articol SEO pentru site-ul dosarpensie.com.
 
-Structură obligatorie:
+Structură necesară:
+- Introducere scurtă
+- Secțiuni clare cu H2 și H3
+- Exemple concrete
+- Ton: expert + foarte clar
 
-- import Head from 'next/head'
-- export default function Page()
-- Props hardcodate: title, description, coverImage, datePublished
-- Conținut structurat în secțiuni clare, heading-uri H2/H3
-- FAQ la final
-- Stil simplu, Tailwind-friendly
-- Fără imports externe în afară de Head
-
-Date articol:
 Titlu: ${title}
-Slug: ${slug}
-Meta descriere: ${description}
 
-FAQ:
-${faq?.map((f: any) => `Q: ${f.q}\nA: ${f.a}`).join("\n")}
+Puncte de acoperit:
+${bullets.map((b: string) => "- " + b).join("\n")}
 
-Brief de conținut:
-${contentBrief}
+FAQ: generează 3-5 întrebări reale și utile.
 
-Returnează DOAR fișierul .tsx complet, valid, fără markdown.
-    `
+Returnează JSON strict cu:
+{
+  "description": "...",
+  "content_html": "<p>...</p>",
+  "faq": [{ "q": "...", "a": "..." }]
+}
+`
 
-    const aiResponse = await openai.chat.completions.create({
-      model: "gpt-4.1",
-      messages: [{ role: "user", content: prompt }],
-      temperature: 0.2
+    const response = await openai.responses.create({
+      model: "gpt-4.1-mini",
+      input: prompt
     })
 
-    const generatedTsx = aiResponse.choices[0].message?.content
-    if (!generatedTsx) throw new Error("OpenAI nu a generat cod")
+    const json = JSON.parse(response.output[0].content[0].text)
 
-    // --- 2. UPLOAD TO SUPABASE STORAGE ---
-    const fileName = `${slug}.tsx`
-
-    const { error: uploadError } = await supabase.storage
-      .from('articles')
-      .upload(fileName, generatedTsx, {
-        contentType: "text/plain",
-        upsert: true
+    // ---- 2) SAVE TO SUPABASE ----
+    const { data, error } = await supabase
+      .from("articles")
+      .insert({
+        slug,
+        title,
+        description: json.description,
+        content_html: json.content_html,
+        faq: json.faq,
+        date_published: new Date().toISOString(),
+        cover_image: null
       })
+      .select()
+      .single()
 
-    if (uploadError) throw uploadError
+    if (error) throw error
 
     return res.status(200).json({
       success: true,
-      file: fileName,
-      url: `https://YOUR-PROJECT.supabase.co/storage/v1/object/public/articles/${fileName}`
+      slug: data.slug,
     })
 
   } catch (err: any) {
