@@ -1,7 +1,7 @@
 // pages/articole/[slug].tsx
 import Head from 'next/head'
 import type { GetStaticPaths, GetStaticProps } from 'next'
-import { supabaseServer } from '../../lib/supabaseServer'
+import { getSupabaseServer } from '../../lib/supabaseServer'
 
 type FaqItem = { q: string; a: string }
 
@@ -76,6 +76,7 @@ export default function ArticlePage({ article }: ArticlePageProps) {
               <h1 className="text-2xl lg:text-3xl font-bold text-slate-900 leading-tight">
                 {article.title}
               </h1>
+
               {article.date_published && (
                 <p className="text-[11px] text-slate-500">
                   Publicat la:{' '}
@@ -150,19 +151,18 @@ export default function ArticlePage({ article }: ArticlePageProps) {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  // Poți începe fără paths pre-generate
   return {
     paths: [],
     fallback: 'blocking'
   }
 }
 
-export const getStaticProps: GetStaticProps<ArticlePageProps> = async ({
-  params
-}) => {
+export const getStaticProps: GetStaticProps<ArticlePageProps> = async ({ params }) => {
   const slug = params?.slug as string
 
-  const { data, error } = await supabaseServer
+  const supabase = getSupabaseServer()
+
+  const { data, error } = await supabase
     .from('articles')
     .select(
       'slug, title, description, cover_image, content_html, faq, date_published'
