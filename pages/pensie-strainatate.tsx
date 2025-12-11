@@ -268,116 +268,114 @@ export default function PensieStrainatatePage() {
         </header>
 
         <main>
-          {/* HERO / INTRO */}
-          <section className="bg-softBg border-b border-slate-100">
-            <div className="section-container py-10 lg:py-14 grid lg:grid-cols-[3fr,2fr] gap-10">
-              <div className="space-y-5">
-                <p className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-[11px] font-medium text-primary shadow-sm">
-                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                  Ghid complet · Pensie în străinătate
-                </p>
+          {/* HERO / INTRO OPTIMIZAT SEO 2025 */}
+<section className="bg-softBg border-b border-slate-100">
+  <div className="section-container py-10 lg:py-14 grid lg:grid-cols-[3fr,2fr] gap-10">
+    <div className="space-y-5">
+      <p className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-[11px] font-medium text-primary shadow-sm">
+        <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+        Ghid 2025 · Pensie din străinătate în România
+      </p>
 
-                <h1 className="text-3xl lg:text-4xl font-bold text-slate-900 leading-tight">
-                  Pensie în străinătate: cum îți primești banii liniștit, fie că
-                  locuiești afară sau te-ai întors în România
-                </h1>
+      <h1 className="text-3xl lg:text-4xl font-bold text-slate-900 leading-tight">
+        Pensie din străinătate în România: cum primești banii din Italia, Spania, UK și Germania în contul tău
+      </h1>
 
-                <p className="text-xs text-slate-500">
-                  Ultima actualizare:{' '}
-                  {new Date().toLocaleDateString('ro-RO')}
-                </p>
+      <p className="text-xs text-slate-500">
+        Ultima actualizare:{" "}
+        {new Date().toLocaleDateString("ro-RO")}
+      </p>
 
-                <nav className="text-xs text-primary space-x-3 mt-2">
-                  <a href="/">Acasă</a>
-                  <span>•</span>
-                  <a href="/pensie-comunitara">Pensia comunitară</a>
-                  <span>•</span>
-                  <a href="/dosar-pensie">Dosarul de pensie</a>
-                </nav>
+      <nav className="text-xs text-primary space-x-3 mt-2">
+        <a href="/">Acasă</a>
+        <span>•</span>
+        <a href="/pensie-comunitara">Pensia comunitară</a>
+        <span>•</span>
+        <a href="/dosar-pensie">Dosarul de pensie</a>
+      </nav>
 
-                <p className="text-base lg:text-lg text-slate-700">
-                  Mulți români locuiesc într-o țară, primesc pensie din alta și
-                  se gândesc dacă nu cumva e „prea complicat” sau „se pierde
-                  ceva pe drum”. În acest ghid îți explic, pe limba ta, cum
-                  funcționează pensia în străinătate: cum se plătește, cum îți
-                  actualizezi contul bancar, ce este certificatul de viață și ce
-                  trebuie să faci dacă te întorci definitiv în România.
-                </p>
+      <p className="text-base lg:text-lg text-slate-700">
+        Mulți români au lucrat în Italia, Spania, UK, Germania sau alte state și acum locuiesc fie în
+        România, fie în continuare în străinătate. Întrebarea principală este mereu aceeași:
+        <strong> „Cum îmi primesc pensia din străinătate, fără întârzieri și fără blocări?”</strong>  
+        În acest ghid îți explic, pas cu pas, cum funcționează <strong>pensia din străinătate în România</strong>:
+        transferul pensiei în cont românesc, schimbarea adresei, actualizarea contului bancar,
+        <strong> certificatul de viață</strong> și ce faci dacă pensia întârzie sau se blochează.
+      </p>
 
-                <div className="grid sm:grid-cols-3 gap-3 text-xs sm:text-sm">
-                  <div className="rounded-2xl bg-white p-3 shadow-sm flex flex-col gap-1">
-                    <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-[0.18em]">
-                      Situații acoperite
-                    </span>
-                    <span className="font-semibold text-slate-900">
-                      Locuiești în România sau afară
-                    </span>
-                    <span className="text-slate-500">
-                      Pensie din două sau mai multe state
-                    </span>
-                  </div>
-                  <div className="rounded-2xl bg-white p-3 shadow-sm flex flex-col gap-1">
-                    <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-[0.18em]">
-                      Țări frecvente
-                    </span>
-                    <span className="font-semibold text-slate-900">
-                      Italia, Spania, UK, Germania
-                    </span>
-                    <span className="text-slate-500">
-                      Plus alte state cu acorduri
-                    </span>
-                  </div>
-                  <div className="rounded-2xl bg-white p-3 shadow-sm flex flex-col gap-1">
-                    <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-[0.18em]">
-                      Stilul ghidului
-                    </span>
-                    <span className="font-semibold text-slate-900">
-                      Explicații simple, fără jargon
-                    </span>
-                    <span className="text-slate-500">
-                      Potrivit pentru părinți și bunici
-                    </span>
-                  </div>
-                </div>
-              </div>
+      <div className="grid sm:grid-cols-3 gap-3 text-xs sm:text-sm">
+        <div className="rounded-2xl bg-white p-3 shadow-sm flex flex-col gap-1">
+          <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-[0.18em]">
+            Pentru cine
+          </span>
+          <span className="font-semibold text-slate-900">
+            Români cu pensie din străinătate
+          </span>
+          <span className="text-slate-500">
+            Trăiești în România sau în alt stat, dar primești pensie din Italia, Spania, UK, Germania etc.
+          </span>
+        </div>
 
-              {/* Box lateral – legături + context */}
-              <aside className="rounded-3xl bg-white shadow-sm border border-slate-100 p-5 lg:p-6 space-y-4 text-sm text-slate-700">
-                <h2 className="text-base font-semibold text-slate-900">
-                  Cum te ajută acest ghid
-                </h2>
-                <p>
-                  Aici vorbim despre partea practică: <strong>unde intră
-                  pensia, ce se întâmplă când îți schimbi adresa sau banca,
-                  ce faci dacă nu mai vin banii</strong> și cum decurge totul
-                  când te întorci în România.
-                </p>
-                <p className="text-sm text-primary">
-                  Vezi și:{' '}
-                  <a
-                    href="/pensie-comunitara"
-                    className="underline hover:text-primaryDark"
-                  >
-                    Pensia comunitară – cum se adună anii lucrați în mai multe
-                    țări
-                  </a>
-                  {' • '}
-                  <a
-                    href="/recalculare-pensie"
-                    className="underline hover:text-primaryDark"
-                  >
-                    Recalcularea pensiei
-                  </a>
-                </p>
-                <p className="text-xs text-slate-500">
-                  Informațiile sunt generale și nu înlocuiesc comunicările
-                  oficiale ale caselor de pensii din fiecare stat. Pentru
-                  situații individuale, verifică întotdeauna și la instituția
-                  care îți plătește pensia.
-                </p>
-              </aside>
-            </div>
-          </section>
+        <div className="rounded-2xl bg-white p-3 shadow-sm flex flex-col gap-1">
+          <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-[0.18em]">
+            Ce afli concret
+          </span>
+          <span className="font-semibold text-slate-900">
+            Transfer, cont, adresă, blocări
+          </span>
+          <span className="text-slate-500">
+            Cum muți pensia în cont românesc, cum e cu certificatul de viață și ce faci dacă banii nu intră.
+          </span>
+        </div>
+
+        <div className="rounded-2xl bg-white p-3 shadow-sm flex flex-col gap-1">
+          <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-[0.18em]">
+            Țări acoperite
+          </span>
+          <span className="font-semibold text-slate-900">
+            Italia · Spania · UK · Germania
+          </span>
+          <span className="text-slate-500">
+            Plus Austria, Belgia, Olanda, Franța și alte state cu care România colaborează la pensii.
+          </span>
+        </div>
+      </div>
+    </div>
+
+    {/* Box lateral – context și legături interne */}
+    <aside className="rounded-3xl bg-white shadow-sm border border-slate-100 p-5 lg:p-6 space-y-4 text-sm text-slate-700">
+      <h3 className="text-base font-semibold text-slate-900">
+        Cum te ajută acest ghid despre pensia din străinătate
+      </h3>
+      <p>
+        Aici nu vorbim doar teoretic despre „pensia internațională”, ci despre viața de zi cu zi:
+        <strong> unde intră pensia, ce faci când îți schimbi banca sau adresa, cum trimiți certificatul de viață</strong>
+        și cum reacționezi dacă pensia din Italia, Spania, UK sau Germania nu mai intră în cont.
+      </p>
+      <p className="text-sm text-primary">
+        Vezi și:{" "}
+        <a
+          href="/pensie-comunitara"
+          className="underline hover:text-primaryDark"
+        >
+          Pensia comunitară – cum se adună anii lucrați în mai multe țări
+        </a>
+        {" • "}
+        <a
+          href="/dosar-pensie"
+          className="underline hover:text-primaryDark"
+        >
+          Dosarul de pensie în România – acte și pași
+        </a>
+      </p>
+      <p className="text-xs text-slate-500">
+        Informațiile din acest ghid sunt generale și te ajută să înțelegi mai ușor
+        procedurile. Pentru decizii finale, verifică întotdeauna și informațiile oficiale
+        ale caselor de pensii din România și din statele care îți plătesc pensia.
+      </p>
+    </aside>
+  </div>
+</section>
 
           {/* CUPRINS */}
           <section className="bg-white border-b border-slate-100">
@@ -1667,9 +1665,9 @@ export default function PensieStrainatatePage() {
         </p>
       </div>
 
-      <h4 className="text-lg font-semibold text-slate-900">
+      <h3 className="text-lg font-semibold text-slate-900">
         Cum anunți schimbarea contului bancar
-      </h4>
+      </h3>
 
       <p>
         Fiecare stat are propriul formular. În general, trebuie să trimiți:
@@ -2449,9 +2447,9 @@ export default function PensieStrainatatePage() {
 
           {/* CTA FINAL */}
           <section className="section-container py-10 text-center text-slate-700 text-sm">
-            <h2 className="text-xl font-bold text-slate-900 mb-4">
+            <h3 className="text-xl font-bold text-slate-900 mb-4">
               Ai o situație concretă legată de pensia ta din străinătate?
-            </h2>
+            </h3>
             <p className="mb-3">
               Îmi poți trimite situația ta pe email și îți răspund cu un ghid
               personalizat, explicat simplu.
