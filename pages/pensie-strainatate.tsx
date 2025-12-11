@@ -15,6 +15,12 @@ export default function PensieStrainatatePage() {
     href="https://dosarpensie.com/pensie-strainatate"
   />
 
+  {/* ROBOTS — SEO CONTROL */}
+<meta
+  name="robots"
+  content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+/>
+
   {/* META DESCRIPTION SEO */}
   <meta
     name="description"
@@ -45,6 +51,7 @@ export default function PensieStrainatatePage() {
     content="https://dosarpensie.com/images/pensie-strainatate.jpg"
   />
   <meta property="og:type" content="article" />
+  <meta property="og:locale" content="ro_RO" />
 
   {/* TWITTER */}
   <meta name="twitter:card" content="summary_large_image" />
@@ -57,8 +64,7 @@ export default function PensieStrainatatePage() {
     content="Cum primești pensia din Italia, Spania, UK, Germania. Actualizare cont bancar, certificat de viață, blocări de plată, întoarcerea în România."
   />
   <meta
-    name="twitter:image"
-    content="https://dosarpensie.com/images/pensie-strainatate.jpg"
+    name="twitter:image:alt" content="Ghid pensie din străinătate în România" 
   />
 
   {/* SCHEMA.ORG — ARTICLE OPTIMIZAT SEO */}
@@ -69,8 +75,14 @@ export default function PensieStrainatatePage() {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": "Pensie din străinătate în România – Italia, Spania, UK, Germania · Ghid complet 2025",
+        "name": "Pensie din străinătate în România – Italia, Spania, UK, Germania · Ghid complet 2025",
+         "@id": "https://dosarpensie.com/pensie-strainatate#article",
         "description":
           "Explicații clare despre cum primești pensia din Italia, Spania, UK, Germania dacă locuiești în România sau în străinătate. Transfer pensie, cont bancar, certificat de viață, întârzieri și întoarcerea în România.",
+          "image": [
+        "https://dosarpensie.com/images/pensie-strainatate.jpg"
+      ],
+      "url": "https://dosarpensie.com/pensie-strainatate",
         "author": {
           "@type": "Person",
           "name": "Adrian Defta",
@@ -289,9 +301,9 @@ export default function PensieStrainatatePage() {
       <nav className="text-xs text-primary space-x-3 mt-2">
         <a href="/">Acasă</a>
         <span>•</span>
-        <a href="/pensie-comunitara">Pensia comunitară</a>
+        <a href="/pensie-comunitara" title="Ghid complet pensie comunitară">Pensia comunitară</a>
         <span>•</span>
-        <a href="/dosar-pensie">Dosarul de pensie</a>
+        <a href="/dosar-pensie" title="Ghid complet dosarul de pensie">Dosarul de pensie</a>
       </nav>
 
       <p className="text-base lg:text-lg text-slate-700">
@@ -2474,7 +2486,7 @@ export default function PensieStrainatatePage() {
               © {new Date().getFullYear()} DosarPensie – ghiduri independente
               despre pensii.
             </p>
-            <p className="text-slate-500">
+            <p className="text-slate-600">
               Informațiile sunt generale și nu înlocuiesc comunicările
               oficiale ale caselor de pensii.
             </p>
