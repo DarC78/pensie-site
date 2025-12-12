@@ -310,40 +310,61 @@ export default function PensieComunitaraPage() {
                   interesează cel mai mult.
                 </p>
               </div>
-              <nav className="bg-softBg rounded-2xl border border-slate-100 p-4 text-sm text-slate-700">
+              <nav className="bg-softBg rounded-2xl border border-slate-200 p-4 text-sm text-slate-800">
                 <ol className="list-decimal list-inside space-y-2">
                   <li>
-                    <a href="#ce-este" className="text-primary hover:text-primaryDark">
+                    <a
+                      href="#ce-este"
+                      className="text-primaryDark hover:text-primary"
+                    >
                       Ce este pensia comunitară?
                     </a>
                   </li>
                   <li>
-                    <a href="#cine-are-dreptul" className="text-primary hover:text-primaryDark">
+                    <a
+                      href="#cine-are-dreptul"
+                      className="text-primaryDark hover:text-primary"
+                    >
                       Cine are dreptul la pensie comunitară?
                     </a>
                   </li>
                   <li>
-                    <a href="#cum-se-calculeaza" className="text-primary hover:text-primaryDark">
+                    <a
+                      href="#cum-se-calculeaza"
+                      className="text-primaryDark hover:text-primary"
+                    >
                       Cum se calculează pensia comunitară?
                     </a>
                   </li>
                   <li>
-                    <a href="#procedura" className="text-primary hover:text-primaryDark">
+                    <a
+                      href="#procedura"
+                      className="text-primaryDark hover:text-primary"
+                    >
                       Cum depui cererea – pas cu pas
                     </a>
                   </li>
                   <li>
-                    <a href="#exemple" className="text-primary hover:text-primaryDark">
+                    <a
+                      href="#exemple"
+                      className="text-primaryDark hover:text-primary"
+                    >
                       Exemple concrete de situații
                     </a>
                   </li>
                   <li>
-                    <a href="#greseli" className="text-primary hover:text-primaryDark">
+                    <a
+                      href="#greseli"
+                      className="text-primaryDark hover:text-primary"
+                    >
                       Greșeli frecvente și cum le eviți
                     </a>
                   </li>
                   <li>
-                    <a href="#intrebari" className="text-primary hover:text-primaryDark">
+                    <a
+                      href="#intrebari"
+                      className="text-primaryDark hover:text-primary"
+                    >
                       Întrebări frecvente
                     </a>
                   </li>
