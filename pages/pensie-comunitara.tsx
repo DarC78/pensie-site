@@ -200,101 +200,115 @@ export default function PensieComunitaraPage() {
 
         <main>
           {/* INTRO */}
-          <section className="bg-softBg border-b border-slate-100">
-            <div className="section-container py-10 lg:py-14 grid lg:grid-cols-[3fr,2fr] gap-10">
-              <div className="space-y-5">
-                <p className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-[11px] font-medium text-primary shadow-sm">
-                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                  Ghid complet · Pensie comunitară (UE + UK)
-                </p>
+          <section className="bg-softBg border-b border-slate-200">
+  <div className="section-container py-10 lg:py-14 grid lg:grid-cols-[3fr,2fr] gap-10">
+    <div className="space-y-5">
+      <p className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-[11px] font-medium text-primaryDark shadow-sm">
+        <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+        Ghid complet · Pensie comunitară (UE + UK)
+      </p>
 
-                <h1 className="text-3xl lg:text-4xl font-bold text-slate-900 leading-tight">
-                  Pensia comunitară: ghid simplu pentru românii care au lucrat în străinătate
-                </h1>
-                <p className="text-xs text-slate-500">
-                  Ultima actualizare: {new Date().toLocaleDateString('ro-RO')}
-                </p>
+      <h1 className="text-3xl lg:text-4xl font-bold text-slate-900 leading-tight">
+        Pensia comunitară: ghid simplu pentru românii care au lucrat în străinătate
+      </h1>
 
-                <nav className="text-xs text-primary space-x-3 mt-2">
-                  <a href="/">Acasă</a>
-                  <span>•</span>
-                  <a href="/ghiduri">Toate ghidurile</a>
-                  <span>•</span>
-                  <a href="/pensie-strainatate">Pensie în străinătate</a>
-                </nav>
+      {/* slate-500 → slate-600 */}
+      <p className="text-xs text-slate-600">
+        Ultima actualizare: {new Date().toLocaleDateString('ro-RO')}
+      </p>
 
-                <p className="text-base lg:text-lg text-slate-700">
-                  Ai lucrat o parte din viață în România și o parte în alte țări – UE sau UK – și
-                  acum te întrebi cum se calculează pensia? În acest ghid îți explicăm, pe limba
-                  ta, cum funcționează pensia comunitară: ce este, cine are dreptul, cum se
-                  calculează și ce pași trebuie să urmezi.
-                </p>
+      {/* primary → primaryDark */}
+      <nav className="text-xs text-primaryDark space-x-3 mt-2">
+        <a href="/" className="hover:text-primary">Acasă</a>
+        <span className="text-slate-400">•</span>
+        <a href="/ghiduri" className="hover:text-primary">Toate ghidurile</a>
+        <span className="text-slate-400">•</span>
+        <a href="/pensie-strainatate" className="hover:text-primary">Pensie în străinătate</a>
+      </nav>
 
-                <div className="grid sm:grid-cols-3 gap-3 text-xs sm:text-sm">
-                  <div className="rounded-2xl bg-white p-3 shadow-sm flex flex-col gap-1">
-                    <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-[0.18em]">
-                      Pentru cine
-                    </span>
-                    <span className="font-semibold text-slate-900">
-                      Români care au lucrat în 2+ țări
-                    </span>
-                    <span className="text-slate-500">România + UE / UK / alte state</span>
-                  </div>
-                  <div className="rounded-2xl bg-white p-3 shadow-sm flex flex-col gap-1">
-                    <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-[0.18em]">
-                      Ce afli
-                    </span>
-                    <span className="font-semibold text-slate-900">
-                      Cum se pun anii la un loc
-                    </span>
-                    <span className="text-slate-500">Fiecare stat plătește partea lui</span>
-                  </div>
-                  <div className="rounded-2xl bg-white p-3 shadow-sm flex flex-col gap-1">
-                    <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-[0.18em]">
-                      Nivel
-                    </span>
-                    <span className="font-semibold text-slate-900">
-                      Explicat simplu, fără jargon
-                    </span>
-                    <span className="text-slate-500">Potrivit și pentru părinți & bunici</span>
-                  </div>
-                </div>
-              </div>
+      <p className="text-base lg:text-lg text-slate-700">
+        Ai lucrat o parte din viață în România și o parte în alte țări – UE sau UK – și
+        acum te întrebi cum se calculează pensia? În acest ghid îți explicăm, pe limba
+        ta, cum funcționează pensia comunitară: ce este, cine are dreptul, cum se
+        calculează și ce pași trebuie să urmezi.
+      </p>
 
-              {/* Mica “fișă tehnică” */}
-              <aside className="rounded-3xl bg-white shadow-sm border border-slate-100 p-5 lg:p-6 space-y-4 text-sm text-slate-700">
-                <h2 className="text-base font-semibold text-slate-900">
-                  Pe scurt, ce este pensia comunitară?
-                </h2>
-                <p className="text-sm text-primary">
-                  Vezi și:{" "}
-                  <a href="/dosar-pensie" className="underline hover:text-primaryDark">Dosarul de pensie – acte și pași</a>
-                  {" • "}
-                  <a href="/recalculare-pensie" className="underline hover:text-primaryDark">Recalcularea pensiei</a>
-                  {" • "}
-                  <a href="/pensie-strainatate" className="underline hover:text-primaryDark">Pensie pentru cei din străinătate</a>
-                </p>
-                <p>
-                  Pensia comunitară nu este o pensie „specială”, ci o procedură prin care țările
-                  din UE (și cele cu acorduri speciale, cum e UK) își pun la un loc informațiile
-                  despre anii tăi lucrați, ca să nu pierzi drepturile la pensie.
-                </p>
-                <ul className="list-disc list-inside space-y-1">
-                  <li>fiecare stat calculează și plătește partea lui de pensie</li>
-                  <li>
-                    anii lucrați în mai multe țări se adună ca să vezi dacă îndeplinești condițiile
-                    minime
-                  </li>
-                  <li>cererea se depune, de regulă, în țara în care locuiești la pensie</li>
-                </ul>
-                <p className="text-xs text-slate-500">
-                  Informațiile de aici sunt generale și nu înlocuiesc comunicările oficiale ale
-                  caselor de pensii. Pentru situații foarte specifice, verifică și cu instituțiile
-                  din țările unde ai lucrat.
-                </p>
-              </aside>
-            </div>
-          </section>
+      <div className="grid sm:grid-cols-3 gap-3 text-xs sm:text-sm">
+        <div className="rounded-2xl bg-white p-3 shadow-sm flex flex-col gap-1">
+          {/* slate-500 → slate-600 */}
+          <span className="text-[11px] font-semibold text-slate-600 uppercase tracking-[0.18em]">
+            Pentru cine
+          </span>
+          <span className="font-semibold text-slate-900">
+            Români care au lucrat în 2+ țări
+          </span>
+          <span className="text-slate-600">România + UE / UK / alte state</span>
+        </div>
+
+        <div className="rounded-2xl bg-white p-3 shadow-sm flex flex-col gap-1">
+          <span className="text-[11px] font-semibold text-slate-600 uppercase tracking-[0.18em]">
+            Ce afli
+          </span>
+          <span className="font-semibold text-slate-900">
+            Cum se pun anii la un loc
+          </span>
+          <span className="text-slate-600">Fiecare stat plătește partea lui</span>
+        </div>
+
+        <div className="rounded-2xl bg-white p-3 shadow-sm flex flex-col gap-1">
+          <span className="text-[11px] font-semibold text-slate-600 uppercase tracking-[0.18em]">
+            Nivel
+          </span>
+          <span className="font-semibold text-slate-900">
+            Explicat simplu, fără jargon
+          </span>
+          <span className="text-slate-600">Potrivit și pentru părinți & bunici</span>
+        </div>
+      </div>
+    </div>
+
+    {/* Aside */}
+    <aside className="rounded-3xl bg-white shadow-sm border border-slate-200 p-5 lg:p-6 space-y-4 text-sm text-slate-700">
+      <h2 className="text-base font-semibold text-slate-900">
+        Pe scurt, ce este pensia comunitară?
+      </h2>
+
+      {/* primary → primaryDark */}
+      <p className="text-sm text-primaryDark">
+        Vezi și:{' '}
+        <a href="/dosar-pensie" className="underline hover:text-primary">
+          Dosarul de pensie – acte și pași
+        </a>
+        {' • '}
+        <a href="/recalculare-pensie" className="underline hover:text-primary">
+          Recalcularea pensiei
+        </a>
+        {' • '}
+        <a href="/pensie-strainatate" className="underline hover:text-primary">
+          Pensie pentru cei din străinătate
+        </a>
+      </p>
+
+      <p>
+        Pensia comunitară nu este o pensie „specială”, ci o procedură prin care țările
+        din UE (și cele cu acorduri speciale, cum e UK) își pun la un loc informațiile
+        despre anii tăi lucrați, ca să nu pierzi drepturile la pensie.
+      </p>
+
+      <ul className="list-disc list-inside space-y-1">
+        <li>fiecare stat calculează și plătește partea lui de pensie</li>
+        <li>anii lucrați în mai multe țări se adună</li>
+        <li>cererea se depune în țara de reședință</li>
+      </ul>
+
+      {/* slate-500 → slate-600 */}
+      <p className="text-xs text-slate-600">
+        Informațiile de aici sunt generale și nu înlocuiesc comunicările oficiale ale
+        caselor de pensii.
+      </p>
+    </aside>
+  </div>
+</section>
 
           
 
