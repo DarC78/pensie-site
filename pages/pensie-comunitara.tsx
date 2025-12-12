@@ -413,7 +413,7 @@ export default function PensieComunitaraPage() {
                 partea lui de pensie</strong>, dar la calcul se ține cont și de anii lucrați în
                 celelalte state. Asta se numește „totalizarea stagiilor de cotizare”.
               </p>
-              <div className="rounded-2xl bg-softBg border border-sky-100 p-4 text-sm">
+              <div className="div.rounded-2xl bg-softBg border border-slate-200 p-4 text-sm">
                 <p className="font-semibold text-slate-900 mb-1">Important de reținut</p>
                 <ul className="list-disc list-inside space-y-1 text-slate-700">
                   <li>
@@ -1461,7 +1461,7 @@ export default function PensieComunitaraPage() {
 
               <div className="grid lg:grid-cols-3 gap-6 text-sm">
                 <div className="rounded-2xl bg-softBg border border-sky-100 p-4 space-y-2">
-                  <h3 className="text-sm font-semibold text-primary uppercase tracking-[0.15em]">
+                  <h3 className="text-sm font-semibold text-primaryDark uppercase tracking-[0.15em]">
                     Exemplu 1
                   </h3>
                   <h4 className="font-semibold text-slate-900">
@@ -1474,7 +1474,7 @@ export default function PensieComunitaraPage() {
                   </p>
                 </div>
                 <div className="rounded-2xl bg-softBg border border-sky-100 p-4 space-y-2">
-                  <h3 className="text-sm font-semibold text-primary uppercase tracking-[0.15em]">
+                  <h3 className="text-sm font-semibold text-primaryDark uppercase tracking-[0.15em]">
                     Exemplu 2
                   </h3>
                   <h4 className="font-semibold text-slate-900">
@@ -1487,7 +1487,7 @@ export default function PensieComunitaraPage() {
                   </p>
                 </div>
                 <div className="rounded-2xl bg-softBg border border-sky-100 p-4 space-y-2">
-                  <h3 className="text-sm font-semibold text-primary uppercase tracking-[0.15em]">
+                  <h3 className="text-sm font-semibold text-primaryDark uppercase tracking-[0.15em]">
                     Exemplu 3
                   </h3>
                   <h4 className="font-semibold text-slate-900">
@@ -2780,7 +2780,7 @@ export default function PensieComunitaraPage() {
             <p className="text-slate-400">
               © {new Date().getFullYear()} DosarPensie – ghiduri independente despre pensii.
             </p>
-            <p className="text-slate-500">
+            <p className="text-slate-700">
               Informațiile sunt generale și nu înlocuiesc comunicările oficiale ale caselor de pensii.
             </p>
           </div>
