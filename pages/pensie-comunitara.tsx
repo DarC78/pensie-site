@@ -14,10 +14,21 @@ export default function PensieComunitaraPage() {
 
         <meta
           property="og:image"
-          content="https://dosarpensie.com/images/pensie-comunitara-cover.jpg"
+          content="https://dosarpensie.com/images/pensie-comunitara-cover.webp"
         />
         <meta
-          property="twitter:image"
+          property="og:image"
+          content="https://dosarpensie.com/images/pensie-comunitara-cover.jpg"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:image"
+          content="https://dosarpensie.com/images/pensie-comunitara-cover.webp"
+        />
+        <meta
+          name="twitter:image"
           content="https://dosarpensie.com/images/pensie-comunitara-cover.jpg"
         />
         
