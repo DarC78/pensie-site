@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Section from "@/components/Section";
-import { BulletList } from "@/components/BulletList";
+import Section from "../components/Section";
+import { BulletList } from "../components/BulletList";
 
 export default function PensieComunitaraUK() {
   const siteUrl = "https://dosarpensie.com";
