@@ -2780,7 +2780,7 @@ export default function PensieComunitaraPage() {
             <p className="text-slate-400">
               © {new Date().getFullYear()} DosarPensie – ghiduri independente despre pensii.
             </p>
-            <p className="text-slate-800">
+            <p className="text-slate-500">
               Informațiile sunt generale și nu înlocuiesc comunicările oficiale ale caselor de pensii.
             </p>
           </div>
