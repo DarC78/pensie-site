@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Section from "@/components/Section";
+import { BulletList } from "@/components/List";
 
 export default function PensieComunitaraUK() {
   const siteUrl = "https://dosarpensie.com";
@@ -91,17 +93,29 @@ export default function PensieComunitaraUK() {
       </Head>
 
       <main style={{ maxWidth: "900px", margin: "0 auto", padding: "24px" }}>
+        <nav aria-label="Cuprins">
+            <ul>
+                <li><a href="#calcul">Cum se calculează pensia</a></li>
+                <li><a href="#cerere">Unde se depune cererea</a></li>
+                <li><a href="#documente">Documente necesare</a></li>
+                <li><a href="#intrebari">Întrebări frecvente</a></li>
+            </ul>
+        </nav>
         <article>
           <h1>Pensia comunitară în UK</h1>
 
-          <p>
-            Pensia comunitară în UK este un subiect de interes major pentru
-            românii care au muncit în Marea Britanie și care, la momentul
-            pensionării, doresc să își valorifice atât anii lucrați în România,
-            cât și pe cei din UK. Deși Marea Britanie a părăsit Uniunea Europeană,
-            drepturile de pensie dobândite înainte și după Brexit continuă să fie
-            protejate prin acorduri internaționale.
-          </p>
+          <Section level={1} title="Pensia comunitară în UK">
+            <p>
+                <a href="/pensie-comunitara">Pensia comunitară</a> în UK este un subiect de
+                interes major pentru românii care au muncit în Marea Britanie și care doresc
+                să își valorifice anii lucrați în România și UK.
+            </p>
+
+            <p>
+                În practică, dosarele de pensie comunitară cu UK sunt printre cele mai
+                complexe din Europa, implicând instituții diferite și proceduri distincte.
+            </p>
+            </Section>
 
           <p>
             În practică, pensia comunitară cu UK este unul dintre cele mai
@@ -115,7 +129,7 @@ export default function PensieComunitaraUK() {
           <h2>Ce este pensia comunitară în relația cu UK</h2>
 
           <p>
-            Pensia comunitară reprezintă mecanismul prin care perioadele de muncă
+            <a href="/pensie-comunitara">Pensia comunitară</a> reprezintă mecanismul prin care perioadele de muncă
             realizate în mai multe state sunt recunoscute împreună, astfel încât
             persoana să nu piardă anii lucrați atunci când ajunge la vârsta de
             pensionare. În cazul UK, acest mecanism funcționează pe baza
@@ -159,28 +173,40 @@ export default function PensieComunitaraUK() {
 
           <h2>Cine are dreptul la pensie comunitară în UK</h2>
 
-          <p>
-            Ai dreptul la pensie comunitară în relația cu UK dacă îndeplinești
-            cumulativ sau parțial următoarele condiții:
-          </p>
+          <Section title="Cine are dreptul la pensie comunitară în UK">
+            <p>
+                Ai dreptul la pensie comunitară în relația cu UK dacă îndeplinești una sau
+                mai multe dintre următoarele condiții:
+            </p>
 
-          <ul>
-            <li>ai lucrat legal în Marea Britanie;</li>
-            <li>
-              ai avut contribuții la National Insurance (NI), fie ca angajat,
-              fie ca self-employed;
-            </li>
-            <li>ai realizat stagii de cotizare și în România sau în alte state;</li>
-            <li>ai atins vârsta legală de pensionare.</li>
-          </ul>
-
-          <p>
+            <BulletList
+                items={[
+                "ai lucrat legal în Marea Britanie",
+                "ai avut contribuții la National Insurance (NI)",
+                "ai stagii de cotizare în România sau alte state",
+                "ai atins vârsta legală de pensionare",
+                ]}
+            />
+            <p>
             Nu este obligatoriu să fi lucrat un număr mare de ani în UK. Chiar și
             perioadele mai scurte pot fi luate în calcul prin mecanismul de
             totalizare a stagiilor, în anumite condiții.
           </p>
+            </Section>
 
-          <h3>Tipuri de muncă recunoscute în UK</h3>
+          
+
+          <Section title="Tipuri de muncă recunoscute în UK" level={3}>
+            <BulletList
+                items={[
+                "contract PAYE",
+                "muncă prin agenții",
+                "self-employed / sole trader",
+                "zero-hours contracts",
+                "NI credits din beneficii",
+                ]}
+            />
+            </Section>
 
           <p>
             În cadrul pensiei comunitare, UK recunoaște mai multe forme de muncă,
@@ -291,6 +317,14 @@ export default function PensieComunitaraUK() {
               una din UK.
             </li>
           </ul>
+
+          <p>
+            Acest mod de calcul se bazează pe principiile generale ale
+            <a href="/pensie-comunitara">
+                pensiei comunitare la nivel european
+            </a>,
+            adaptate relației specifice dintre România și UK.
+        </p>
 
           <p>
             Dacă în România nu ai fi îndeplinit stagiul minim, anii din UK ar fi
@@ -420,12 +454,13 @@ export default function PensieComunitaraUK() {
 
           <p>
             <strong>
-              Pensia comunitară în UK implică reguli diferite, instituții
-              multiple și un proces birocratic complex. ProveIt te ajută să îți
-              aperi drepturile tale în fața instituțiilor și să eviți blocajele
-              care pot întârzia sau afecta pensia ta.
+                Pensia comunitară în UK implică reguli diferite și instituții multiple.
+                <a href="/pensie-comunitara">
+                Află cum funcționează pensia comunitară în ansamblu
+                </a>
+                și cum ProveIt te ajută să îți aperi drepturile tale în fața instituțiilor.
             </strong>
-          </p>
+        </p>
         </article>
       </main>
     </>
