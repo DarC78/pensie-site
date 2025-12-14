@@ -186,31 +186,134 @@ export default function PensiePage() {
 
       <main style={{ maxWidth: "900px", margin: "0 auto", padding: "24px" }}>
         <article>
-          {/* ================= HERO ================= */}
-          <h1>Pensia în România</h1>
+          {/* ================= HERO / INTRO ================= */}
+<section className="bg-softBg border-b border-slate-100">
+  <div className="section-container py-10 lg:py-14 space-y-6">
+    <p className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-[11px] font-medium text-primary shadow-sm w-fit">
+      <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+      Ghid complet · Pensia în România
+    </p>
 
-          <p>
-            Acest ghid explică, pe înțelesul tuturor, ce este pensia, cum
-            funcționează pensionarea în România și ce trebuie să știi dacă te
-            apropii de vârsta de pensionare.
-          </p>
+    <h1 className="text-3xl lg:text-4xl font-bold text-slate-900 leading-tight max-w-4xl">
+      Pensia în România – ghid clar și explicat simplu pentru cei care se
+      apropie de pensionare
+    </h1>
 
-          <hr />
+    <p className="text-base lg:text-lg text-slate-700 max-w-3xl">
+      Pensionarea este unul dintre cele mai importante momente administrative
+      din viață. În acest ghid vei găsi explicații clare despre
+      <strong> ce este pensia</strong>, <strong>când te poți pensiona</strong>,
+      <strong> cum se calculează pensia</strong> și
+      <strong> ce trebuie să faci concret</strong> pentru a evita întârzieri
+      sau probleme.
+    </p>
 
-          {/* ================= CUPRINS ================= */}
-          <nav>
-            <h2>Cuprins</h2>
-            <ol>
-              <li><a href="#ce-este">Ce este pensia</a></li>
-              <li><a href="#tipuri">Tipuri de pensii</a></li>
-              <li><a href="#cand">Când te poți pensiona</a></li>
-              <li><a href="#calcul">Cum se calculează pensia</a></li>
-              <li><a href="#dosar">Dosarul de pensionare</a></li>
-              <li><a href="#strainatate">Pensia dacă ai lucrat în străinătate</a></li>
-              <li><a href="#greseli">Greșeli frecvente</a></li>
-              <li><a href="#faq">Întrebări frecvente</a></li>
-            </ol>
-          </nav>
+    <p className="text-base lg:text-lg text-slate-700 max-w-3xl">
+      Informațiile sunt prezentate pe înțelesul tuturor, fără limbaj juridic
+      complicat, astfel încât să poți lua decizii informate și să știi exact
+      la ce să fii atent.
+    </p>
+
+    <div className="grid sm:grid-cols-3 gap-4 text-sm max-w-4xl">
+      <div className="rounded-2xl bg-white p-4 shadow-sm border border-slate-100">
+        <p className="text-xs font-semibold text-slate-500 uppercase tracking-[0.15em]">
+          Pentru cine
+        </p>
+        <p className="font-semibold text-slate-900">
+          Persoane 55+ și familiile lor
+        </p>
+        <p className="text-slate-600">
+          Inclusiv cei cu muncă în străinătate
+        </p>
+      </div>
+
+      <div className="rounded-2xl bg-white p-4 shadow-sm border border-slate-100">
+        <p className="text-xs font-semibold text-slate-500 uppercase tracking-[0.15em]">
+          Ce afli
+        </p>
+        <p className="font-semibold text-slate-900">
+          Reguli, pași și calcule
+        </p>
+        <p className="text-slate-600">
+          Explicate fără jargon
+        </p>
+      </div>
+
+      <div className="rounded-2xl bg-white p-4 shadow-sm border border-slate-100">
+        <p className="text-xs font-semibold text-slate-500 uppercase tracking-[0.15em]">
+          De ce contează
+        </p>
+        <p className="font-semibold text-slate-900">
+          Eviți greșeli și întârzieri
+        </p>
+        <p className="text-slate-600">
+          Știi exact ce ai de făcut
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* ================= CUPRINS ================= */}
+<section className="bg-white border-b border-slate-100">
+  <div className="section-container py-8 lg:py-10 grid lg:grid-cols-[3fr,2fr] gap-8">
+    <div>
+      <h2 className="text-lg font-semibold text-slate-900 mb-3">
+        Ce vei găsi în acest ghid
+      </h2>
+      <p className="text-sm text-slate-600">
+        Poți parcurge ghidul cap-coadă sau poți merge direct la secțiunea care
+        te interesează. Dacă ești aproape de pensionare, îți recomand să citești
+        cel puțin secțiunile despre dosar și greșeli frecvente.
+      </p>
+    </div>
+
+    <nav className="bg-softBg rounded-2xl border border-slate-100 p-5 text-sm text-slate-700">
+      <ol className="list-decimal list-inside space-y-2">
+        <li>
+          <a href="#sectiunea-1" className="text-primary hover:text-primaryDark">
+            Ce este pensia și cum funcționează
+          </a>
+        </li>
+        <li>
+          <a href="#sectiunea-2" className="text-primary hover:text-primaryDark">
+            Tipuri de pensii în România
+          </a>
+        </li>
+        <li>
+          <a href="#sectiunea-3" className="text-primary hover:text-primaryDark">
+            Când te poți pensiona
+          </a>
+        </li>
+        <li>
+          <a href="#sectiunea-4" className="text-primary hover:text-primaryDark">
+            Cum se calculează pensia
+          </a>
+        </li>
+        <li>
+          <a href="#sectiunea-5" className="text-primary hover:text-primaryDark">
+            Dosarul de pensionare
+          </a>
+        </li>
+        <li>
+          <a href="#sectiunea-6" className="text-primary hover:text-primaryDark">
+            Pensia dacă ai lucrat în străinătate
+          </a>
+        </li>
+        <li>
+          <a href="#sectiunea-7" className="text-primary hover:text-primaryDark">
+            Greșeli frecvente legate de pensie
+          </a>
+        </li>
+        <li>
+          <a href="#sectiunea-8" className="text-primary hover:text-primaryDark">
+            Întrebări frecvente
+          </a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+</section>
 
           <hr />
 
