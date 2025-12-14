@@ -215,326 +215,387 @@ export default function PensiePage() {
           <hr />
 
           {/* ================= SECTIUNEA 1 ================= */}
-<section id="ce-este">
-  <h2>1. Ce este pensia și cum funcționează</h2>
+<section className="bg-white border-b border-slate-100">
+  <div className="section-container py-10 lg:py-14 space-y-10 text-slate-800">
+    <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
+      1. Ce este pensia și de ce este important să o înțelegi
+    </h2>
 
-  {/* 1.1 */}
-  <h3>1.1 Ce înseamnă, de fapt, pensia</h3>
-  <p>
-    Pensia este un <strong>drept financiar lunar</strong> acordat de stat
-    persoanelor care au muncit și au contribuit la sistemul de asigurări
-    sociale pe parcursul vieții active.
-  </p>
-  <p>
-    Spre deosebire de un ajutor social, pensia nu este un favor și nu depinde
-    de bunăvoința statului. Ea se bazează pe
-    <strong> contribuțiile plătite</strong> în timpul activității profesionale.
-  </p>
-  <p>
-    Cu alte cuvinte, pensia este modul prin care statul îți returnează,
-    etapizat, o parte din banii contribuiți, sub forma unui venit stabil la
-    bătrânețe.
-  </p>
-
-  <div style={{ borderLeft: "4px solid #2563eb", paddingLeft: "12px" }}>
-    <p>
-      <strong>Important:</strong> Dacă ai muncit fără contribuții declarate,
-      acea perioadă nu generează drepturi de pensie.
-    </p>
-  </div>
-
-  {/* 1.2 */}
-  <h3>1.2 Pensia nu este un ajutor social</h3>
-  <p>
-    O confuzie frecventă este aceea că pensia ar fi un ajutor oferit de stat
-    tuturor persoanelor în vârstă. În realitate,
-    <strong> pensia este condiționată</strong>.
-  </p>
-  <p>
-    Pentru a primi pensie, trebuie să fi îndeplinit anumite
-    <strong> condiții legale</strong>, precum stagiul minim de cotizare și
-    vârsta de pensionare.
-  </p>
-  <p>
-    Persoanele care nu au contribuit suficient pot primi alte forme de sprijin,
-    dar acestea nu sunt pensii în sens legal.
-  </p>
-
-  <ul>
-    <li>pensia = drept bazat pe contribuții;</li>
-    <li>ajutorul social = sprijin acordat în funcție de situație;</li>
-    <li>cele două nu trebuie confundate.</li>
-  </ul>
-
-  {/* 1.3 */}
-  <h3>1.3 Rolul contribuțiilor în pensie</h3>
-  <p>
-    Contribuțiile reprezintă <strong>fundamentul pensiei</strong>.
-    Ele se rețin lunar din salariu sau se plătesc individual, în cazul
-    activităților independente.
-  </p>
-  <p>
-    Cu cât contribuțiile sunt mai mari și plătite pe o perioadă mai lungă,
-    cu atât pensia va fi, în general, mai mare.
-  </p>
-  <p>
-    Lipsa contribuțiilor sau perioadele neclare pot duce la
-    <strong> pensii mai mici</strong> sau întârzieri la stabilire.
-  </p>
-
-  <div style={{ background: "#f8fafc", padding: "12px", borderRadius: "6px" }}>
-    <p>
-      <strong>Sfat practic:</strong> Verifică din timp dacă toate perioadele
-      tale de muncă sunt declarate corect.
-    </p>
-  </div>
-
-  {/* 1.4 */}
-  <h3>1.4 De ce două persoane cu aceiași ani au pensii diferite</h3>
-  <p>
-    Mulți oameni se miră când află că două persoane cu același număr de ani
-    lucrați primesc pensii diferite. Diferența vine din
-    <strong> nivelul contribuțiilor</strong>.
-  </p>
-  <p>
-    Salariile diferite, perioadele cu normă parțială sau întreruperile
-    influențează direct valoarea pensiei.
-  </p>
-  <p>
-    Nu anii, ci <strong>calitatea contribuției</strong> face diferența.
-  </p>
-
-  <div style={{ border: "1px dashed #94a3b8", padding: "12px" }}>
-    <p>
-      Doi oameni pot avea 35 de ani de muncă, dar pensii foarte diferite.
-    </p>
-  </div>
-
-  {/* 1.5 */}
-  <h3>1.5 Pensia ca proces, nu ca formular</h3>
-  <p>
-    Pensionarea nu începe în ziua în care depui cererea.
-    Este un <strong>proces administrativ</strong> care poate dura luni.
-  </p>
-  <p>
-    Verificarea vechimii, solicitarea documentelor și comunicarea cu
-    instituțiile fac parte din acest proces.
-  </p>
-  <p>
-    Cu cât ești mai pregătit, cu atât procesul este mai rapid și mai clar.
-  </p>
-
-  <ul>
-    <li>verifici vechimea;</li>
-    <li>pregătești dosarul;</li>
-    <li>depuți cererea;</li>
-    <li>aștepți decizia.</li>
-  </ul>
-
-  <p className="text-sm text-primary">
-    Pentru pașii practici, vezi și{" "}
-    <a href="/dosar-pensie" className="underline hover:text-primaryDark">
-        ghidul complet despre dosarul de pensionare
-    </a>.
+    <p className="text-base lg:text-lg text-slate-700">
+      Pensia reprezintă venitul lunar pe care îl primești după ce încetezi
+      activitatea profesională. Pentru mulți oameni, aceasta devine principala
+      sursă de trai la o anumită vârstă, motiv pentru care este esențial să
+      înțelegi cum funcționează.
     </p>
 
-  {/* 1.6 */}
-  <h3>1.6 Ce se întâmplă dacă nu îndeplinești condițiile</h3>
-  <p>
-    Dacă nu îndeplinești condițiile minime, nu înseamnă automat că nu vei
-    primi nimic. Există <strong>situații speciale</strong>.
-  </p>
-  <p>
-    De exemplu, perioadele lucrate în străinătate pot ajuta la completarea
-    stagiului minim.
-  </p>
-  <p>
-    Fiecare caz trebuie analizat individual.
-  </p>
-
-  <div style={{ background: "#fff7ed", padding: "12px", borderRadius: "6px" }}>
-    <p>
-      <strong>Atenție:</strong> Nu presupune că nu ai drepturi fără să verifici.
+    <p className="text-base lg:text-lg text-slate-700">
+      Deși termenul „pensie” este foarte des folosit, regulile din spatele lui
+      nu sunt întotdeauna clare. Lipsa de informare poate duce la decizii
+      greșite sau la pierderi financiare pe termen lung.
     </p>
-  </div>
 
-  {/* 1.7 */}
-  <h3>1.7 De ce este important să te informezi din timp</h3>
-  <p>
-    Lipsa informațiilor este una dintre cele mai mari probleme la pensionare.
-    Mulți oameni află prea târziu că lipsesc acte sau perioade.
-  </p>
-  <p>
-    Informarea din timp îți permite să corectezi greșeli și să eviți
-    <strong> pierderi financiare</strong>.
-  </p>
-  <p>
-    Pensia este rezultatul unei vieți de muncă și merită tratată cu atenție.
-  </p>
+    {/* 1.1 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      1.1 Ce înseamnă, de fapt, pensia
+    </h3>
 
-  <div style={{ borderLeft: "4px solid #16a34a", paddingLeft: "12px" }}>
-    <p>
-      <strong>Concluzie:</strong> Cine se informează din timp, are mai mult
-      control asupra pensiei sale.
+    <p className="text-slate-700">
+      Pensia este un drept social obținut în urma contribuțiilor plătite pe
+      parcursul vieții active. Practic, o parte din veniturile tale au fost
+      direcționate către sistemul public pentru a-ți asigura un venit la
+      bătrânețe.
+    </p>
+
+    <p className="text-slate-700">
+      Statul calculează pensia pe baza anilor lucrați și a contribuțiilor
+      achitate, conform legislației în vigoare la momentul pensionării.
+      Aceasta nu este o sumă „standard”, ci diferă de la persoană la persoană.
+    </p>
+
+    <p className="text-slate-700">
+      De aceea, două persoane care se pensionează în același an pot primi
+      pensii foarte diferite, chiar dacă au avut cariere aparent similare.
+    </p>
+
+    {/* 1.2 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      1.2 De ce pensia nu este automată
+    </h3>
+
+    <p className="text-slate-700">
+      Un mit frecvent este că pensia se acordă automat la împlinirea unei
+      anumite vârste. În realitate, este necesară depunerea unei cereri și a
+      unui dosar complet.
+    </p>
+
+    <p className="text-slate-700">
+      Fără cerere și fără documente justificative, Casa de Pensii nu poate
+      stabili dreptul la pensie, chiar dacă îndeplinești condițiile legale.
+    </p>
+
+    <div className="rounded-3xl bg-sky-50 border border-sky-200 p-5 lg:p-6">
+      <p className="font-semibold text-slate-900 mb-1">
+        Important
+      </p>
+      <p className="text-slate-700">
+        Pensia nu începe „din oficiu”. Ea se acordă doar din luna următoare
+        depunerii cererii complete, indiferent de cât timp îndeplinești
+        condițiile.
+      </p>
+    </div>
+
+    {/* 1.3 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      1.3 Ce rol are contribuția la pensie
+    </h3>
+
+    <p className="text-slate-700">
+      Contribuția la pensie reprezintă baza sistemului public. Fiecare lună
+      lucrată cu contribuții plătite contează în calculul final.
+    </p>
+
+    <p className="text-slate-700">
+      Atât angajații, cât și persoanele care lucrează pe cont propriu
+      contribuie la sistem, chiar dacă modalitatea de plată diferă.
+    </p>
+
+    <p className="text-slate-700">
+      Lipsa contribuțiilor sau perioadele nedeclarate pot reduce semnificativ
+      valoarea pensiei.
+    </p>
+
+    {/* 1.4 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      1.4 Pensia ca venit pe termen lung
+    </h3>
+
+    <p className="text-slate-700">
+      Pensionarea nu este un eveniment de moment, ci începutul unei perioade
+      care poate dura mulți ani. De aceea, pensia trebuie privită ca un venit
+      pe termen lung.
+    </p>
+
+    <p className="text-slate-700">
+      O pensie mai mică poate afecta calitatea vieții, mai ales dacă nu există
+      alte surse de venit sau economii.
+    </p>
+
+    <p className="text-slate-700">
+      Înțelegerea modului de calcul te ajută să îți faci așteptări realiste.
+    </p>
+
+    {/* 1.5 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      1.5 Diferența dintre pensie și ajutor social
+    </h3>
+
+    <p className="text-slate-700">
+      Pensia nu este un ajutor social. Ea este rezultatul contribuțiilor tale
+      din timpul vieții active și se acordă în baza unui drept câștigat.
+    </p>
+
+    <p className="text-slate-700">
+      Ajutoarele sociale sunt acordate în funcție de situația financiară și
+      pot fi condiționate sau retrase.
+    </p>
+
+    <div className="rounded-3xl bg-white border border-slate-100 p-5 lg:p-6">
+      <ul className="list-disc list-inside space-y-2 text-slate-700">
+        <li>pensia este un drept dobândit;</li>
+        <li>ajutorul social este o formă de sprijin temporar;</li>
+        <li>condițiile de acordare sunt diferite.</li>
+      </ul>
+    </div>
+
+    {/* 1.6 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      1.6 De ce este bine să te informezi din timp
+    </h3>
+
+    <p className="text-slate-700">
+      Mulți oameni se interesează de pensie abia cu câteva luni înainte de
+      pensionare. În acel moment, opțiunile sunt limitate.
+    </p>
+
+    <p className="text-slate-700">
+      Informarea din timp îți oferă posibilitatea să verifici vechimea,
+      contribuțiile și eventualele lipsuri.
+    </p>
+
+    <p className="text-slate-700">
+      Cu cât începi mai devreme, cu atât ai mai mult control asupra situației
+      tale.
+    </p>
+
+    {/* 1.7 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      1.7 Ce urmează după ce înțelegi ce este pensia
+    </h3>
+
+    <p className="text-slate-700">
+      După ce ai o imagine clară despre ce este pensia, următorul pas este să
+      afli ce tip de pensie ți se potrivește și când te poți pensiona.
+    </p>
+
+    <p className="text-slate-700">
+      Fiecare situație este diferită, iar informațiile generale trebuie
+      adaptate la cazul tău concret.
+    </p>
+
+    <p className="text-slate-700">
+      În secțiunile următoare vei găsi explicații detaliate care te vor ajuta
+      să mergi mai departe, pas cu pas.
     </p>
   </div>
 </section>
 
           {/* ================= SECTIUNEA 2 ================= */}
-<section id="tipuri">
-  <h2>2. Tipuri de pensii în România</h2>
+<section className="bg-white border-b border-slate-100">
+  <div className="section-container py-10 lg:py-14 space-y-10 text-slate-800">
+    <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
+      2. Tipuri de pensii în România
+    </h2>
 
-  {/* 2.1 */}
-  <h3>2.1 Pensia pentru limită de vârstă (pensia de stat)</h3>
-  <p>
-    <strong>Pensia pentru limită de vârstă</strong> este cea mai cunoscută formă
-    de pensie și se acordă persoanelor care au atins vârsta legală de pensionare
-    și au realizat stagiul minim de cotizare.
-  </p>
-  <p>
-    Aceasta este pensia „standard”, la care se gândesc majoritatea oamenilor
-    când vorbesc despre <strong>pensie</strong> sau <strong>pensionare</strong>.
-  </p>
-  <p>
-    Valoarea pensiei depinde de numărul de ani lucrați și de nivelul
-    contribuțiilor plătite de-a lungul vieții active.
-  </p>
-
-  <div style={{ borderLeft: "4px solid #2563eb", paddingLeft: "12px" }}>
-    <p>
-      <strong>De reținut:</strong> Fără stagiu minim de cotizare, pensia pentru
-      limită de vârstă nu poate fi acordată.
+    <p className="text-base lg:text-lg text-slate-700">
+      Sistemul de pensii din România cuprinde mai multe tipuri de pensii,
+      fiecare destinată unor situații diferite. Alegerea tipului corect de
+      pensie este esențială, deoarece influențează atât momentul pensionării,
+      cât și suma primită lunar.
     </p>
-  </div>
 
-  {/* 2.2 */}
-  <h3>2.2 Pensia anticipată</h3>
-  <p>
-    <strong>Pensia anticipată</strong> se acordă persoanelor care doresc să se
-    pensioneze înainte de împlinirea vârstei standard, dar care au realizat un
-    stagiu de cotizare mai mare decât cel minim.
-  </p>
-  <p>
-    Această formă de pensionare vine, de regulă, cu
-    <strong> penalizări</strong> aplicate sumei primite, în funcție de numărul de
-    luni de anticipare.
-  </p>
-  <p>
-    Mulți oameni aleg această variantă din motive de sănătate sau oboseală
-    acumulată în timp.
-  </p>
-
-  <ul>
-    <li>se acordă înainte de vârsta standard;</li>
-    <li>necesită stagiu mare de cotizare;</li>
-    <li>poate fi penalizată.</li>
-  </ul>
-
-  {/* 2.3 */}
-  <h3>2.3 Pensia anticipată parțială</h3>
-  <p>
-    <strong>Pensia anticipată parțială</strong> este o formă intermediară, destinată
-    celor care nu îndeplinesc toate condițiile pentru pensia anticipată completă.
-  </p>
-  <p>
-    Aceasta presupune <strong>reduceri mai mari</strong> ale cuantumului pensiei
-    față de pensia anticipată.
-  </p>
-  <p>
-    Este important ca această variantă să fie analizată atent, deoarece
-    penalizările pot fi permanente.
-  </p>
-
-  <div style={{ background: "#fff7ed", padding: "12px", borderRadius: "6px" }}>
-    <p>
-      <strong>Atenție:</strong> O decizie grăbită poate duce la o pensie mai mică
-      pe tot restul vieții.
+    <p className="text-base lg:text-lg text-slate-700">
+      Mulți oameni folosesc termenul „pensie” într-un sens general, fără să
+      știe că există diferențe importante între pensia pentru limită de vârstă,
+      pensia anticipată sau pensia de invaliditate. În această secțiune le
+      explicăm pe rând, într-un mod clar și ușor de înțeles.
     </p>
-  </div>
 
-  {/* 2.4 */}
-  <h3>2.4 Pensia de invaliditate</h3>
-  <p>
-    <strong>Pensia de invaliditate</strong> se acordă persoanelor care și-au
-    pierdut total sau parțial capacitatea de muncă din motive medicale.
-  </p>
-  <p>
-    Aceasta se stabilește pe baza unui
-    <strong> certificat medical</strong> și a deciziei unei comisii de specialitate.
-  </p>
-  <p>
-    Există mai multe grade de invaliditate, fiecare cu reguli diferite privind
-    dreptul de a munci și cuantumul pensiei.
-  </p>
+    {/* 2.1 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      2.1 Pensia pentru limită de vârstă
+    </h3>
 
-  <div style={{ background: "#f8fafc", padding: "12px", borderRadius: "6px" }}>
-    <p>
-      Pensia de invaliditate poate fi revizuită periodic, în funcție de starea
-      de sănătate.
+    <p className="text-slate-700">
+      Pensia pentru limită de vârstă este forma cea mai cunoscută de pensie și
+      se acordă persoanelor care au atins vârsta legală de pensionare și au
+      realizat stagiul minim de cotizare.
     </p>
-  </div>
 
-  {/* 2.5 */}
-  <h3>2.5 Pensia de urmaș</h3>
-  <p>
-    <strong>Pensia de urmaș</strong> este destinată membrilor familiei unei
-    persoane decedate care a fost pensionar sau îndeplinea condițiile pentru
-    pensionare.
-  </p>
-  <p>
-    Beneficiari pot fi soțul supraviețuitor și copiii, în anumite condiții de
-    vârstă sau studii.
-  </p>
-  <p>
-    Această pensie are rolul de a oferi
-    <strong> protecție financiară</strong> familiei rămase.
-  </p>
-
-  <ul>
-    <li>se acordă soțului supraviețuitor;</li>
-    <li>se acordă copiilor, în anumite condiții;</li>
-    <li>depinde de situația decedatului.</li>
-  </ul>
-
-  {/* 2.6 */}
-  <h3>2.6 Pensii speciale și pensii de serviciu</h3>
-  <p>
-    Există anumite categorii profesionale care beneficiază de
-    <strong> pensii de serviciu</strong>, cunoscute popular ca „pensii speciale”.
-  </p>
-  <p>
-    Acestea se bazează pe legi speciale și nu urmează în totalitate regulile
-    sistemului public.
-  </p>
-  <p>
-    Subiectul este adesea controversat și se află frecvent în atenția publică.
-  </p>
-
-  <div style={{ border: "1px dashed #94a3b8", padding: "12px" }}>
-    <p>
-      Pensiile speciale nu se aplică majorității populației.
+    <p className="text-slate-700">
+      Aceasta este pensia „standard”, fără penalizări, și reprezintă baza
+      sistemului public. Majoritatea oamenilor se pensionează prin acest tip
+      de pensie.
     </p>
-  </div>
 
-  {/* 2.7 */}
-  <h3>2.7 Cum alegi tipul de pensie potrivit</h3>
-  <p>
-    Alegerea tipului de pensie nu este întotdeauna o decizie simplă.
-    Fiecare variantă vine cu avantaje și dezavantaje.
-  </p>
-  <p>
-    Este important să ții cont de vârstă, sănătate,
-    <strong> nivelul contribuțiilor</strong> și nevoile tale financiare.
-  </p>
-  <p>
-    O informare corectă te poate ajuta să eviți decizii care îți pot afecta
-    venitul pe termen lung.
-  </p>
+    <p className="text-slate-700">
+      Valoarea pensiei pentru limită de vârstă depinde de anii lucrați, de
+      nivelul contribuțiilor și de legislația în vigoare la momentul
+      pensionării.
+    </p>
 
-  <div style={{ borderLeft: "4px solid #16a34a", paddingLeft: "12px" }}>
-    <p>
-      <strong>Sfat:</strong> Analizează fiecare opțiune înainte de a lua o
-      decizie definitivă.
+    {/* 2.2 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      2.2 Pensia anticipată
+    </h3>
+
+    <p className="text-slate-700">
+      Pensia anticipată permite retragerea din activitate înainte de vârsta
+      standard de pensionare, însă doar în anumite condiții stricte.
+    </p>
+
+    <p className="text-slate-700">
+      De regulă, este necesar un stagiu de cotizare mai mare decât cel minim,
+      iar pensia se acordă cu penalizări aplicate sumei finale.
+    </p>
+
+    <p className="text-slate-700">
+      Această opțiune poate fi utilă în anumite situații, dar trebuie analizată
+      cu atenție, deoarece penalizările pot afecta pensia pe termen lung.
+    </p>
+
+    <div className="rounded-3xl bg-sky-50 border border-sky-200 p-5 lg:p-6">
+      <p className="font-semibold text-slate-900 mb-1">
+        Atenție
+      </p>
+      <p className="text-slate-700">
+        Pensia anticipată nu este potrivită pentru toată lumea. O decizie
+        luată în grabă poate duce la pierderi financiare permanente.
+      </p>
+    </div>
+
+    {/* 2.3 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      2.3 Pensia anticipată parțială
+    </h3>
+
+    <p className="text-slate-700">
+      Pensia anticipată parțială se acordă persoanelor care doresc să se
+      pensioneze înainte de vârsta standard, dar nu îndeplinesc toate
+      condițiile pentru pensia anticipată completă.
+    </p>
+
+    <p className="text-slate-700">
+      În acest caz, penalizările sunt mai mari și se aplică până la atingerea
+      vârstei standard de pensionare.
+    </p>
+
+    <p className="text-slate-700">
+      De aceea, această variantă este considerată una dintre cele mai
+      dezavantajoase din punct de vedere financiar.
+    </p>
+
+    {/* 2.4 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      2.4 Pensia de invaliditate
+    </h3>
+
+    <p className="text-slate-700">
+      Pensia de invaliditate se acordă persoanelor care și-au pierdut total sau
+      parțial capacitatea de muncă din cauza unor afecțiuni medicale.
+    </p>
+
+    <p className="text-slate-700">
+      Aceasta nu este condiționată strict de vârstă, ci de gradul de
+      invaliditate stabilit prin expertiză medicală.
+    </p>
+
+    <p className="text-slate-700">
+      Pensia de invaliditate poate fi temporară sau permanentă, în funcție de
+      evoluția stării de sănătate.
+    </p>
+
+    {/* 2.5 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      2.5 Pensia de urmaș
+    </h3>
+
+    <p className="text-slate-700">
+      Pensia de urmaș se acordă membrilor familiei unei persoane decedate care
+      era pensionară sau îndeplinea condițiile pentru pensionare.
+    </p>
+
+    <p className="text-slate-700">
+      Beneficiarii pot fi copiii, soțul sau soția supraviețuitoare, în
+      condițiile prevăzute de lege.
+    </p>
+
+    <p className="text-slate-700">
+      Durata și valoarea pensiei de urmaș depind de mai mulți factori,
+      inclusiv de situația fiecărui beneficiar.
+    </p>
+
+    <div className="rounded-3xl bg-white border border-slate-100 p-5 lg:p-6">
+      <ul className="list-disc list-inside space-y-2 text-slate-700">
+        <li>se acordă pe baza unei cereri;</li>
+        <li>necesită documente doveditoare;</li>
+        <li>nu este automată.</li>
+      </ul>
+    </div>
+
+    {/* 2.6 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      2.6 Pensia socială (indemnizația socială)
+    </h3>
+
+    <p className="text-slate-700">
+      Indemnizația socială pentru pensionari este destinată persoanelor care
+      nu au realizat suficiente contribuții pentru o pensie decentă.
+    </p>
+
+    <p className="text-slate-700">
+      Aceasta nu este o pensie în sensul clasic, ci un sprijin acordat de stat
+      pentru a asigura un venit minim.
+    </p>
+
+    <p className="text-slate-700">
+      Acordarea indemnizației este condiționată de nivelul total al veniturilor.
+    </p>
+
+    {/* 2.7 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      2.7 Pensii speciale și alte categorii
+    </h3>
+
+    <p className="text-slate-700">
+      Există anumite categorii profesionale care beneficiază de reglementări
+      speciale privind pensionarea, stabilite prin legi distincte.
+    </p>
+
+    <p className="text-slate-700">
+      Aceste pensii sunt adesea subiect de dezbatere publică, însă regulile lor
+      sunt diferite de cele ale sistemului public standard.
+    </p>
+
+    <p className="text-slate-700">
+      Pentru aceste situații, este important să consulți legislația specifică
+      sau instituțiile competente.
+    </p>
+
+    {/* 2.8 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      2.8 Cum alegi tipul de pensie potrivit
+    </h3>
+
+    <p className="text-slate-700">
+      Alegerea tipului de pensie potrivit depinde de vârstă, de vechimea în
+      muncă și de situația personală.
+    </p>
+
+    <p className="text-slate-700">
+      O alegere greșită poate duce la pierderi financiare sau la întârzieri în
+      acordarea pensiei.
+    </p>
+
+    <p className="text-slate-700">
+      De aceea, este recomandat să te informezi din timp și să analizezi toate
+      opțiunile disponibile.
+    </p>
+
+    <p className="text-sm text-primary">
+      Dacă ai lucrat și în afara României, vezi explicațiile dedicate despre{" "}
+      <a href="/pensie-comunitara" className="underline hover:text-primaryDark">
+        pensia comunitară
+      </a>.
     </p>
   </div>
 </section>
