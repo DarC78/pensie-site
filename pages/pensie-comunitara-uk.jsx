@@ -35,47 +35,91 @@ export default function PensieComunitaraUKRomaniaPage() {
   }
 
   const faqJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'Primesc o singură pensie dacă am lucrat în România și UK?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text:
-            'Nu. Vei primi două pensii separate: una din România și una din UK. Fiecare stat plătește doar pentru anii lucrați în sistemul său.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Contează anii din România la pensia din UK?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text:
-            'Anii din România nu cresc suma pensiei din UK. Ei pot ajuta doar la îndeplinirea condiției minime de eligibilitate.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Unde depun cererea pentru pensia comunitară?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text:
-            'Cererea se depune o singură dată, fie în România, fie în UK. Instituțiile comunică între ele.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Brexit afectează pensia din UK?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text:
-            'Nu. Drepturile de pensie sunt protejate prin acorduri internaționale. Procedura este doar mai birocratică.',
-        },
-      },
-    ],
-  }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Primesc o singură pensie dacă am lucrat în România și în UK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nu. Vei primi două pensii separate: una din România pentru anii lucrați acolo și una din UK pentru anii cu contribuții la National Insurance. Fiecare stat plătește doar partea care îi aparține."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Anii lucrați în România îmi cresc pensia din UK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nu. Anii lucrați în România nu cresc suma pensiei din UK. Ei pot ajuta doar la îndeplinirea condiției minime de eligibilitate, dacă este necesar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Care este numărul minim de ani necesari pentru pensia din UK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "În general, este nevoie de minimum 10 ani de contribuții la National Insurance pentru a avea dreptul la pensie din UK. Pentru pensia completă sunt necesari 35 de ani."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dacă am lucrat mai puțin de 10 ani în UK, mai primesc pensie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "În anumite situații, da. Anii lucrați în România pot fi luați în calcul pentru deschiderea dreptului la pensie, însă UK va plăti doar pentru anii lucrați efectiv pe teritoriul său."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Unde depun cererea pentru pensia comunitară UK – România?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cererea se depune o singură dată, fie în România, la Casa de Pensii, fie în UK, la Department for Work and Pensions. Instituțiile comunică între ele."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pot primi pensia din UK într-un cont bancar din România?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Da. Pensia din UK poate fi plătită într-un cont bancar din România, dacă furnizezi corect datele bancare solicitate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Brexit a afectat dreptul meu la pensie din UK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nu. Drepturile de pensie sunt protejate prin acorduri internaționale. Procedura este mai birocratică, dar anii lucrați nu se pierd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cât durează obținerea pensiei comunitare UK – România?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "În general, procesul durează între 6 și 18 luni. În cazurile mai complexe, durata poate fi mai mare, în funcție de claritatea documentelor și de comunicarea dintre instituții."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ce se întâmplă dacă îmi lipsesc documente din perioada lucrată în UK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lipsa unor documente nu înseamnă automat pierderea dreptului la pensie, dar poate duce la întârzieri. Este recomandat să încerci recuperarea documentelor sau să întrebi ce dovezi alternative sunt acceptate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Unde pot afla regulile generale despre pensia comunitară, valabile pentru toate țările?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pentru regulile generale despre pensia comunitară, valabile pentru toate țările, consultă ghidul complet disponibil pe pagina dedicată pensiei comunitare."
+      }
+    }
+  ]
+}
 
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
@@ -401,20 +445,122 @@ export default function PensieComunitaraUKRomaniaPage() {
       8. Întrebări frecvente despre pensia comunitară UK – România
     </h2>
 
-    <p>
-      Pensia comunitară ridică multe întrebări, mai ales pentru cei care se
-      apropie de vârsta de pensionare.
-    </p>
+    <div className="space-y-4 text-sm">
 
-    <p>
-      Cele mai importante lucruri de reținut sunt: fiecare stat plătește separat,
-      anii nu se pierd, iar cererea se depune o singură dată.
-    </p>
+      <div className="rounded-2xl border border-slate-100 bg-white p-4">
+        <p className="font-semibold text-slate-900 mb-1">
+          1. Primesc o singură pensie dacă am lucrat în România și în UK?
+        </p>
+        <p>
+          Nu. Vei primi <strong>două pensii separate</strong>: una din România
+          pentru anii lucrați acolo și una din UK pentru anii cu contribuții
+          la National Insurance. Fiecare stat plătește doar partea sa.
+        </p>
+      </div>
 
-    <p>
-      Pentru situații speciale sau neclare, este recomandat să verifici informațiile
-      oficiale sau să ceri ajutor specializat.
-    </p>
+      <div className="rounded-2xl border border-slate-100 bg-white p-4">
+        <p className="font-semibold text-slate-900 mb-1">
+          2. Anii lucrați în România îmi cresc pensia din UK?
+        </p>
+        <p>
+          Nu. Anii din România <strong>nu cresc suma</strong> pensiei din UK.
+          Ei pot ajuta doar la îndeplinirea condiției minime de eligibilitate,
+          dacă este nevoie.
+        </p>
+      </div>
+
+      <div className="rounded-2xl border border-slate-100 bg-white p-4">
+        <p className="font-semibold text-slate-900 mb-1">
+          3. Care este numărul minim de ani necesari pentru pensia din UK?
+        </p>
+        <p>
+          În general, ai nevoie de <strong>minimum 10 ani</strong> de
+          contribuții la National Insurance pentru a avea dreptul la pensie
+          din UK. Pentru pensia completă sunt necesari 35 de ani.
+        </p>
+      </div>
+
+      <div className="rounded-2xl border border-slate-100 bg-white p-4">
+        <p className="font-semibold text-slate-900 mb-1">
+          4. Dacă am lucrat mai puțin de 10 ani în UK, mai primesc pensie?
+        </p>
+        <p>
+          În unele situații, da. Anii din România pot fi luați în calcul
+          pentru deschiderea dreptului la pensie, însă UK va plăti doar
+          pentru anii lucrați efectiv acolo.
+        </p>
+      </div>
+
+      <div className="rounded-2xl border border-slate-100 bg-white p-4">
+        <p className="font-semibold text-slate-900 mb-1">
+          5. Unde depun cererea pentru pensia comunitară?
+        </p>
+        <p>
+          Cererea se depune <strong>o singură dată</strong>, fie în România
+          (la Casa de Pensii), fie în UK (la Department for Work and Pensions).
+          Instituțiile comunică între ele.
+        </p>
+      </div>
+
+      <div className="rounded-2xl border border-slate-100 bg-white p-4">
+        <p className="font-semibold text-slate-900 mb-1">
+          6. Pot primi pensia din UK într-un cont din România?
+        </p>
+        <p>
+          Da. Pensia din UK poate fi plătită într-un cont bancar din România,
+          cu condiția să furnizezi corect datele bancare cerute.
+        </p>
+      </div>
+
+      <div className="rounded-2xl border border-slate-100 bg-white p-4">
+        <p className="font-semibold text-slate-900 mb-1">
+          7. Brexit a afectat dreptul meu la pensie?
+        </p>
+        <p>
+          Nu. Drepturile de pensie sunt protejate prin acorduri internaționale.
+          Procedura este mai birocratică, dar <strong>anii lucrați nu se pierd</strong>.
+        </p>
+      </div>
+
+      <div className="rounded-2xl border border-slate-100 bg-white p-4">
+        <p className="font-semibold text-slate-900 mb-1">
+          8. Cât durează obținerea pensiei comunitare?
+        </p>
+        <p>
+          În general, procesul durează între <strong>6 și 18 luni</strong>.
+          Dosarele cu muncă în străinătate pot dura mai mult, în funcție de
+          claritatea documentelor.
+        </p>
+      </div>
+
+      <div className="rounded-2xl border border-slate-100 bg-white p-4">
+        <p className="font-semibold text-slate-900 mb-1">
+          9. Ce se întâmplă dacă lipsesc documente din UK?
+        </p>
+        <p>
+          Lipsa unor documente nu înseamnă automat pierderea dreptului.
+          Totuși, poate duce la întârzieri. Este important să încerci
+          recuperarea lor sau să întrebi ce alternative sunt acceptate.
+        </p>
+      </div>
+
+      <div className="rounded-2xl border border-slate-100 bg-white p-4">
+        <p className="font-semibold text-slate-900 mb-1">
+          10. Unde pot afla regulile generale, valabile pentru toate țările?
+        </p>
+        <p>
+          Acest ghid explică situația UK – România. Pentru regulile generale
+          și alte țări, consultă{" "}
+          <a
+            href="/pensie-comunitara"
+            className="text-primary underline hover:text-primaryDark"
+          >
+            ghidul complet despre pensia comunitară
+          </a>.
+        </p>
+      </div>
+
+    </div>
   </div>
 </section>
         </main>
