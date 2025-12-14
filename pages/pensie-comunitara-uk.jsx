@@ -212,45 +212,211 @@ export default function PensieComunitaraUKRomaniaPage() {
             </div>
           </section>
 
-          {/* SECTIUNI 1–8 */}
-          <Section id="ce-este" title="1. Ce este pensia comunitară UK – România">
-            Pensia comunitară este mecanismul prin care statul român și statul
-            britanic îți recunosc anii de muncă, astfel încât să nu pierzi
-            vechimea acumulată.
-          </Section>
+          {/* 1. CE ESTE */}
+<section id="ce-este" className="bg-white">
+  <div className="section-container py-10 lg:py-14 space-y-6 text-slate-800">
+    <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
+      1. Ce este pensia comunitară UK – România și de ce este importantă
+    </h2>
 
-          <Section id="drept" title="2. Cine are dreptul la pensie comunitară">
-            Ai dreptul dacă ai lucrat legal în una sau ambele țări și ai plătit
-            contribuțiile obligatorii.
-          </Section>
+    <p>
+      Pensia comunitară este mecanismul prin care statul român și statul britanic
+      îți recunosc anii de muncă realizați în ambele țări. Scopul acestui sistem
+      este simplu: <strong>să nu pierzi anii munciți</strong> doar pentru că ai
+      lucrat în afara României.
+    </p>
 
-          <Section id="calcul" title="3. Cum se calculează pensia">
-            UK se uită doar la anii cu National Insurance. România calculează
-            separat partea sa.
-          </Section>
+    <p>
+      Mulți români cred, în mod greșit, că dacă au muncit în două țări vor primi
+      o singură pensie „la comun”. În realitate, lucrurile stau diferit:
+      <strong> fiecare stat plătește separat</strong>, doar pentru anii lucrați
+      în sistemul său.
+    </p>
 
-          <Section id="cerere" title="4. Unde și cum depui cererea">
-            Cererea se depune o singură dată. Instituțiile comunică între ele.
-          </Section>
+    <p>
+      Pensia comunitară nu este un ajutor social și nu este un bonus. Este un
+      <strong> drept legal</strong>, reglementat prin acorduri internaționale,
+      care se aplică automat atunci când ai vechime în mai multe state.
+    </p>
+  </div>
+</section>
 
-          <Section id="acte" title="5. Acte necesare">
-            Ai nevoie de acte de identitate, dovezi de muncă și documente din
-            ambele țări.
-          </Section>
+{/* 2. CINE ARE DREPTUL */}
+<section id="drept" className="bg-softBg">
+  <div className="section-container py-10 lg:py-14 space-y-6 text-slate-800">
+    <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
+      2. Cine are dreptul la pensie comunitară dacă a lucrat în UK și România
+    </h2>
 
-          <Section id="durata" title="6. Cât durează procedura">
-            De regulă între 6 și 18 luni, în funcție de complexitate.
-          </Section>
+    <p>
+      Ai dreptul la pensie comunitară dacă ai lucrat legal cel puțin într-una
+      dintre cele două țări și ai plătit contribuțiile obligatorii. Nu contează
+      dacă ai lucrat întâi în România și apoi în UK sau invers.
+    </p>
 
-          <Section id="greseli" title="7. Greșeli frecvente">
-            Lipsa anilor de NI, cererea incompletă și informațiile greșite sunt
-            cele mai frecvente probleme.
-          </Section>
+    <p>
+      În cazul Marii Britanii, contribuțiile se numesc
+      <strong> National Insurance</strong>. Ele apar pe fluturașul de salariu
+      și sunt esențiale pentru recunoașterea anilor de muncă.
+    </p>
 
-          <Section id="faq" title="8. Întrebări frecvente">
-            Vezi secțiunea de mai sus pentru răspunsuri rapide la cele mai
-            comune întrebări.
-          </Section>
+    <p>
+      Chiar și perioadele mai scurte de muncă pot conta. Important este ca
+      activitatea să fi fost declarată și să existe dovezi oficiale.
+    </p>
+  </div>
+</section>
+
+{/* 3. CALCUL */}
+<section id="calcul" className="bg-white">
+  <div className="section-container py-10 lg:py-14 space-y-6 text-slate-800">
+    <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
+      3. Cum se calculează pensia din UK și pensia din România
+    </h2>
+
+    <p>
+      Calculul pensiei comunitare îi sperie pe mulți oameni, dar în realitate
+      este mai simplu decât pare. Fiecare stat își face propriul calcul,
+      <strong> independent</strong>.
+    </p>
+
+    <p>
+      În UK, statul se uită la câți ani ai plătit National Insurance:
+      minimum <strong>10 ani</strong> pentru a avea dreptul la pensie și
+      <strong>35 de ani</strong> pentru pensia completă.
+    </p>
+
+    <p>
+      Anii din România <strong>nu măresc suma</strong> pensiei din UK.
+      Ei pot ajuta doar la îndeplinirea condițiilor minime, dacă este cazul.
+      România calculează separat pensia sa, pe baza legislației românești.
+    </p>
+  </div>
+</section>
+
+{/* 4. CERERE */}
+<section id="cerere" className="bg-softBg">
+  <div className="section-container py-10 lg:py-14 space-y-6 text-slate-800">
+    <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
+      4. Unde și cum se depune cererea pentru pensia comunitară
+    </h2>
+
+    <p>
+      Un aspect foarte important este că <strong>nu trebuie să depui două
+      cereri diferite</strong>. Cererea pentru pensia comunitară se depune
+      o singură dată.
+    </p>
+
+    <p>
+      Dacă locuiești în România, cererea se depune la Casa de Pensii.
+      Dacă locuiești în UK, cererea se depune la Department for Work and Pensions.
+      Instituțiile comunică între ele.
+    </p>
+
+    <p>
+      Este important să menționezi clar toate perioadele lucrate în străinătate
+      încă de la început, pentru a evita întârzieri.
+    </p>
+  </div>
+</section>
+
+{/* 5. ACTE */}
+<section id="acte" className="bg-white">
+  <div className="section-container py-10 lg:py-14 space-y-6 text-slate-800">
+    <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
+      5. Acte necesare pentru pensia comunitară UK – România
+    </h2>
+
+    <p>
+      Actele necesare pot varia ușor de la un caz la altul, dar în practică
+      există câteva documente care sunt cerute aproape întotdeauna.
+    </p>
+
+    <p>
+      Vei avea nevoie de acte de identitate, dovezi ale perioadelor lucrate
+      în România și documente care să ateste contribuțiile din UK
+      (National Insurance Number, scrisori oficiale).
+    </p>
+
+    <p>
+      Lipsa unui document nu înseamnă automat pierderea dreptului, dar poate
+      duce la întârzieri mari dacă nu este clarificată din timp.
+    </p>
+  </div>
+</section>
+
+{/* 6. DURATA */}
+<section id="durata" className="bg-softBg">
+  <div className="section-container py-10 lg:py-14 space-y-6 text-slate-800">
+    <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
+      6. Cât durează procedura de pensie comunitară
+    </h2>
+
+    <p>
+      Dosarele de pensie comunitară sunt, de obicei, mai lente decât cele
+      naționale. Comunicarea între instituții durează.
+    </p>
+
+    <p>
+      În medie, procedura poate dura între
+      <strong> 6 și 18 luni</strong>, uneori chiar mai mult dacă apar lipsuri
+      sau neclarități.
+    </p>
+
+    <p>
+      Este important să păstrezi dovada depunerii cererii și să urmărești
+      periodic stadiul dosarului.
+    </p>
+  </div>
+</section>
+
+{/* 7. GREȘELI */}
+<section id="greseli" className="bg-white">
+  <div className="section-container py-10 lg:py-14 space-y-6 text-slate-800">
+    <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
+      7. Greșeli frecvente care pot întârzia pensia
+    </h2>
+
+    <p>
+      Cele mai multe probleme nu apar din rea-voință, ci din lipsă de informație.
+      Mulți oameni presupun că „statul știe”.
+    </p>
+
+    <p>
+      Greșeli frecvente sunt: nedeclararea perioadelor din UK, lipsa verificării
+      anilor de National Insurance sau depunerea cererii pe ultima sută de metri.
+    </p>
+
+    <p>
+      O cerere completă și clară de la început poate face diferența între
+      o pensie stabilită corect și luni întregi de așteptare.
+    </p>
+  </div>
+</section>
+
+{/* 8. FAQ */}
+<section id="faq" className="bg-softBg">
+  <div className="section-container py-10 lg:py-14 space-y-6 text-slate-800">
+    <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
+      8. Întrebări frecvente despre pensia comunitară UK – România
+    </h2>
+
+    <p>
+      Pensia comunitară ridică multe întrebări, mai ales pentru cei care se
+      apropie de vârsta de pensionare.
+    </p>
+
+    <p>
+      Cele mai importante lucruri de reținut sunt: fiecare stat plătește separat,
+      anii nu se pierd, iar cererea se depune o singură dată.
+    </p>
+
+    <p>
+      Pentru situații speciale sau neclare, este recomandat să verifici informațiile
+      oficiale sau să ceri ajutor specializat.
+    </p>
+  </div>
+</section>
         </main>
 
         <footer className="bg-slate-950 text-slate-400 py-6 text-xs">
