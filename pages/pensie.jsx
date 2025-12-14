@@ -1487,90 +1487,67 @@ export default function PensiePage() {
   </div>
 </section>
 
-{/* ================= MINI CONCLUZIE ================= */}
-<section id="ce-urmeaza" className="bg-softBg border-t border-slate-100">
+<section className="bg-softBg border-t border-slate-100">
   <div className="section-container py-10 lg:py-14 space-y-6 text-slate-800">
     <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
-      Ce faci acum?
+      Ce faci mai departe
     </h2>
 
-    <p>
-      Pensionarea este un proces important și este normal să pară complicat la
-      început. Vestea bună este că, pas cu pas, lucrurile pot deveni clare și
-      ușor de gestionat.
+    <p className="text-base lg:text-lg text-slate-700">
+      Pensionarea nu este o singură zi și nici un singur formular.
+      Este un proces care devine mult mai ușor atunci când îl parcurgi
+      organizat și din timp.
     </p>
 
-    <p>
-      Dacă ai ajuns până aici, înseamnă că ai deja o imagine de ansamblu despre
-      <strong> ce este pensia</strong>, <strong>când te poți pensiona</strong> și
-      <strong> ce influențează valoarea ei</strong>.
-    </p>
-
-    <div className="rounded-2xl bg-white border border-slate-100 p-5 space-y-4">
+    <div className="rounded-3xl bg-white border border-slate-100 p-5 lg:p-6 space-y-4">
       <p className="font-semibold text-slate-900">
-        Următorii pași practici recomandati:
+        Pașii recomandați, pe scurt:
       </p>
 
-      <ul className="list-disc list-inside space-y-2">
-        <li>
-          verifică <strong>vechimea în muncă</strong> și perioadele lucrate;
-        </li>
-        <li>
-          identifică dacă îți lipsesc <strong>documente sau adeverințe</strong>;
-        </li>
-        <li>
-          stabilește <strong>când te poți pensiona</strong> exact;
-        </li>
-        <li>
-          începe din timp <strong>pregătirea dosarului de pensionare</strong>.
-        </li>
+      <ul className="list-disc list-inside space-y-2 text-slate-700">
+        <li>verifică vechimea și perioadele lucrate;</li>
+        <li>clarifică exact când te poți pensiona;</li>
+        <li>identifică documentele care îți lipsesc;</li>
+        <li>pregătește dosarul de pensionare din timp.</li>
       </ul>
     </div>
 
-    <div className="grid sm:grid-cols-2 gap-4 text-sm">
+    <div className="grid lg:grid-cols-2 gap-4 text-sm">
       <div className="rounded-2xl bg-white border border-slate-100 p-4">
         <p className="font-semibold text-slate-900 mb-1">
-          👉 Dacă urmează să îți pregătești dosarul
+          Dosarul de pensionare
         </p>
-        <p>
-          Vezi explicațiile detaliate din{" "}
+        <p className="text-slate-700">
+          Dacă urmează să depui cererea, consultă{" "}
           <a
             href="/dosar-pensie"
             className="text-primary underline hover:text-primaryDark"
           >
             ghidul complet despre dosarul de pensionare
-          </a>
-          , unde găsești actele necesare, pașii și greșelile frecvente.
+          </a>.
         </p>
       </div>
 
       <div className="rounded-2xl bg-white border border-slate-100 p-4">
         <p className="font-semibold text-slate-900 mb-1">
-          👉 Dacă ai lucrat și în străinătate
+          Muncă în străinătate
         </p>
-        <p>
-          Informează-te din timp despre{" "}
+        <p className="text-slate-700">
+          Dacă ai lucrat în afara României, vezi{" "}
           <a
             href="/pensie-comunitara"
             className="text-primary underline hover:text-primaryDark"
           >
-            pensia comunitară
-          </a>{" "}
-          și cum sunt recunoscuți anii lucrați în alte țări.
+            ghidul despre pensia comunitară
+          </a>.
         </p>
       </div>
     </div>
 
-    <div
-      style={{ borderLeft: "4px solid #16a34a", paddingLeft: "12px" }}
-      className="text-sm"
-    >
-      <p>
-        <strong>Mesaj important:</strong> Nu lăsa pensionarea pe ultima sută de
-        metri. Cu cât începi mai devreme, cu atât vei avea mai mult control și
-        mai puțin stres.
-      </p>
-    </div>
+    <p className="text-sm text-slate-600">
+      Cu cât începi mai devreme, cu atât procesul este mai simplu și mai lipsit
+      de stres.
+    </p>
   </div>
 </section>
 
