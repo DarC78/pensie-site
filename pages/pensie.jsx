@@ -539,168 +539,195 @@ export default function PensiePage() {
   </div>
 </section>
 
-          {/* ================= SECTIUNEA 3 ================= */}
-<section id="cand">
-  <h2>3. Când te poți pensiona</h2>
+          <section className="bg-white border-b border-slate-100">
+  <div className="section-container py-10 lg:py-14 space-y-10 text-slate-800">
+    <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
+      3. Când te poți pensiona
+    </h2>
 
-  {/* 3.1 */}
-  <h3>3.1 Vârsta standard de pensionare</h3>
-  <p>
-    <strong>Vârsta standard de pensionare</strong> este stabilită prin lege și
-    reprezintă momentul în care poți solicita pensia pentru limită de vârstă,
-    fără penalizări.
-  </p>
-  <p>
-    Această vârstă diferă în funcție de sex și de anul nașterii, fiind aplicate
-    <strong> etape de creștere graduală</strong> pentru anumite generații.
-  </p>
-  <p>
-    Este important să verifici exact anul și luna la care împlinești vârsta
-    legală, pentru a evita depunerea prea devreme a cererii.
-  </p>
+    <p className="text-base lg:text-lg text-slate-700">
+      Momentul pensionării nu este același pentru toată lumea. El depinde de
+      vârstă, de anii lucrați și de situația personală a fiecărei persoane.
+    </p>
 
-  <div style={{ borderLeft: "4px solid #2563eb", paddingLeft: "12px" }}>
-    <p>
-      <strong>De reținut:</strong> Cererea depusă înainte de împlinirea vârstei
-      standard poate fi respinsă.
+    <p className="text-base lg:text-lg text-slate-700">
+      Pentru a evita refuzuri sau întârzieri, este important să știi exact
+      când ai dreptul legal să depui cererea de pensionare.
+    </p>
+
+    {/* 3.1 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      3.1 Vârsta standard de pensionare
+    </h3>
+
+    <p className="text-slate-700">
+      Vârsta standard de pensionare este stabilită prin lege și reprezintă
+      momentul în care poți solicita pensia pentru limită de vârstă fără
+      penalizări.
+    </p>
+
+    <p className="text-slate-700">
+      Această vârstă diferă în funcție de sex și de anul nașterii, deoarece
+      există etape de creștere graduală pentru anumite generații.
+    </p>
+
+    <div className="rounded-3xl bg-white border border-slate-100 p-5 lg:p-6">
+      <p className="font-semibold text-slate-900 mb-1">
+        De reținut
+      </p>
+      <p className="text-slate-700">
+        Cererea depusă înainte de împlinirea vârstei standard poate fi respinsă,
+        chiar dacă mai lipsesc doar câteva luni.
+      </p>
+    </div>
+
+    {/* 3.2 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      3.2 Stagiul minim de cotizare
+    </h3>
+
+    <p className="text-slate-700">
+      Pe lângă vârstă, legea impune realizarea unui stagiu minim de cotizare
+      pentru a putea primi pensia de stat.
+    </p>
+
+    <p className="text-slate-700">
+      Stagiul minim este o condiție obligatorie. Fără el, dreptul la pensie
+      nu poate fi deschis.
+    </p>
+
+    <p className="text-slate-700">
+      În anumite situații, anii lucrați în străinătate pot ajuta la
+      îndeplinirea acestui stagiu.
+    </p>
+
+    {/* 3.3 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      3.3 Stagiul complet și influența asupra pensiei
+    </h3>
+
+    <p className="text-slate-700">
+      Stagiul complet de cotizare este diferit de stagiul minim și are un
+      impact direct asupra valorii pensiei.
+    </p>
+
+    <p className="text-slate-700">
+      Cu cât ai mai mulți ani de contribuții peste minim, cu atât pensia
+      calculată va fi, în general, mai mare.
+    </p>
+
+    <div className="rounded-3xl bg-white border border-slate-100 p-5 lg:p-6">
+      <p className="font-semibold text-slate-900 mb-1">
+        Important
+      </p>
+      <p className="text-slate-700">
+        Stagiul complet nu este obligatoriu pentru pensionare, dar influențează
+        semnificativ suma primită.
+      </p>
+    </div>
+
+    {/* 3.4 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      3.4 Pensionarea anticipată
+    </h3>
+
+    <p className="text-slate-700">
+      Pensionarea anticipată permite ieșirea la pensie înainte de vârsta
+      standard, în anumite condiții stricte.
+    </p>
+
+    <p className="text-slate-700">
+      De regulă, este necesar un stagiu de cotizare mai mare, iar pensia se
+      acordă cu penalizări.
+    </p>
+
+    <p className="text-slate-700">
+      Această opțiune trebuie analizată cu atenție, deoarece penalizările pot
+      fi permanente.
+    </p>
+
+    {/* 3.5 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      3.5 Pensionarea anticipată parțială
+    </h3>
+
+    <p className="text-slate-700">
+      Pensionarea anticipată parțială se aplică persoanelor care nu îndeplinesc
+      toate condițiile pentru pensionarea anticipată completă.
+    </p>
+
+    <p className="text-slate-700">
+      Penalizările sunt, de regulă, mai mari și pot afecta pensia pe toată
+      durata vieții.
+    </p>
+
+    <div className="rounded-3xl bg-softBg border border-slate-100 p-5 lg:p-6">
+      <ul className="list-disc list-inside space-y-2 text-slate-700">
+        <li>ieșire mai devreme din activitate;</li>
+        <li>pensia este redusă;</li>
+        <li>decizie greu de corectat ulterior.</li>
+      </ul>
+    </div>
+
+    {/* 3.6 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      3.6 Reducerea vârstei pentru condiții speciale
+    </h3>
+
+    <p className="text-slate-700">
+      Anumite locuri de muncă permit reducerea vârstei de pensionare, datorită
+      condițiilor deosebite sau speciale.
+    </p>
+
+    <p className="text-slate-700">
+      Aceste reduceri se aplică doar dacă perioadele sunt dovedite prin
+      documente oficiale.
+    </p>
+
+    <p className="text-slate-700">
+      Lipsa adeverințelor poate anula complet acest beneficiu.
+    </p>
+
+    {/* 3.7 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      3.7 Diferențe între femei și bărbați
+    </h3>
+
+    <p className="text-slate-700">
+      Vârsta de pensionare diferă între femei și bărbați, în funcție de anul
+      nașterii.
+    </p>
+
+    <p className="text-slate-700">
+      Aceste diferențe sunt stabilite prin lege și sunt aplicate gradual.
+    </p>
+
+    <div className="rounded-3xl bg-white border border-slate-100 p-5 lg:p-6">
+      <p className="text-slate-700">
+        Este recomandat să verifici tabelele oficiale pentru situația ta
+        exactă, nu să te bazezi pe exemplele altora.
+      </p>
+    </div>
+
+    {/* 3.8 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      3.8 De ce este important să știi din timp când te pensionezi
+    </h3>
+
+    <p className="text-slate-700">
+      Mulți oameni află prea târziu când se pot pensiona legal, ceea ce duce
+      la stres și decizii greșite.
+    </p>
+
+    <p className="text-slate-700">
+      O planificare din timp îți permite să verifici actele și să eviți
+      întârzierile.
+    </p>
+
+    <p className="text-slate-700">
+      Pensionarea este un moment important și merită tratată organizat.
     </p>
   </div>
-
-  {/* 3.2 */}
-  <h3>3.2 Stagiul minim și stagiul complet de cotizare</h3>
-  <p>
-    Pentru a te pensiona, nu este suficient doar să atingi vârsta legală.
-    Legea impune și realizarea unui
-    <strong> stagiu minim de cotizare</strong>.
-  </p>
-  <p>
-    Există o diferență între stagiul minim și
-    <strong> stagiul complet</strong>, acesta din urmă influențând valoarea
-    pensiei.
-  </p>
-  <p>
-    Lipsa stagiului minim poate amâna sau chiar bloca acordarea pensiei.
-  </p>
-
-  <ul>
-    <li>stagiul minim = condiție obligatorie;</li>
-    <li>stagiul complet = pensie mai bună;</li>
-    <li>anii suplimentari pot conta.</li>
-  </ul>
-
-  {/* 3.3 */}
-  <h3>3.3 Pensionarea anticipată: când este posibilă</h3>
-  <p>
-    <strong>Pensionarea anticipată</strong> permite ieșirea la pensie înainte
-    de vârsta standard, în anumite condiții stricte.
-  </p>
-  <p>
-    De regulă, este necesar un stagiu de cotizare mai mare decât cel standard,
-    iar pensionarea se face cu
-    <strong> penalizări</strong>.
-  </p>
-  <p>
-    Această opțiune trebuie analizată atent, deoarece influențează venitul
-    lunar pe termen lung.
-  </p>
-
-  <div style={{ background: "#fff7ed", padding: "12px", borderRadius: "6px" }}>
-    <p>
-      <strong>Atenție:</strong> Penalizările pot fi permanente, nu temporare.
-    </p>
-  </div>
-
-  {/* 3.4 */}
-  <h3>3.4 Pensionarea anticipată parțială</h3>
-  <p>
-    <strong>Pensionarea anticipată parțială</strong> se adresează celor care
-    nu îndeplinesc toate condițiile pentru pensionarea anticipată completă.
-  </p>
-  <p>
-    În acest caz, penalizările sunt de obicei
-    <strong> mai mari</strong>, iar pensia rezultată poate fi semnificativ mai
-    mică.
-  </p>
-  <p>
-    Mulți oameni aleg această variantă fără a înțelege pe deplin consecințele.
-  </p>
-
-  <div style={{ border: "1px dashed #94a3b8", padding: "12px" }}>
-    <p>
-      Această formă de pensionare trebuie aleasă doar după o analiză atentă.
-    </p>
-  </div>
-
-  {/* 3.5 */}
-  <h3>3.5 Pensionarea pentru condiții deosebite sau speciale</h3>
-  <p>
-    Anumite locuri de muncă permit
-    <strong> reducerea vârstei de pensionare</strong>,
-    datorită condițiilor grele sau periculoase.
-  </p>
-  <p>
-    Aceste reduceri se aplică doar dacă există
-    <strong> documente doveditoare</strong>
-    și perioadele sunt recunoscute oficial.
-  </p>
-  <p>
-    Lipsa adeverințelor poate anula complet acest avantaj.
-  </p>
-
-  <div style={{ background: "#f8fafc", padding: "12px", borderRadius: "6px" }}>
-    <p>
-      Verifică din timp dacă ai adeverințele pentru condiții deosebite.
-    </p>
-  </div>
-
-  {/* 3.6 */}
-  <h3>3.6 Diferențe între femei și bărbați</h3>
-  <p>
-    În România există diferențe între femei și bărbați în ceea ce privește
-    <strong> vârsta de pensionare</strong>, în funcție de anul nașterii.
-  </p>
-  <p>
-    Aceste diferențe sunt stabilite prin lege și sunt supuse unor etape de
-    armonizare.
-  </p>
-  <p>
-    Este important să consulți tabelele oficiale pentru situația ta exactă.
-  </p>
-
-  <ul>
-    <li>vârsta diferă în funcție de sex;</li>
-    <li>contează anul și luna nașterii;</li>
-    <li>nu toți ies la aceeași vârstă.</li>
-  </ul>
-
-  {/* 3.7 */}
-  <h3>3.7 De ce este important să îți calculezi momentul pensionării</h3>
-  <p>
-    Mulți oameni ajung la Casa de Pensii fără să știe exact
-    <strong> când au dreptul legal</strong> să se pensioneze.
-  </p>
-  <p>
-    O estimare corectă îți permite să te pregătești din timp și să eviți
-    surprize neplăcute.
-  </p>
-  <p>
-    Pensionarea este un moment important și merită planificată, nu lăsată la
-    întâmplare.
-  </p>
-
-  <div style={{ borderLeft: "4px solid #16a34a", paddingLeft: "12px" }}>
-    <p>
-      <strong>Concluzie:</strong> Cine își cunoaște din timp data pensionării,
-      are mai mult control asupra deciziilor sale.
-    </p>
-  </div>
-
-  <p className="text-sm text-primary">
-    După ce știi când te poți pensiona, următorul pas este{" "}
-    <a href="/dosar-pensie" className="underline hover:text-primaryDark">
-        pregătirea dosarului de pensionare
-    </a>.
-    </p>
 </section>
 
           {/* ================= SECTIUNEA 4 ================= */}
@@ -1487,67 +1514,90 @@ export default function PensiePage() {
   </div>
 </section>
 
-<section className="bg-softBg border-t border-slate-100">
+{/* ================= MINI CONCLUZIE ================= */}
+<section id="ce-urmeaza" className="bg-softBg border-t border-slate-100">
   <div className="section-container py-10 lg:py-14 space-y-6 text-slate-800">
     <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
-      Ce faci mai departe
+      Ce faci acum?
     </h2>
 
-    <p className="text-base lg:text-lg text-slate-700">
-      Pensionarea nu este o singură zi și nici un singur formular.
-      Este un proces care devine mult mai ușor atunci când îl parcurgi
-      organizat și din timp.
+    <p>
+      Pensionarea este un proces important și este normal să pară complicat la
+      început. Vestea bună este că, pas cu pas, lucrurile pot deveni clare și
+      ușor de gestionat.
     </p>
 
-    <div className="rounded-3xl bg-white border border-slate-100 p-5 lg:p-6 space-y-4">
+    <p>
+      Dacă ai ajuns până aici, înseamnă că ai deja o imagine de ansamblu despre
+      <strong> ce este pensia</strong>, <strong>când te poți pensiona</strong> și
+      <strong> ce influențează valoarea ei</strong>.
+    </p>
+
+    <div className="rounded-2xl bg-white border border-slate-100 p-5 space-y-4">
       <p className="font-semibold text-slate-900">
-        Pașii recomandați, pe scurt:
+        Următorii pași practici recomandati:
       </p>
 
-      <ul className="list-disc list-inside space-y-2 text-slate-700">
-        <li>verifică vechimea și perioadele lucrate;</li>
-        <li>clarifică exact când te poți pensiona;</li>
-        <li>identifică documentele care îți lipsesc;</li>
-        <li>pregătește dosarul de pensionare din timp.</li>
+      <ul className="list-disc list-inside space-y-2">
+        <li>
+          verifică <strong>vechimea în muncă</strong> și perioadele lucrate;
+        </li>
+        <li>
+          identifică dacă îți lipsesc <strong>documente sau adeverințe</strong>;
+        </li>
+        <li>
+          stabilește <strong>când te poți pensiona</strong> exact;
+        </li>
+        <li>
+          începe din timp <strong>pregătirea dosarului de pensionare</strong>.
+        </li>
       </ul>
     </div>
 
-    <div className="grid lg:grid-cols-2 gap-4 text-sm">
+    <div className="grid sm:grid-cols-2 gap-4 text-sm">
       <div className="rounded-2xl bg-white border border-slate-100 p-4">
         <p className="font-semibold text-slate-900 mb-1">
-          Dosarul de pensionare
+          👉 Dacă urmează să îți pregătești dosarul
         </p>
-        <p className="text-slate-700">
-          Dacă urmează să depui cererea, consultă{" "}
+        <p>
+          Vezi explicațiile detaliate din{" "}
           <a
             href="/dosar-pensie"
             className="text-primary underline hover:text-primaryDark"
           >
             ghidul complet despre dosarul de pensionare
-          </a>.
+          </a>
+          , unde găsești actele necesare, pașii și greșelile frecvente.
         </p>
       </div>
 
       <div className="rounded-2xl bg-white border border-slate-100 p-4">
         <p className="font-semibold text-slate-900 mb-1">
-          Muncă în străinătate
+          👉 Dacă ai lucrat și în străinătate
         </p>
-        <p className="text-slate-700">
-          Dacă ai lucrat în afara României, vezi{" "}
+        <p>
+          Informează-te din timp despre{" "}
           <a
             href="/pensie-comunitara"
             className="text-primary underline hover:text-primaryDark"
           >
-            ghidul despre pensia comunitară
-          </a>.
+            pensia comunitară
+          </a>{" "}
+          și cum sunt recunoscuți anii lucrați în alte țări.
         </p>
       </div>
     </div>
 
-    <p className="text-sm text-slate-600">
-      Cu cât începi mai devreme, cu atât procesul este mai simplu și mai lipsit
-      de stres.
-    </p>
+    <div
+      style={{ borderLeft: "4px solid #16a34a", paddingLeft: "12px" }}
+      className="text-sm"
+    >
+      <p>
+        <strong>Mesaj important:</strong> Nu lăsa pensionarea pe ultima sută de
+        metri. Cu cât începi mai devreme, cu atât vei avea mai mult control și
+        mai puțin stres.
+      </p>
+    </div>
   </div>
 </section>
 
