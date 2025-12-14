@@ -11,178 +11,185 @@ export default function PensiePage() {
 
   /* ================= JSON-LD (TEMP – va fi refăcut complet) ================= */
 
-  const jsonLdBreadcrumbs = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Acasă",
-        item: SITE_URL,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Pensia",
-        item: PAGE_URL,
-      },
-    ],
-  };
+  const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Acasă",
+      "item": "https://dosarpensie.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Pensia în România",
+      "item": "https://dosarpensie.com/pensie"
+    }
+  ]
+};
 
-  const jsonLdArticle = {
+
+  const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: title,
-    description: description,
-    mainEntityOfPage: PAGE_URL,
-    inLanguage: "ro-RO",
-    author: {
-      "@type": "Organization",
-      name: "dosarpensie.com",
-      url: SITE_URL,
+    "headline": "Pensia în România – ghid complet și explicat simplu",
+    "description":
+        "Ghid complet despre pensia în România: tipuri de pensii, vârsta de pensionare, calculul pensiei, dosarul de pensionare, munca în străinătate și greșeli frecvente. Explicat clar, pentru persoane 55+.",
+    "inLanguage": "ro-RO",
+    "author": {
+        "@type": "Organization",
+        "name": "dosarpensie.com",
+        "url": "https://dosarpensie.com"
     },
-    publisher: {
-      "@type": "Organization",
-      name: "dosarpensie.com",
-      url: SITE_URL,
+    "publisher": {
+        "@type": "Organization",
+        "name": "dosarpensie.com",
+        "logo": {
+        "@type": "ImageObject",
+        "url": "https://dosarpensie.com/favicon.ico"
+        }
     },
-  };
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://dosarpensie.com/pensie"
+    },
+    "datePublished": "2025-01-01",
+    "dateModified": new Date().toISOString()
+    };
+
+    const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "De la ce vârstă mă pot pensiona?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text":
+          "Vârsta de pensionare depinde de anul nașterii și de sex. În România, aceasta crește gradual conform legii, iar pentru majoritatea persoanelor este în jurul vârstei de 65 de ani. Este important să verifici exact vârsta aplicabilă situației tale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Câți ani de muncă sunt necesari pentru pensie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text":
+          "Există un stagiu minim de cotizare necesar pentru a avea drept la pensie și un stagiu complet care influențează valoarea pensiei. Anii lucrați peste stagiul complet pot aduce un punctaj mai mare."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pot primi pensie dacă nu am vechime suficientă?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text":
+          "Dacă nu îndeplinești stagiul minim, nu poți primi pensie contributivă. În anumite situații, statul acordă indemnizația socială pentru pensionari, care asigură un venit minim."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ce se întâmplă dacă am lucrat în străinătate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text":
+          "Anii lucrați în străinătate nu se pierd dacă munca a fost legală și cu contribuții. Fiecare stat plătește partea de pensie corespunzătoare perioadelor lucrate în sistemul său, prin mecanismul pensiei comunitare."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Primesc o singură pensie sau mai multe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text":
+          "Dacă ai lucrat în mai multe țări, vei primi plăți separate din fiecare stat. Nu există o pensie unică care să includă toate perioadele într-o singură plată."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Unde se depune cererea de pensionare?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text":
+          "Cererea de pensionare se depune la Casa de Pensii din statul în care locuiești la momentul pensionării. Instituția respectivă comunică apoi cu celelalte state implicate, dacă este cazul."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cât durează stabilirea pensiei?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text":
+          "Stabilirea pensiei poate dura de la câteva luni la peste un an, în funcție de complexitatea dosarului și de existența perioadelor lucrate în străinătate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pot lucra după ce ies la pensie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text":
+          "Da, pensionarii pot lucra și după ieșirea la pensie, în anumite condiții. Tipul de pensie și natura activității pot influența acest drept."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pot cere recalcularea pensiei?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text":
+          "Recalcularea pensiei este posibilă dacă apar documente noi sau dacă legislația permite acest lucru. Cererea trebuie susținută cu acte justificative."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ce fac dacă nu sunt de acord cu decizia de pensionare?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text":
+          "Dacă nu ești de acord cu decizia de pensionare, ai dreptul să o contești în termenul legal prevăzut, atașând documentele relevante."
+      }
+    }
+  ]
+};
 
   return (
     <>
       <Head>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <link rel="canonical" href={PAGE_URL} />
-        <meta name="robots" content="index, follow" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={PAGE_URL} />
+  <meta name="robots" content="index, follow" />
 
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta property="og:url" content={PAGE_URL} />
+  {/* Open Graph */}
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={PAGE_URL} />
 
-        <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-                __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Acasă",
-                    "item": "https://dosarpensie.com/"
-                    },
-                    {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Pensii",
-                    "item": "https://dosarpensie.com/pensie"
-                    }
-                ]
-                }),
-            }}
-            />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLdArticle),
-          }}
-        />
-        <script
+  {/* ================= Article JSON-LD ================= */}
+  <script
   type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Ce este pensia și cine are dreptul la pensie?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Pensia este un drept financiar lunar acordat persoanelor care au muncit și au contribuit la sistemul public de pensii. Dreptul la pensie apare atunci când sunt îndeplinite condițiile legale privind vârsta și stagiul de cotizare. Fără contribuții sau fără stagiu minim, pensia de stat nu poate fi acordată."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Care este vârsta de pensionare în România?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Vârsta de pensionare diferă în funcție de sex și de anul nașterii. Există tabele oficiale care stabilesc exact luna și anul în care o persoană se poate pensiona. Este important să verifici datele exacte înainte de a depune cererea."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Câți ani trebuie să muncesc pentru a primi pensie?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Pentru pensia de stat este necesar un stagiu minim de cotizare. Stagiul complet este mai mare și influențează valoarea pensiei. Anii lucrați peste minim pot crește semnificativ pensia."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Cum se calculează pensia?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Pensia se calculează pe baza contribuțiilor plătite și a perioadei de muncă. Elementul central este punctajul de pensie, care reflectă raportul dintre venitul tău și salariul mediu. Două persoane cu aceeași vechime pot avea pensii diferite."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Ce este dosarul de pensionare?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Dosarul de pensionare este setul de documente pe baza căruia Casa de Pensii stabilește dreptul la pensie. El conține acte care dovedesc vechimea, contribuțiile și identitatea. Un dosar incomplet poate duce la întârzieri sau recalculări."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Ce se întâmplă dacă îmi lipsesc acte din dosar?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Lipsa unor acte nu înseamnă automat pierderea dreptului la pensie. În multe cazuri, documentele pot fi recuperate din arhive sau prin adeverințe. Este important să începi aceste demersuri din timp."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Pot primi pensie dacă am lucrat în străinătate?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Da. Anii lucrați în străinătate pot fi luați în calcul, în anumite condiții. Fiecare stat îți va plăti partea de pensie pentru anii lucrați acolo. Acest mecanism este cunoscut ca pensia comunitară."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Pot primi pensia din străinătate în România?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Da. În majoritatea cazurilor, pensia din străinătate poate fi plătită într-un cont bancar din România. Procedura diferă în funcție de statul plătitor și pot fi necesare confirmări periodice de viață."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Cât durează soluționarea dosarului de pensie?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Durata soluționării depinde de complexitatea dosarului. Dosarele simple pot fi soluționate în câteva luni. Dosarele care includ muncă în străinătate pot dura mai mult."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Unde pot găsi informații sigure despre pensie?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Informațiile sigure provin din surse oficiale și din ghiduri specializate despre pensii. Este important să eviți zvonurile și informațiile neconfirmate. Ghidurile bine documentate te ajută să înțelegi corect drepturile tale."
-          }
-        }
-      ]
-    }),
-  }}
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
 />
-      </Head>
+
+  {/* ================= FAQ JSON-LD (1:1 WITH SECTION 8) ================= */}
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify(faqJsonLd) // ← use the 10-question version we aligned earlier
+    }}
+  />
+
+  {/* ================= Breadcrumb JSON-LD ================= */}
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+    />
+</Head>
 
       <main style={{ maxWidth: "900px", margin: "0 auto", padding: "24px" }}>
         <article>
@@ -318,7 +325,7 @@ export default function PensiePage() {
           <hr />
 
           {/* ================= SECTIUNEA 1 ================= */}
-<section className="bg-white border-b border-slate-100">
+<section id="sectiunea-1" className="bg-white border-b border-slate-100">
   <div className="section-container py-10 lg:py-14 space-y-10 text-slate-800">
     <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
       1. Ce este pensia și de ce este important să o înțelegi
@@ -493,7 +500,7 @@ export default function PensiePage() {
 </section>
 
           {/* ================= SECTIUNEA 2 ================= */}
-<section className="bg-white border-b border-slate-100">
+<section id="sectiunea-2" className="bg-white border-b border-slate-100">
   <div className="section-container py-10 lg:py-14 space-y-10 text-slate-800">
     <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
       2. Tipuri de pensii în România
@@ -705,7 +712,7 @@ export default function PensiePage() {
 
 {/* section 3*/}
 
-          <section className="bg-white border-b border-slate-100">
+          <section id="sectiunea-3" className="bg-white border-b border-slate-100">
   <div className="section-container py-10 lg:py-14 space-y-10 text-slate-800">
     <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
       3. Când te poți pensiona
@@ -921,7 +928,7 @@ export default function PensiePage() {
 </section>
 
           {/* ================= SECTIUNEA 4 ================= */}
-<section className="bg-white border-b border-slate-100">
+<section id="sectiunea-4" className="bg-white border-b border-slate-100">
   <div className="section-container py-10 lg:py-14 space-y-10 text-slate-800">
     <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
       4. Cum se calculează pensia
@@ -1119,7 +1126,7 @@ export default function PensiePage() {
 </section>
 
           {/* ================= SECTIUNEA 5 ================= */}
-<section className="bg-white border-b border-slate-100">
+<section id="sectiunea-5" className="bg-white border-b border-slate-100">
   <div className="section-container py-10 lg:py-14 space-y-10 text-slate-800">
     <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
       5. Dosarul de pensionare
@@ -1319,7 +1326,7 @@ export default function PensiePage() {
 </section>
 
           {/* ================= SECTIUNEA 6 ================= */}
-<section className="bg-white border-b border-slate-100">
+<section id="sectiunea-6" className="bg-white border-b border-slate-100">
   <div className="section-container py-10 lg:py-14 space-y-10 text-slate-800">
     <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
       6. Pensia dacă ai lucrat în străinătate
@@ -1518,7 +1525,7 @@ export default function PensiePage() {
 
 
           {/* ================= SECTIUNEA 7 ================= */}
-<section className="bg-white border-b border-slate-100">
+<section id="sectiunea-7" className="bg-white border-b border-slate-100">
   <div className="section-container py-10 lg:py-14 space-y-10 text-slate-800">
     <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
       7. Greșeli frecvente legate de pensie
@@ -1704,7 +1711,7 @@ export default function PensiePage() {
 </section>
 
           {/* ================= SECTIUNEA 8 ================= */}
-<section className="bg-white border-b border-slate-100">
+<section id="sectiunea-8" className="bg-white border-b border-slate-100">
   <div className="section-container py-10 lg:py-14 space-y-10 text-slate-800">
     <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
       8. Întrebări frecvente despre pensie
