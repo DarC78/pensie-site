@@ -539,6 +539,8 @@ export default function PensiePage() {
   </div>
 </section>
 
+{/* section 3*/}
+
           <section className="bg-white border-b border-slate-100">
   <div className="section-container py-10 lg:py-14 space-y-10 text-slate-800">
     <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
@@ -546,13 +548,18 @@ export default function PensiePage() {
     </h2>
 
     <p className="text-base lg:text-lg text-slate-700">
-      Momentul pensionării nu este același pentru toată lumea. El depinde de
-      vârstă, de anii lucrați și de situația personală a fiecărei persoane.
+      Momentul pensionării nu este identic pentru toată lumea și nu depinde
+      doar de vârstă. El este influențat de mai mulți factori, precum anii
+      lucrați, tipul activității desfășurate și situația personală.
+      Înțelegerea acestor elemente din timp te ajută să eviți surprizele
+      neplăcute.
     </p>
 
     <p className="text-base lg:text-lg text-slate-700">
-      Pentru a evita refuzuri sau întârzieri, este important să știi exact
-      când ai dreptul legal să depui cererea de pensionare.
+      Mulți oameni descoperă prea târziu că nu îndeplinesc toate condițiile
+      pentru pensionare la data dorită. De aceea, este important să știi
+      exact când poți depune cererea și ce condiții trebuie să îndeplinești
+      în mod concret.
     </p>
 
     {/* 3.1 */}
@@ -561,23 +568,27 @@ export default function PensiePage() {
     </h3>
 
     <p className="text-slate-700">
-      Vârsta standard de pensionare este stabilită prin lege și reprezintă
-      momentul în care poți solicita pensia pentru limită de vârstă fără
-      penalizări.
+      Vârsta standard de pensionare este momentul stabilit prin lege în care
+      poți solicita pensia pentru limită de vârstă fără penalizări. Aceasta
+      nu este aceeași pentru toți și diferă în funcție de sex și de anul
+      nașterii.
     </p>
 
     <p className="text-slate-700">
-      Această vârstă diferă în funcție de sex și de anul nașterii, deoarece
-      există etape de creștere graduală pentru anumite generații.
+      Pentru anumite generații, vârsta de pensionare a fost crescută gradual,
+      astfel încât data exactă poate varia chiar și cu câteva luni față de
+      estimările generale. De aceea, verificarea tabelului oficial este
+      esențială.
     </p>
 
-    <div className="rounded-3xl bg-white border border-slate-100 p-5 lg:p-6">
+    <div className="rounded-3xl bg-sky-50 border border-sky-200 p-5 lg:p-6">
       <p className="font-semibold text-slate-900 mb-1">
         De reținut
       </p>
       <p className="text-slate-700">
-        Cererea depusă înainte de împlinirea vârstei standard poate fi respinsă,
-        chiar dacă mai lipsesc doar câteva luni.
+        Cererea de pensionare depusă înainte de împlinirea exactă a vârstei
+        standard poate fi respinsă, chiar dacă mai lipsesc doar câteva luni.
+        Din acest motiv, este important să știi data exactă, nu doar anul.
       </p>
     </div>
 
@@ -587,18 +598,21 @@ export default function PensiePage() {
     </h3>
 
     <p className="text-slate-700">
-      Pe lângă vârstă, legea impune realizarea unui stagiu minim de cotizare
-      pentru a putea primi pensia de stat.
+      Pe lângă vârstă, legea impune realizarea unui stagiu minim de cotizare.
+      Acesta reprezintă numărul minim de ani în care ai contribuit la sistemul
+      public de pensii.
     </p>
 
     <p className="text-slate-700">
-      Stagiul minim este o condiție obligatorie. Fără el, dreptul la pensie
-      nu poate fi deschis.
+      Fără acest stagiu minim, dreptul la pensie nu poate fi deschis, chiar
+      dacă ai atins vârsta standard. Din acest motiv, verificarea vechimii
+      este un pas absolut necesar.
     </p>
 
     <p className="text-slate-700">
-      În anumite situații, anii lucrați în străinătate pot ajuta la
-      îndeplinirea acestui stagiu.
+      În anumite situații, perioadele lucrate în străinătate pot fi luate în
+      calcul pentru îndeplinirea acestui stagiu, prin mecanismele de
+      coordonare între state.
     </p>
 
     {/* 3.3 */}
@@ -607,13 +621,15 @@ export default function PensiePage() {
     </h3>
 
     <p className="text-slate-700">
-      Stagiul complet de cotizare este diferit de stagiul minim și are un
-      impact direct asupra valorii pensiei.
+      Stagiul complet de cotizare este diferit de stagiul minim și are rolul
+      de a influența valoarea finală a pensiei. Cu cât ai mai mulți ani de
+      contribuții, cu atât punctajul acumulat este mai mare.
     </p>
 
     <p className="text-slate-700">
-      Cu cât ai mai mulți ani de contribuții peste minim, cu atât pensia
-      calculată va fi, în general, mai mare.
+      Mulți oameni se pensionează fără a atinge stagiul complet, ceea ce este
+      perfect legal. Totuși, acest lucru se reflectă, de regulă, într-o
+      pensie mai mică.
     </p>
 
     <div className="rounded-3xl bg-white border border-slate-100 p-5 lg:p-6">
@@ -621,8 +637,9 @@ export default function PensiePage() {
         Important
       </p>
       <p className="text-slate-700">
-        Stagiul complet nu este obligatoriu pentru pensionare, dar influențează
-        semnificativ suma primită.
+        Stagiul complet nu este o condiție obligatorie pentru pensionare,
+        dar este unul dintre factorii principali care influențează suma
+        primită lunar.
       </p>
     </div>
 
@@ -633,17 +650,20 @@ export default function PensiePage() {
 
     <p className="text-slate-700">
       Pensionarea anticipată permite ieșirea la pensie înainte de vârsta
-      standard, în anumite condiții stricte.
+      standard, însă doar în condiții stricte. De regulă, este necesar un
+      stagiu de cotizare mai mare decât cel minim.
     </p>
 
     <p className="text-slate-700">
-      De regulă, este necesar un stagiu de cotizare mai mare, iar pensia se
-      acordă cu penalizări.
+      Această formă de pensionare implică penalizări aplicate pensiei,
+      penalizări care pot fi permanente. Din acest motiv, decizia trebuie
+      analizată cu atenție.
     </p>
 
     <p className="text-slate-700">
-      Această opțiune trebuie analizată cu atenție, deoarece penalizările pot
-      fi permanente.
+      Pentru unele persoane, pensionarea anticipată poate fi o soluție, dar
+      pentru altele poate însemna o pierdere financiară semnificativă pe
+      termen lung.
     </p>
 
     {/* 3.5 */}
@@ -652,20 +672,22 @@ export default function PensiePage() {
     </h3>
 
     <p className="text-slate-700">
-      Pensionarea anticipată parțială se aplică persoanelor care nu îndeplinesc
-      toate condițiile pentru pensionarea anticipată completă.
+      Pensionarea anticipată parțială se aplică persoanelor care nu
+      îndeplinesc toate condițiile pentru pensionarea anticipată completă,
+      dar doresc să se retragă mai devreme din activitate.
     </p>
 
     <p className="text-slate-700">
-      Penalizările sunt, de regulă, mai mari și pot afecta pensia pe toată
-      durata vieții.
+      În acest caz, penalizările sunt mai mari și se aplică până la atingerea
+      vârstei standard de pensionare. Aceste reduceri pot afecta semnificativ
+      venitul lunar.
     </p>
 
-    <div className="rounded-3xl bg-softBg border border-slate-100 p-5 lg:p-6">
+    <div className="rounded-3xl bg-sky-50 border border-sky-200 p-5 lg:p-6">
       <ul className="list-disc list-inside space-y-2 text-slate-700">
-        <li>ieșire mai devreme din activitate;</li>
-        <li>pensia este redusă;</li>
-        <li>decizie greu de corectat ulterior.</li>
+        <li>ieșire mai devreme din activitate, dar cu restricții;</li>
+        <li>pensia este redusă pe toată durata acordării;</li>
+        <li>decizia este dificil de corectat ulterior.</li>
       </ul>
     </div>
 
@@ -675,17 +697,19 @@ export default function PensiePage() {
     </h3>
 
     <p className="text-slate-700">
-      Anumite locuri de muncă permit reducerea vârstei de pensionare, datorită
-      condițiilor deosebite sau speciale.
+      Anumite locuri de muncă permit reducerea vârstei de pensionare datorită
+      condițiilor deosebite sau speciale. Aceste reduceri sunt strict
+      reglementate.
     </p>
 
     <p className="text-slate-700">
-      Aceste reduceri se aplică doar dacă perioadele sunt dovedite prin
-      documente oficiale.
+      Pentru a beneficia de reducere, perioadele trebuie dovedite prin
+      documente oficiale. Lipsa acestora poate duce la pierderea dreptului.
     </p>
 
     <p className="text-slate-700">
-      Lipsa adeverințelor poate anula complet acest beneficiu.
+      De aceea, este important să verifici din timp dacă aceste perioade sunt
+      corect recunoscute în evidențele tale.
     </p>
 
     {/* 3.7 */}
@@ -695,17 +719,18 @@ export default function PensiePage() {
 
     <p className="text-slate-700">
       Vârsta de pensionare diferă între femei și bărbați, în funcție de anul
-      nașterii.
+      nașterii. Aceste diferențe sunt prevăzute de lege și se aplică gradual.
     </p>
 
     <p className="text-slate-700">
-      Aceste diferențe sunt stabilite prin lege și sunt aplicate gradual.
+      Din acest motiv, este posibil ca persoane de vârste apropiate să se
+      pensioneze la momente diferite.
     </p>
 
     <div className="rounded-3xl bg-white border border-slate-100 p-5 lg:p-6">
       <p className="text-slate-700">
-        Este recomandat să verifici tabelele oficiale pentru situația ta
-        exactă, nu să te bazezi pe exemplele altora.
+        Verifică întotdeauna situația ta exactă în funcție de data nașterii,
+        nu pe baza exemplelor generale.
       </p>
     </div>
 
@@ -715,17 +740,18 @@ export default function PensiePage() {
     </h3>
 
     <p className="text-slate-700">
-      Mulți oameni află prea târziu când se pot pensiona legal, ceea ce duce
-      la stres și decizii greșite.
+      Cunoașterea exactă a momentului pensionării îți permite să îți
+      organizezi mai bine documentele și să iei decizii informate.
     </p>
 
     <p className="text-slate-700">
-      O planificare din timp îți permite să verifici actele și să eviți
-      întârzierile.
+      O planificare făcută din timp reduce stresul și te ajută să eviți
+      situațiile neplăcute în care dosarul este respins sau amânat.
     </p>
 
     <p className="text-slate-700">
-      Pensionarea este un moment important și merită tratată organizat.
+      Pensionarea este un moment important al vieții și merită tratată cu
+      atenție și responsabilitate.
     </p>
   </div>
 </section>
