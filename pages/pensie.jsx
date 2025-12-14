@@ -818,785 +818,955 @@ export default function PensiePage() {
 </section>
 
           {/* ================= SECTIUNEA 4 ================= */}
-<section id="calcul">
-  <h2>4. Cum se calculează pensia</h2>
+<section className="bg-white border-b border-slate-100">
+  <div className="section-container py-10 lg:py-14 space-y-10 text-slate-800">
+    <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
+      4. Cum se calculează pensia
+    </h2>
 
-  {/* 4.1 */}
-  <h3>4.1 Ce înseamnă, pe scurt, calculul pensiei</h3>
-  <p>
-    Calculul pensiei reprezintă modul prin care statul stabilește
-    <strong> suma lunară</strong> pe care o vei primi după pensionare, pe baza
-    activității tale profesionale.
-  </p>
-  <p>
-    Deși formula legală poate părea complicată, principiul este simplu:
-    pensia reflectă <strong>cât ai contribuit</strong> și
-    <strong>cât timp ai contribuit</strong>.
-  </p>
-  <p>
-    Din acest motiv, două persoane cu același număr de ani lucrați pot primi
-    pensii diferite.
-  </p>
-
-  <div style={{ borderLeft: "4px solid #2563eb", paddingLeft: "12px" }}>
-    <p>
-      <strong>Ideea de bază:</strong> Pensia nu se calculează „din ochi”, ci pe
-      baza contribuțiilor reale.
+    <p className="text-base lg:text-lg text-slate-700">
+      Modul de calcul al pensiei este unul dintre cele mai neclare subiecte
+      pentru mulți oameni. Deși formula de calcul este stabilită prin lege,
+      rezultatul final depinde de mai mulți factori care se acumulează de-a
+      lungul anilor de muncă.
     </p>
-  </div>
 
-  {/* 4.2 */}
-  <h3>4.2 Rolul stagiului de cotizare în calcul</h3>
-  <p>
-    <strong>Stagiul de cotizare</strong> reprezintă totalul perioadelor în care
-    ai plătit contribuții la sistemul public de pensii.
-  </p>
-  <p>
-    Fiecare lună de contribuție contează, iar lipsurile pot afecta atât
-    <strong>dreptul la pensie</strong>, cât și valoarea acesteia.
-  </p>
-  <p>
-    Stagiul complet influențează direct cuantumul pensiei, nu doar accesul la ea.
-  </p>
-
-  <ul>
-    <li>stagiu minim = drept la pensie;</li>
-    <li>stagiu complet = pensie mai mare;</li>
-    <li>perioadele lipsă contează negativ.</li>
-  </ul>
-
-  {/* 4.3 */}
-  <h3>4.3 Cum influențează salariul valoarea pensiei</h3>
-  <p>
-    Pensia nu depinde doar de anii munciți, ci și de
-    <strong> nivelul salariilor</strong> pentru care s-au plătit contribuții.
-  </p>
-  <p>
-    Salariile mai mari duc, în general, la
-    <strong> punctaje mai mari</strong>, care se reflectă ulterior în pensie.
-  </p>
-  <p>
-    Munca la negru sau perioadele cu venituri nedeclarate nu aduc beneficii la
-    calculul pensiei.
-  </p>
-
-  <div style={{ background: "#f8fafc", padding: "12px", borderRadius: "6px" }}>
-    <p>
-      <strong>Sfat:</strong> Dacă ai lucrat cu normă parțială sau pe salarii mici,
-      este normal ca pensia să fie mai redusă.
+    <p className="text-base lg:text-lg text-slate-700">
+      În această secțiune explicăm, pas cu pas, elementele care influențează
+      valoarea pensiei, fără formule complicate și fără jargon tehnic.
     </p>
-  </div>
 
-  {/* 4.4 */}
-  <h3>4.4 Ce este punctajul de pensie</h3>
-  <p>
-    <strong>Punctajul de pensie</strong> este elementul central în calculul
-    pensiei și reflectă raportul dintre venitul tău și salariul mediu din
-    economie.
-  </p>
-  <p>
-    Fiecare an de muncă generează un punctaj anual, care se adună pe întreaga
-    perioadă de activitate.
-  </p>
-  <p>
-    La final, punctajul total este transformat în bani, conform legii.
-  </p>
+    {/* 4.1 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      4.1 Ce înseamnă punctajul de pensie
+    </h3>
 
-  <div style={{ border: "1px dashed #94a3b8", padding: "12px" }}>
-    <p>
-      Punctaj mare = pensie mai mare. Punctaj mic = pensie mai mică.
+    <p className="text-slate-700">
+      Punctajul de pensie este mecanismul prin care statul transformă veniturile
+      tale din timpul activității într-o valoare care va fi folosită la calcul.
+      Practic, fiecare lună lucrată generează un anumit punctaj.
     </p>
-  </div>
 
-  {/* 4.5 */}
-  <h3>4.5 De ce apar diferențe între persoane cu aceeași vechime</h3>
-  <p>
-    Diferențele de pensie apar frecvent între persoane cu
-    <strong> vechime similară</strong>, dar cu venituri diferite.
-  </p>
-  <p>
-    De asemenea, întreruperile de activitate, concediile fără plată sau munca
-    part-time influențează negativ punctajul.
-  </p>
-  <p>
-    Fiecare detaliu din cariera profesională contează la calcul.
-  </p>
+    <p className="text-slate-700">
+      Acest punctaj este influențat de nivelul salariului și de contribuțiile
+      plătite la sistemul public de pensii. Cu cât venitul declarat este mai
+      mare, cu atât punctajul acumulat este mai mare.
+    </p>
 
-  <div style={{ background: "#fff7ed", padding: "12px", borderRadius: "6px" }}>
-    <p>
-      <strong>Important:</strong> Nu compara pensia ta doar după ani, ci și după
+    <p className="text-slate-700">
+      La final, punctajele lunare se adună și se transformă într-un punctaj
+      total, care stă la baza pensiei tale.
+    </p>
+
+    {/* 4.2 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      4.2 Valoarea punctului de pensie
+    </h3>
+
+    <p className="text-slate-700">
+      Valoarea punctului de pensie este stabilită prin lege și poate fi
+      modificată în timp. Aceasta reprezintă suma de bani asociată unui punct
+      de pensie.
+    </p>
+
+    <p className="text-slate-700">
+      Pensia ta se obține prin înmulțirea punctajului total cu valoarea
+      punctului de pensie valabilă la momentul stabilirii dreptului.
+    </p>
+
+    <div className="rounded-3xl bg-sky-50 border border-sky-200 p-5 lg:p-6">
+      <p className="font-semibold text-slate-900 mb-1">
+        De reținut
+      </p>
+      <p className="text-slate-700">
+        Modificările valorii punctului de pensie se aplică tuturor
+        pensionarilor, nu doar celor care ies la pensie într-un anumit an.
+      </p>
+    </div>
+
+    {/* 4.3 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      4.3 Rolul vechimii în muncă
+    </h3>
+
+    <p className="text-slate-700">
+      Vechimea în muncă reprezintă totalul perioadelor în care ai contribuit la
+      sistemul public de pensii. Fiecare an lucrat contează în calculul final.
+    </p>
+
+    <p className="text-slate-700">
+      Perioadele fără contribuții sau cele nedeclarate pot reduce semnificativ
+      punctajul total și, implicit, valoarea pensiei.
+    </p>
+
+    <p className="text-slate-700">
+      De aceea, este important să verifici dacă toate perioadele lucrate sunt
+      corect înregistrate.
+    </p>
+
+    {/* 4.4 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      4.4 Veniturile luate în calcul
+    </h3>
+
+    <p className="text-slate-700">
+      Nu toate veniturile obținute de-a lungul vieții sunt luate în calcul la
+      pensie. Sunt considerate doar acele venituri pentru care s-au plătit
       contribuții.
     </p>
-  </div>
 
-  {/* 4.6 */}
-  <h3>4.6 Cum influențează perioadele speciale calculul pensiei</h3>
-  <p>
-    Anumite perioade pot fi considerate
-    <strong> perioade asimilate</strong>, chiar dacă nu ai contribuit direct
-    (de exemplu, armata sau studiile).
-  </p>
-  <p>
-    Aceste perioade sunt recunoscute de lege, dar pot avea un impact diferit
-    asupra punctajului.
-  </p>
-  <p>
-    Este important să verifici dacă aceste perioade sunt corect evidențiate
-    în dosar.
-  </p>
+    <p className="text-slate-700">
+      Sporurile, primele sau alte venituri pot influența pensia doar dacă au
+      fost declarate și pentru ele s-au achitat contribuții.
+    </p>
 
-  <ul>
-    <li>serviciul militar;</li>
-    <li>studiile universitare;</li>
-    <li>alte perioade prevăzute de lege.</li>
-  </ul>
+    <div className="rounded-3xl bg-white border border-slate-100 p-5 lg:p-6">
+      <ul className="list-disc list-inside space-y-2 text-slate-700">
+        <li>salariile brute declarate;</li>
+        <li>sporurile permanente;</li>
+        <li>alte venituri supuse contribuțiilor.</li>
+      </ul>
+    </div>
 
-  {/* 4.7 */}
-  <h3>4.7 De ce este util să îți estimezi pensia din timp</h3>
-  <p>
-    Mulți oameni află valoarea aproximativă a pensiei abia după depunerea
-    cererii, ceea ce poate fi un șoc.
-  </p>
-  <p>
-    O estimare făcută din timp îți oferă
-    <strong> claritate și control</strong> asupra deciziilor viitoare.
-  </p>
-  <p>
-    Chiar dacă suma finală poate varia, o estimare te ajută să te pregătești
-    financiar.
-  </p>
+    {/* 4.5 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      4.5 Perioade asimilate la pensie
+    </h3>
 
-  <div style={{ borderLeft: "4px solid #16a34a", paddingLeft: "12px" }}>
-    <p>
-      <strong>Concluzie:</strong> Cu cât înțelegi mai bine calculul pensiei,
-      cu atât vei avea mai puține surprize.
+    <p className="text-slate-700">
+      Există perioade care nu presupun muncă efectivă, dar care sunt totuși
+      luate în calcul la pensie. Acestea se numesc perioade asimilate.
+    </p>
+
+    <p className="text-slate-700">
+      Printre acestea se numără studiile universitare, serviciul militar sau
+      concediile medicale de lungă durată, în anumite condiții.
+    </p>
+
+    <p className="text-slate-700">
+      Recunoașterea acestor perioade depinde de documentele doveditoare.
+    </p>
+
+    {/* 4.6 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      4.6 Diferențe între pensia minimă și pensia calculată
+    </h3>
+
+    <p className="text-slate-700">
+      Pensia calculată pe baza contribuțiilor poate fi mai mică decât nivelul
+      minim stabilit de stat.
+    </p>
+
+    <p className="text-slate-700">
+      În aceste situații, se acordă indemnizația socială pentru pensionari,
+      astfel încât venitul să ajungă la un prag minim.
+    </p>
+
+    <p className="text-slate-700">
+      Această diferență este suportată de stat și nu afectează punctajul tău.
+    </p>
+
+    {/* 4.7 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      4.7 Calculul pensiei dacă ai lucrat în străinătate
+    </h3>
+
+    <p className="text-slate-700">
+      Dacă ai lucrat și în alte țări, pensia se calculează separat pentru
+      fiecare stat, în funcție de perioadele lucrate în fiecare sistem.
+    </p>
+
+    <p className="text-slate-700">
+      România va plăti pensia aferentă anilor lucrați aici, iar celelalte
+      state vor plăti partea lor.
+    </p>
+
+    <p className="text-slate-700">
+      Acest mecanism este cunoscut sub denumirea de pensie comunitară.
+    </p>
+
+    <p className="text-sm text-primary">
+      Vezi explicațiile detaliate în{" "}
+      <a href="/pensie-comunitara" className="underline hover:text-primaryDark">
+        ghidul despre pensia comunitară
+      </a>.
+    </p>
+
+    {/* 4.8 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      4.8 De ce apar diferențe între estimări și pensia reală
+    </h3>
+
+    <p className="text-slate-700">
+      Mulți oameni fac calcule aproximative și sunt surprinși de suma finală.
+      Diferențele apar din cauza veniturilor nedeclarate sau a perioadelor
+      lipsă.
+    </p>
+
+    <p className="text-slate-700">
+      De asemenea, modificările legislative pot influența valoarea pensiei
+      față de estimările făcute cu mulți ani înainte.
+    </p>
+
+    <p className="text-slate-700">
+      De aceea, este recomandat să verifici periodic situația ta și să ceri
+      clarificări atunci când apar neconcordanțe.
     </p>
   </div>
 </section>
 
           {/* ================= SECTIUNEA 5 ================= */}
-<section id="dosar">
-  <h2>5. Dosarul de pensionare</h2>
+<section className="bg-white border-b border-slate-100">
+  <div className="section-container py-10 lg:py-14 space-y-10 text-slate-800">
+    <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
+      5. Dosarul de pensionare
+    </h2>
 
-  {/* 5.1 */}
-  <h3>5.1 Ce este dosarul de pensionare și de ce contează</h3>
-  <p>
-    <strong>Dosarul de pensionare</strong> este setul de documente pe baza căruia
-    Casa de Pensii îți stabilește dreptul la pensie și valoarea acesteia.
-  </p>
-  <p>
-    Practic, dosarul este „povestea ta profesională” spusă prin acte. Orice
-    perioadă lipsă sau document incorect poate influența
-    <strong> decizia finală</strong>.
-  </p>
-  <p>
-    De aceea, dosarul nu trebuie tratat ca o simplă formalitate, ci ca un
-    element esențial al pensionării.
-  </p>
-
-  <div style={{ borderLeft: "4px solid #2563eb", paddingLeft: "12px" }}>
-    <p>
-      <strong>Important:</strong> Casa de Pensii decide strict pe baza actelor,
-      nu pe baza declarațiilor verbale.
+    <p className="text-base lg:text-lg text-slate-700">
+      Dosarul de pensionare este setul de documente pe baza căruia Casa de
+      Pensii îți stabilește dreptul la pensie. Chiar dacă îndeplinești toate
+      condițiile de vârstă și vechime, fără un dosar complet pensia nu poate fi
+      acordată.
     </p>
-  </div>
 
-  {/* 5.2 */}
-  <h3>5.2 Când trebuie începută pregătirea dosarului</h3>
-  <p>
-    Pregătirea dosarului de pensionare ar trebui să înceapă cu
-    <strong> 6–12 luni</strong> înainte de data estimată a pensionării.
-  </p>
-  <p>
-    Acest interval îți permite să verifici vechimea, să ceri adeverințe și să
-    corectezi eventuale erori fără presiune.
-  </p>
-  <p>
-    Mulți oameni amână acest pas și ajung să se confrunte cu întârzieri mari.
-  </p>
-
-  <ul>
-    <li>verifici vechimea;</li>
-    <li>identifici perioade lipsă;</li>
-    <li>soliciți documente;</li>
-    <li>organizezi actele.</li>
-  </ul>
-
-  {/* 5.3 */}
-  <h3>5.3 Actele de bază din dosarul de pensionare</h3>
-  <p>
-    Deși lista exactă poate varia, există câteva
-    <strong> documente de bază</strong> care apar în aproape toate dosarele.
-  </p>
-  <p>
-    Lipsa unuia dintre aceste documente poate duce la amânarea soluționării
-    dosarului.
-  </p>
-  <p>
-    Este recomandat să ai atât originalele, cât și copii clare.
-  </p>
-
-  <div style={{ background: "#f8fafc", padding: "12px", borderRadius: "6px" }}>
-    <p>
-      <strong>Documente frecvente:</strong> act de identitate, cerere tip,
-      carnet de muncă sau adeverințe de vechime, acte de stare civilă.
+    <p className="text-base lg:text-lg text-slate-700">
+      Mulți oameni subestimează importanța dosarului și descoperă probleme
+      abia după depunere. O pregătire atentă din timp reduce riscul
+      întârzierilor și al refuzurilor.
     </p>
-  </div>
 
-  {/* 5.4 */}
-  <h3>5.4 Adeverințele de vechime și rolul lor</h3>
-  <p>
-    <strong>Adeverințele de vechime</strong> sunt esențiale pentru perioadele
-    care nu apar clar în carnetul de muncă sau în evidențele electronice.
-  </p>
-  <p>
-    Ele trebuie să conțină informații corecte despre perioadă, funcție și
-    contribuții.
-  </p>
-  <p>
-    Adeverințele incomplete sau greșite pot fi respinse.
-  </p>
+    {/* 5.1 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      5.1 Ce este dosarul de pensionare
+    </h3>
 
-  <div style={{ border: "1px dashed #94a3b8", padding: "12px" }}>
-    <p>
-      Verifică atent datele din adeverințe înainte de depunere.
+    <p className="text-slate-700">
+      Dosarul de pensionare reprezintă dovada oficială a întregii tale
+      activități profesionale. El conține documente care arată când și unde ai
+      lucrat, ce venituri ai avut și ce contribuții ai plătit.
     </p>
-  </div>
 
-  {/* 5.5 */}
-  <h3>5.5 Ce faci dacă îți lipsesc acte sau angajatori</h3>
-  <p>
-    O situație des întâlnită este lipsa unor documente sau dispariția
-    angajatorilor vechi.
-  </p>
-  <p>
-    În astfel de cazuri, există soluții precum arhivele, instituțiile care au
-    preluat documentele sau alte dovezi acceptate de lege.
-  </p>
-  <p>
-    Important este să nu presupui că acea perioadă este pierdută definitiv.
-  </p>
-
-  <div style={{ background: "#fff7ed", padding: "12px", borderRadius: "6px" }}>
-    <p>
-      <strong>Atenție:</strong> Recuperarea documentelor poate dura luni.
+    <p className="text-slate-700">
+      Funcționarii de la Casa de Pensii folosesc acest dosar pentru a verifica
+      dacă îndeplinești condițiile legale și pentru a calcula pensia.
     </p>
-  </div>
 
-  {/* 5.6 */}
-  <h3>5.6 Unde și cum se depune dosarul de pensionare</h3>
-  <p>
-    Dosarul de pensionare se depune la
-    <strong> Casa Teritorială de Pensii</strong> de care aparții, în funcție de
-    domiciliu.
-  </p>
-  <p>
-    La depunere, vei primi un număr de înregistrare care îți permite să
-    urmărești dosarul.
-  </p>
-  <p>
-    Dosarul poate fi depus personal sau prin împuternicit, în anumite condiții.
-  </p>
+    <p className="text-slate-700">
+      Orice neclaritate sau lipsă de documente poate duce la solicitări
+      suplimentare sau la amânarea soluționării dosarului.
+    </p>
 
-  <ul>
-    <li>verifică programul;</li>
-    <li>pregătește copii;</li>
-    <li>notează numărul de înregistrare.</li>
-  </ul>
+    {/* 5.2 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      5.2 Când se depune dosarul de pensionare
+    </h3>
 
-  {/* 5.7 */}
-  <h3>5.7 De ce merită să consulți un ghid dedicat</h3>
-  <p>
-    Dosarul de pensionare este una dintre cele mai
-    <strong> sensibile etape</strong> ale pensionării.
-  </p>
-  <p>
-    Un ghid dedicat te poate ajuta să înțelegi pașii, actele și greșelile
-    frecvente înainte de a ajunge la ghișeu.
-  </p>
-  <p>
-    Pentru detalii complete, poți consulta{" "}
-    <a
-      href="/dosar-pensie"
-      className="text-primary underline hover:text-primaryDark"
-    >
-      ghidul complet despre dosarul de pensionare
-    </a>.
-  </p>
+    <p className="text-slate-700">
+      Dosarul de pensionare se depune, de regulă, cu câteva săptămâni înainte
+      sau imediat după împlinirea condițiilor legale de pensionare.
+    </p>
 
-  <div style={{ borderLeft: "4px solid #16a34a", paddingLeft: "12px" }}>
-    <p>
-      <strong>Concluzie:</strong> Un dosar bine pregătit înseamnă mai puțin stres
-      și mai puține întârzieri.
+    <p className="text-slate-700">
+      Este recomandat să începi pregătirea documentelor cu 6–12 luni înainte,
+      mai ales dacă ai lucrat la mai mulți angajatori sau în străinătate.
+    </p>
+
+    <div className="rounded-3xl bg-sky-50 border border-sky-200 p-5 lg:p-6">
+      <p className="font-semibold text-slate-900 mb-1">
+        De reținut
+      </p>
+      <p className="text-slate-700">
+        Pensia se acordă, de regulă, din luna următoare depunerii cererii
+        complete, nu retroactiv pentru perioade mai vechi.
+      </p>
+    </div>
+
+    {/* 5.3 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      5.3 Actele necesare pentru dosarul de pensionare
+    </h3>
+
+    <p className="text-slate-700">
+      Lista actelor necesare poate varia în funcție de tipul de pensie și de
+      situația fiecărei persoane. Totuși, există documente care apar aproape
+      întotdeauna.
+    </p>
+
+    <p className="text-slate-700">
+      Este important ca toate actele să fie complete, lizibile și corecte,
+      pentru a evita solicitările ulterioare.
+    </p>
+
+    <div className="rounded-3xl bg-white border border-slate-100 p-5 lg:p-6">
+      <ul className="list-disc list-inside space-y-2 text-slate-700">
+        <li>cererea tip de pensionare;</li>
+        <li>actul de identitate;</li>
+        <li>carnetul de muncă sau adeverințe de vechime;</li>
+        <li>documente pentru perioade speciale sau asimilate;</li>
+        <li>alte acte specifice situației tale.</li>
+      </ul>
+    </div>
+
+    {/* 5.4 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      5.4 Verificarea vechimii și a documentelor
+    </h3>
+
+    <p className="text-slate-700">
+      Înainte de depunerea dosarului, este esențial să verifici vechimea și
+      perioadele lucrate. Erorile din documente sunt mai frecvente decât se
+      crede.
+    </p>
+
+    <p className="text-slate-700">
+      Diferențele de nume, datele greșite sau perioadele lipsă pot crea
+      întârzieri semnificative.
+    </p>
+
+    <p className="text-slate-700">
+      Corectarea acestor probleme este mult mai ușoară înainte de depunerea
+      dosarului.
+    </p>
+
+    {/* 5.5 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      5.5 Ce faci dacă îți lipsesc acte
+    </h3>
+
+    <p className="text-slate-700">
+      Lipsa unor documente nu înseamnă automat pierderea dreptului la pensie.
+      Există soluții pentru majoritatea situațiilor.
+    </p>
+
+    <p className="text-slate-700">
+      Poți solicita adeverințe de la foștii angajatori, de la arhive sau de la
+      instituțiile care au preluat documentele.
+    </p>
+
+    <p className="text-slate-700">
+      Important este să începi aceste demersuri din timp, deoarece pot dura
+      câteva luni.
+    </p>
+
+    {/* 5.6 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      5.6 Unde se depune dosarul de pensionare
+    </h3>
+
+    <p className="text-slate-700">
+      Dosarul se depune la Casa Teritorială de Pensii de care aparții, în
+      funcție de domiciliu.
+    </p>
+
+    <p className="text-slate-700">
+      În anumite situații, dosarul poate fi transmis și prin alte instituții,
+      mai ales dacă ai lucrat în străinătate.
+    </p>
+
+    <p className="text-slate-700">
+      Este important să păstrezi dovada depunerii dosarului.
+    </p>
+
+    {/* 5.7 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      5.7 Cât durează analiza dosarului
+    </h3>
+
+    <p className="text-slate-700">
+      Durata analizei dosarului depinde de complexitatea situației tale și de
+      volumul de lucru al Casei de Pensii.
+    </p>
+
+    <p className="text-slate-700">
+      Dosarele simple pot fi soluționate în câteva luni, în timp ce cele care
+      implică muncă în străinătate pot dura mai mult.
+    </p>
+
+    <p className="text-slate-700">
+      În acest timp, pot fi solicitate documente suplimentare.
+    </p>
+
+    {/* 5.8 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      5.8 Legătura dintre dosar și pensia comunitară
+    </h3>
+
+    <p className="text-slate-700">
+      Dacă ai lucrat și în alte țări, dosarul de pensionare din România joacă
+      un rol esențial în inițierea procedurii de pensie comunitară.
+    </p>
+
+    <p className="text-slate-700">
+      Pe baza informațiilor din dosar, instituțiile din diferite state
+      comunică pentru a stabili drepturile tale.
+    </p>
+
+    <p className="text-slate-700">
+      De aceea, este important ca dosarul să conțină toate perioadele lucrate.
+    </p>
+
+    <p className="text-sm text-primary">
+      Vezi ghidul detaliat despre{" "}
+      <a href="/dosar-pensie" className="underline hover:text-primaryDark">
+        dosarul de pensionare
+      </a>{" "}
+      pentru explicații pas cu pas.
     </p>
   </div>
 </section>
 
           {/* ================= SECTIUNEA 6 ================= */}
-<section id="strainatate">
-  <h2>6. Pensia dacă ai lucrat în străinătate</h2>
+<section className="bg-white border-b border-slate-100">
+  <div className="section-container py-10 lg:py-14 space-y-10 text-slate-800">
+    <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
+      6. Pensia dacă ai lucrat în străinătate
+    </h2>
 
-  {/* 6.1 */}
-  <h3>6.1 Ce se întâmplă cu anii lucrați în afara României</h3>
-  <p>
-    Mulți români au lucrat o parte din viață în afara țării și se întreabă ce
-    se întâmplă cu <strong>anii lucrați în străinătate</strong> la pensionare.
-  </p>
-  <p>
-    În general, acești ani <strong>nu se pierd</strong>, atâta timp cât munca a
-    fost legală și s-au plătit contribuții în statul respectiv.
-  </p>
-  <p>
-    Fiecare stat își plătește partea de pensie pentru perioadele lucrate în
-    sistemul său.
-  </p>
-
-  <div style={{ borderLeft: "4px solid #2563eb", paddingLeft: "12px" }}>
-    <p>
-      <strong>Important:</strong> Nu primești o singură pensie „combinată”, ci
-      pensii separate de la fiecare stat.
+    <p className="text-base lg:text-lg text-slate-700">
+      Tot mai mulți români au lucrat o parte din viață în afara României.
+      Această situație ridică întrebări firești despre ce se întâmplă cu
+      anii lucrați în străinătate și dacă aceștia sunt pierduți la pensie.
     </p>
-  </div>
 
-  {/* 6.2 */}
-  <h3>6.2 Ce este pensia comunitară</h3>
-  <p>
-    <strong>Pensia comunitară</strong> este mecanismul prin care perioadele de
-    muncă realizate în mai multe state sunt recunoscute împreună, pentru a nu
-    pierde dreptul la pensie.
-  </p>
-  <p>
-    Acest sistem funcționează între România și statele din Uniunea Europeană,
-    dar și cu anumite țări din afara UE, precum Marea Britanie.
-  </p>
-  <p>
-    Pensia comunitară nu înseamnă că un stat îți plătește pentru anii lucrați în
-    alt stat.
-  </p>
-
-  <div style={{ background: "#f8fafc", padding: "12px", borderRadius: "6px" }}>
-    <p>
-      <strong>Pe scurt:</strong> Anii se adună pentru drept, banii se plătesc
-      separat.
+    <p className="text-base lg:text-lg text-slate-700">
+      Vestea bună este că, în majoritatea cazurilor, perioadele lucrate în
+      alte țări pot fi valorificate. Totuși, procedura este diferită față
+      de un dosar obișnuit și necesită mai multă atenție.
     </p>
-  </div>
 
-  {/* 6.3 */}
-  <h3>6.3 Diferența dintre UE, UK și alte țări</h3>
-  <p>
-    Regulile diferă în funcție de țara în care ai lucrat.
-    În Uniunea Europeană se aplică regulile clasice de coordonare.
-  </p>
-  <p>
-    Pentru <strong>UK</strong>, drepturile sunt protejate prin acorduri speciale,
-    inclusiv după Brexit.
-  </p>
-  <p>
-    Pentru alte țări (non-UE), situația depinde de existența unor acorduri
-    bilaterale.
-  </p>
+    {/* 6.1 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      6.1 Ce se întâmplă cu anii lucrați în străinătate
+    </h3>
 
-  <ul>
-    <li>UE – reguli comunitare;</li>
-    <li>UK – acord post-Brexit;</li>
-    <li>alte state – acorduri bilaterale sau deloc.</li>
-  </ul>
-
-  {/* 6.4 */}
-  <h3>6.4 Unde depui cererea de pensie dacă ai lucrat în străinătate</h3>
-  <p>
-    Cererea de pensie se depune, de regulă, în
-    <strong> statul de reședință</strong> la momentul pensionării.
-  </p>
-  <p>
-    Instituția respectivă va comunica cu celelalte state pentru verificarea
-    perioadelor de muncă.
-  </p>
-  <p>
-    Procedura este unică, dar poate dura mai mult decât un dosar intern.
-  </p>
-
-  <div style={{ border: "1px dashed #94a3b8", padding: "12px" }}>
-    <p>
-      Nu este nevoie să depui dosare separate în fiecare țară.
+    <p className="text-slate-700">
+      Anii lucrați în străinătate nu se pierd, atâta timp cât activitatea a
+      fost legală și au fost plătite contribuții la sistemul de pensii din
+      țara respectivă.
     </p>
-  </div>
 
-  {/* 6.5 */}
-  <h3>6.5 Documente necesare pentru pensia din străinătate</h3>
-  <p>
-    Dosarele cu muncă în străinătate necesită, de regulă,
-    <strong> mai multe documente</strong>.
-  </p>
-  <p>
-    Pe lângă actele din România, pot fi cerute dovezi ale contribuțiilor din
-    celelalte state.
-  </p>
-  <p>
-    Lipsa documentelor este una dintre cele mai frecvente cauze de întârziere.
-  </p>
-
-  <ul>
-    <li>contracte de muncă;</li>
-    <li>număr de asigurare socială;</li>
-    <li>adeverințe de contribuții;</li>
-    <li>documente fiscale.</li>
-  </ul>
-
-  {/* 6.6 */}
-  <h3>6.6 Probleme frecvente în dosarele internaționale</h3>
-  <p>
-    Dosarele de pensie cu muncă în străinătate sunt printre cele mai
-    <strong> complexe</strong>.
-  </p>
-  <p>
-    Apar frecvent probleme precum lipsa contribuțiilor, diferențe de nume sau
-    perioade neclare.
-  </p>
-  <p>
-    Comunicarea dintre instituții poate dura luni sau chiar peste un an.
-  </p>
-
-  <div style={{ background: "#fff7ed", padding: "12px", borderRadius: "6px" }}>
-    <p>
-      <strong>Atenție:</strong> Dosarele internaționale necesită răbdare și
-      organizare.
+    <p className="text-slate-700">
+      Fiecare stat este responsabil pentru plata pensiei aferente perioadelor
+      lucrate pe teritoriul său. Nu există o „pensie combinată” plătită de
+      un singur stat.
     </p>
-  </div>
 
-  {/* 6.7 */}
-  <h3>6.7 Unde găsești informații detaliate despre pensia comunitară</h3>
-  <p>
-    Pensia comunitară are reguli specifice și multe situații particulare.
-  </p>
-  <p>
-    De aceea, este recomandat să consulți un ghid dedicat exclusiv acestui
-    subiect.
-  </p>
-  <p>
-    Poți citi explicațiile detaliate în{" "}
-    <a
-      href="/pensie-comunitara"
-      className="text-primary underline hover:text-primaryDark"
-    >
-      ghidul complet despre pensia comunitară
-    </a>.
-  </p>
+    <p className="text-slate-700">
+      La pensionare, vei primi plăți separate din fiecare țară în care ai
+      lucrat, în funcție de contribuțiile realizate.
+    </p>
 
-  <div style={{ borderLeft: "4px solid #16a34a", paddingLeft: "12px" }}>
-    <p>
-      <strong>Concluzie:</strong> Anii munciți în străinătate pot conta decisiv
-      pentru dreptul tău la pensie.
+    {/* 6.2 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      6.2 Ce este pensia comunitară
+    </h3>
+
+    <p className="text-slate-700">
+      Pensia comunitară este mecanismul prin care perioadele de muncă din mai
+      multe state sunt recunoscute împreună, pentru a nu pierde anii lucrați.
+    </p>
+
+    <p className="text-slate-700">
+      Acest sistem se aplică în relația dintre România și statele membre ale
+      Uniunii Europene, precum și în relația cu Marea Britanie, pe baza
+      acordurilor existente.
+    </p>
+
+    <div className="rounded-3xl bg-sky-50 border border-sky-200 p-5 lg:p-6">
+      <p className="font-semibold text-slate-900 mb-1">
+        Important
+      </p>
+      <p className="text-slate-700">
+        Pensia comunitară nu înseamnă o singură pensie. Fiecare stat plătește
+        separat partea care îi revine.
+      </p>
+    </div>
+
+    {/* 6.3 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      6.3 Diferența dintre UE și țări din afara UE
+    </h3>
+
+    <p className="text-slate-700">
+      Pentru statele membre UE, regulile de coordonare a sistemelor de pensii
+      sunt clare și bine stabilite prin regulamente europene.
+    </p>
+
+    <p className="text-slate-700">
+      Pentru țările din afara UE, situația depinde de existența unor acorduri
+      bilaterale de securitate socială.
+    </p>
+
+    <p className="text-slate-700">
+      În lipsa unui acord, recunoașterea anilor lucrați poate fi limitată sau
+      chiar imposibilă.
+    </p>
+
+    {/* 6.4 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      6.4 Pensia dacă ai lucrat în Marea Britanie (UK)
+    </h3>
+
+    <p className="text-slate-700">
+      Marea Britanie a părăsit Uniunea Europeană, însă drepturile de pensie
+      ale românilor care au lucrat în UK sunt, în mare parte, protejate.
+    </p>
+
+    <p className="text-slate-700">
+      Perioadele lucrate în UK sunt recunoscute pe baza contribuțiilor la
+      sistemul britanic de asigurări sociale (National Insurance).
+    </p>
+
+    <p className="text-slate-700">
+      Procedura poate fi mai birocratică decât în cazul statelor UE, iar
+      termenele de soluționare pot fi mai lungi.
+    </p>
+
+    {/* 6.5 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      6.5 Cum se calculează pensia pentru munca în străinătate
+    </h3>
+
+    <p className="text-slate-700">
+      Calculul se face pe principiul pro-rata. Fiecare stat calculează
+      separat pensia pentru perioadele lucrate în sistemul său.
+    </p>
+
+    <p className="text-slate-700">
+      Anii lucrați în străinătate pot fi folosiți pentru a îndeplini stagiul
+      minim de cotizare din România, fără ca România să plătească pentru
+      acești ani.
+    </p>
+
+    <div className="rounded-3xl bg-white border border-slate-100 p-5 lg:p-6">
+      <ul className="list-disc list-inside space-y-2 text-slate-700">
+        <li>fiecare stat calculează separat;</li>
+        <li>plăți distincte din fiecare țară;</li>
+        <li>anii se cumulează doar pentru drept.</li>
+      </ul>
+    </div>
+
+    {/* 6.6 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      6.6 Unde se depune cererea pentru pensia internațională
+    </h3>
+
+    <p className="text-slate-700">
+      Cererea se depune, de regulă, în statul în care locuiești la momentul
+      pensionării.
+    </p>
+
+    <p className="text-slate-700">
+      Instituția respectivă va transmite solicitarea către celelalte state
+      implicate, pe baza documentelor din dosar.
+    </p>
+
+    <p className="text-slate-700">
+      Acest proces poate dura mai mult decât un dosar exclusiv național.
+    </p>
+
+    {/* 6.7 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      6.7 Documente necesare pentru pensia din străinătate
+    </h3>
+
+    <p className="text-slate-700">
+      Pe lângă actele standard, sunt necesare documente care dovedesc
+      perioadele lucrate în străinătate.
+    </p>
+
+    <p className="text-slate-700">
+      Lipsa acestor documente poate întârzia sau complica procedura de
+      stabilire a pensiei.
+    </p>
+
+    <p className="text-slate-700">
+      De aceea, este recomandat să le pregătești din timp.
+    </p>
+
+    {/* 6.8 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      6.8 De ce este important să începi din timp
+    </h3>
+
+    <p className="text-slate-700">
+      Dosarele de pensie care implică muncă în străinătate sunt mai complexe
+      și necesită mai mult timp de analiză.
+    </p>
+
+    <p className="text-slate-700">
+      Începerea procedurii din timp îți oferă șansa să corectezi eventualele
+      probleme și să eviți întârzierile.
+    </p>
+
+    <p className="text-slate-700">
+      Cu cât dosarul este mai bine pregătit, cu atât procesul va fi mai clar
+      și mai previzibil.
+    </p>
+
+    <p className="text-sm text-primary">
+      Vezi explicațiile complete în{" "}
+      <a href="/pensie-comunitara" className="underline hover:text-primaryDark">
+        ghidul despre pensia comunitară
+      </a>.
     </p>
   </div>
 </section>
 
 
           {/* ================= SECTIUNEA 7 ================= */}
-<section id="greseli">
-  <h2>7. Greșeli frecvente la pensionare</h2>
+<section className="bg-white border-b border-slate-100">
+  <div className="section-container py-10 lg:py-14 space-y-10 text-slate-800">
+    <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
+      7. Greșeli frecvente legate de pensie
+    </h2>
 
-  {/* 7.1 */}
-  <h3>7.1 Amânarea verificării vechimii</h3>
-  <p>
-    Una dintre cele mai frecvente greșeli este amânarea verificării
-    <strong> vechimii în muncă</strong> până în ultimul moment.
-  </p>
-  <p>
-    Mulți oameni presupun că toate perioadele sunt corect înregistrate, iar
-    surprizele apar abia la depunerea dosarului.
-  </p>
-  <p>
-    Verificarea din timp îți permite să corectezi erori fără stres.
-  </p>
+    <p className="text-base lg:text-lg text-slate-700">
+      Mulți oameni ajung la vârsta pensionării convinși că „totul este în
+      regulă”, doar pentru a descoperi ulterior că există probleme care le
+      întârzie pensia sau îi reduc valoarea.
+    </p>
 
-  <div style={{ borderLeft: "4px solid #2563eb", paddingLeft: "12px" }}>
-    <p>
-      <strong>Sfat:</strong> Verifică-ți vechimea cu cel puțin un an înainte de
-      pensionare.
+    <p className="text-base lg:text-lg text-slate-700">
+      Cele mai multe greșeli nu apar din rea-voință, ci din lipsă de informații
+      sau din amânarea verificărilor importante. Mai jos sunt cele mai frecvente
+      situații întâlnite.
+    </p>
+
+    {/* 7.1 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      7.1 Amânarea verificării vechimii
+    </h3>
+
+    <p className="text-slate-700">
+      Una dintre cele mai comune greșeli este verificarea vechimii abia în
+      momentul depunerii dosarului de pensionare.
+    </p>
+
+    <p className="text-slate-700">
+      În acest stadiu, corectarea erorilor este mai dificilă și poate duce la
+      întârzieri semnificative.
+    </p>
+
+    <p className="text-slate-700">
+      Verificarea vechimii cu 6–12 luni înainte de pensionare oferă timp pentru
+      clarificări și completări.
+    </p>
+
+    {/* 7.2 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      7.2 Lipsa unor documente importante
+    </h3>
+
+    <p className="text-slate-700">
+      Mulți oameni presupun că instituțiile „au deja toate datele”, însă acest
+      lucru nu este întotdeauna adevărat.
+    </p>
+
+    <p className="text-slate-700">
+      Actele lipsă sau incomplete pot duce la nevalorificarea unor perioade de
+      muncă.
+    </p>
+
+    <div className="rounded-3xl bg-sky-50 border border-sky-200 p-5 lg:p-6">
+      <p className="font-semibold text-slate-900 mb-1">
+        Documente frecvent lipsă
+      </p>
+      <ul className="list-disc list-inside space-y-2 text-slate-700">
+        <li>adeverințe de vechime de la angajatori vechi;</li>
+        <li>documente pentru perioade speciale;</li>
+        <li>dovezi pentru munca în străinătate.</li>
+      </ul>
+    </div>
+
+    {/* 7.3 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      7.3 Neînțelegerea modului de calcul
+    </h3>
+
+    <p className="text-slate-700">
+      Mulți pensionari sunt surprinși de valoarea pensiei deoarece nu au
+      înțeles cum se face calculul.
+    </p>
+
+    <p className="text-slate-700">
+      Estimările bazate pe „auzite” sau pe exemple din jur pot fi înșelătoare.
+    </p>
+
+    <p className="text-slate-700">
+      Înțelegerea elementelor de bază ale calculului ajută la evitarea
+      surprizelor neplăcute.
+    </p>
+
+    {/* 7.4 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      7.4 Ignorarea perioadelor lucrate în străinătate
+    </h3>
+
+    <p className="text-slate-700">
+      Unele persoane nu menționează munca în străinătate, crezând că acei ani
+      „nu contează”.
+    </p>
+
+    <p className="text-slate-700">
+      Această omisiune poate duce la pierderea dreptului la pensie sau la
+      întârzierea stabilirii acesteia.
+    </p>
+
+    <p className="text-slate-700">
+      Toate perioadele lucrate trebuie declarate în dosar.
+    </p>
+
+    {/* 7.5 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      7.5 Depunerea dosarului în grabă
+    </h3>
+
+    <p className="text-slate-700">
+      Graba este un factor major de eroare. Mulți oameni depun dosarul fără a
+      verifica toate documentele.
+    </p>
+
+    <p className="text-slate-700">
+      Ulterior, completările și corecturile pot dura luni de zile.
+    </p>
+
+    <div className="rounded-3xl bg-white border border-slate-100 p-5 lg:p-6">
+      <p className="font-semibold text-slate-900 mb-1">
+        Sfat practic
+      </p>
+      <p className="text-slate-700">
+        Alocă timp pentru a reciti dosarul și pentru a face o listă clară a
+        documentelor înainte de depunere.
+      </p>
+    </div>
+
+    {/* 7.6 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      7.6 Încrederea exclusivă în informații neoficiale
+    </h3>
+
+    <p className="text-slate-700">
+      Grupurile online și discuțiile informale pot fi utile, dar informațiile
+      pot fi incomplete sau greșite.
+    </p>
+
+    <p className="text-slate-700">
+      Fiecare situație este diferită, iar ce a fost valabil pentru altcineva
+      nu se aplică automat și în cazul tău.
+    </p>
+
+    <p className="text-slate-700">
+      Verifică întotdeauna informațiile din surse oficiale sau ghiduri clare.
+    </p>
+
+    {/* 7.7 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      7.7 Lipsa urmăririi dosarului
+    </h3>
+
+    <p className="text-slate-700">
+      După depunerea dosarului, unii oameni presupun că totul va merge de la
+      sine.
+    </p>
+
+    <p className="text-slate-700">
+      În realitate, pot apărea solicitări suplimentare sau clarificări.
+    </p>
+
+    <p className="text-slate-700">
+      Urmărirea dosarului ajută la rezolvarea mai rapidă a problemelor.
+    </p>
+
+    {/* 7.8 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      7.8 Amânarea cererii de ajutor
+    </h3>
+
+    <p className="text-slate-700">
+      Mulți oameni evită să ceară ajutor de teamă că procedura va fi
+      complicată sau costisitoare.
+    </p>
+
+    <p className="text-slate-700">
+      În realitate, o clarificare la timp poate preveni pierderi financiare
+      pe termen lung.
+    </p>
+
+    <p className="text-slate-700">
+      Cu cât acționezi mai devreme, cu atât situația este mai ușor de
+      corectat.
     </p>
   </div>
-
-  {/* 7.2 */}
-  <h3>7.2 Lipsa unor documente esențiale</h3>
-  <p>
-    Un dosar incomplet este una dintre principalele cauze ale
-    <strong> întârzierilor</strong> în soluționarea cererii de pensie.
-  </p>
-  <p>
-    Adeverințele lipsă, actele deteriorate sau copiile ilizibile pot crea
-    probleme.
-  </p>
-  <p>
-    Este important să verifici din timp dacă ai toate documentele necesare.
-  </p>
-
-  <ul>
-    <li>acte de identitate;</li>
-    <li>adeverințe de vechime;</li>
-    <li>documente pentru perioade speciale.</li>
-  </ul>
-
-  {/* 7.3 */}
-  <h3>7.3 Neînțelegerea tipului de pensie ales</h3>
-  <p>
-    Mulți oameni aleg un tip de pensie fără să înțeleagă pe deplin
-    <strong> consecințele</strong>.
-  </p>
-  <p>
-    De exemplu, pensia anticipată sau anticipată parțială poate aduce
-    penalizări permanente.
-  </p>
-  <p>
-    O decizie greșită poate afecta venitul pe toată durata vieții.
-  </p>
-
-  <div style={{ background: "#fff7ed", padding: "12px", borderRadius: "6px" }}>
-    <p>
-      <strong>Atenție:</strong> O alegere greșită poate fi greu de corectat.
-    </p>
-  </div>
-
-  {/* 7.4 */}
-  <h3>7.4 Ignorarea muncii în străinătate</h3>
-  <p>
-    O altă greșeală frecventă este neglijarea perioadelor lucrate în
-    <strong> străinătate</strong>.
-  </p>
-  <p>
-    Mulți oameni nu menționează aceste perioade în dosar, crezând că nu contează.
-  </p>
-  <p>
-    În realitate, ele pot fi decisive pentru îndeplinirea stagiului minim.
-  </p>
-
-  <div style={{ background: "#f8fafc", padding: "12px", borderRadius: "6px" }}>
-    <p>
-      Anii lucrați în afara României pot face diferența între a primi sau nu
-      pensie.
-    </p>
-  </div>
-
-  {/* 7.5 */}
-  <h3>7.5 Compararea pensiei cu a altora</h3>
-  <p>
-    Compararea pensiei cu cea a prietenilor sau vecinilor este o sursă frecventă
-    de frustrare.
-  </p>
-  <p>
-    Fiecare pensie este calculată individual, în funcție de
-    <strong> contribuții</strong>.
-  </p>
-  <p>
-    Diferențele nu înseamnă automat erori.
-  </p>
-
-  <div style={{ border: "1px dashed #94a3b8", padding: "12px" }}>
-    <p>
-      Două cariere diferite duc la două pensii diferite.
-    </p>
-  </div>
-
-  {/* 7.6 */}
-  <h3>7.6 Lipsa răbdării în procesul de pensionare</h3>
-  <p>
-    Procesul de pensionare poate dura luni, mai ales în dosarele complexe.
-  </p>
-  <p>
-    Lipsa răbdării duce adesea la stres inutil și conflicte cu funcționarii.
-  </p>
-  <p>
-    Este important să urmărești dosarul, dar și să accepți timpii legali.
-  </p>
-
-  <ul>
-    <li>notează numărul de înregistrare;</li>
-    <li>cere termene orientative;</li>
-    <li>păstrează documentele.</li>
-  </ul>
-
-  {/* 7.7 */}
-  <h3>7.7 Neinformarea din surse sigure</h3>
-  <p>
-    Informațiile greșite sunt una dintre cele mai mari probleme la pensionare.
-  </p>
-  <p>
-    Mulți oameni se bazează pe zvonuri sau discuții informale, în loc de surse
-    sigure.
-  </p>
-  <p>
-    Ghidurile clare și informațiile oficiale reduc riscul de greșeli.
-  </p>
-
-  <div style={{ borderLeft: "4px solid #16a34a", paddingLeft: "12px" }}>
-    <p>
-      <strong>Concluzie:</strong> Informația corectă te ajută să eviți cele mai
-      frecvente greșeli la pensionare.
-    </p>
-  </div>
-
-  <p className="text-sm text-primary">
-    Multe greșeli pot fi evitate dacă parcurgi din timp{" "}
-    <a href="/dosar-pensie" className="underline hover:text-primaryDark">
-        ghidul despre dosarul de pensionare
-    </a>.
-    </p>
 </section>
 
           {/* ================= SECTIUNEA 8 ================= */}
-<section id="faq">
-  <h2>8. Întrebări frecvente despre pensie</h2>
+<section className="bg-white border-b border-slate-100">
+  <div className="section-container py-10 lg:py-14 space-y-10 text-slate-800">
+    <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
+      8. Întrebări frecvente despre pensie
+    </h2>
 
-  {/* FAQ 1 */}
-  <div className="faq-box">
-    <h3>8.1 Ce este pensia și cine are dreptul la pensie?</h3>
-    <p>
-      Pensia este un <strong>drept financiar lunar</strong> acordat persoanelor
-      care au muncit și au contribuit la sistemul public de pensii.
+    <p className="text-base lg:text-lg text-slate-700">
+      Mai jos găsești răspunsuri la cele mai frecvente întrebări primite de la
+      persoanele care se apropie de vârsta pensionării sau care vor să își
+      înțeleagă mai bine drepturile.
     </p>
-    <p>
-      Dreptul la pensie apare atunci când sunt îndeplinite
-      <strong> condițiile legale</strong> privind vârsta și stagiul de cotizare.
-    </p>
-    <p>
-      Fără contribuții sau fără stagiu minim, pensia de stat nu poate fi
-      acordată.
-    </p>
-  </div>
 
-  {/* FAQ 2 */}
-  <div className="faq-box">
-    <h3>8.2 Care este vârsta de pensionare în România?</h3>
+    {/* FAQ 1 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      8.1 De la ce vârstă mă pot pensiona?
+    </h3>
     <p>
-      <strong>Vârsta de pensionare</strong> diferă în funcție de sex și de anul
-      nașterii.
+      Vârsta de pensionare depinde de anul nașterii și de sex. În România,
+      aceasta crește gradual, conform unui calendar stabilit prin lege.
     </p>
     <p>
-      Există tabele oficiale care stabilesc exact luna și anul în care o
-      persoană se poate pensiona.
+      Pentru majoritatea persoanelor, pensionarea la limită de vârstă are loc
+      în jurul vârstei de 65 de ani, însă există diferențe în funcție de situație.
     </p>
     <p>
-      Este important să verifici datele exacte înainte de a depune cererea.
+      Este important să verifici exact vârsta aplicabilă în cazul tău, nu să te
+      bazezi pe exemple generale.
     </p>
-  </div>
 
-  {/* FAQ 3 */}
-  <div className="faq-box">
-    <h3>8.3 Câți ani trebuie să muncesc pentru a primi pensie?</h3>
+    {/* FAQ 2 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      8.2 Câți ani de muncă sunt necesari pentru pensie?
+    </h3>
     <p>
-      Pentru pensia de stat este necesar un
-      <strong> stagiu minim de cotizare</strong>.
+      Legea prevede un stagiu minim de cotizare și un stagiu complet de
+      cotizare. Stagiul minim este necesar pentru a avea drept la pensie.
     </p>
     <p>
-      Stagiul complet este mai mare și influențează valoarea pensiei.
+      Stagiul complet influențează valoarea pensiei, nu doar dreptul de a o
+      primi.
     </p>
     <p>
-      Anii lucrați peste minim pot crește semnificativ pensia.
+      Anii lucrați peste stagiul complet pot aduce un punctaj mai mare.
     </p>
-  </div>
 
-  {/* FAQ 4 */}
-  <div className="faq-box">
-    <h3>8.4 Cum se calculează pensia?</h3>
+    {/* FAQ 3 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      8.3 Pot primi pensie dacă nu am vechime suficientă?
+    </h3>
     <p>
-      Pensia se calculează pe baza
-      <strong> contribuțiilor plătite</strong> și a perioadei de muncă.
+      Dacă nu îndeplinești stagiul minim, nu poți primi pensie contributivă.
     </p>
     <p>
-      Elementul central este punctajul de pensie, care reflectă raportul dintre
-      venitul tău și salariul mediu.
+      În anumite situații, statul acordă indemnizația socială pentru pensionari,
+      care asigură un venit minim.
     </p>
     <p>
-      Două persoane cu aceeași vechime pot avea pensii diferite.
+      Condițiile diferă și trebuie verificate punctual.
     </p>
-  </div>
 
-  {/* FAQ 5 */}
-  <div className="faq-box">
-    <h3>8.5 Ce este dosarul de pensionare?</h3>
+    {/* FAQ 4 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      8.4 Ce se întâmplă dacă am lucrat în străinătate?
+    </h3>
     <p>
-      Dosarul de pensionare este setul de documente pe baza căruia
-      Casa de Pensii stabilește dreptul la pensie.
+      Anii lucrați în străinătate nu se pierd, dacă munca a fost legală și cu
+      contribuții.
     </p>
     <p>
-      El conține acte care dovedesc vechimea, contribuțiile și identitatea.
+      Fiecare stat plătește partea de pensie corespunzătoare perioadelor
+      lucrate în sistemul său.
     </p>
     <p>
-      Un dosar incomplet poate duce la întârzieri sau recalculări.
+      Această procedură este cunoscută sub numele de pensie comunitară.
     </p>
-  </div>
 
-  {/* FAQ 6 */}
-  <div className="faq-box">
-    <h3>8.6 Ce se întâmplă dacă îmi lipsesc acte din dosar?</h3>
+    {/* FAQ 5 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      8.5 Primesc o singură pensie sau mai multe?
+    </h3>
     <p>
-      Lipsa unor acte nu înseamnă automat pierderea dreptului la pensie.
+      Dacă ai lucrat în mai multe țări, vei primi plăți separate din fiecare
+      stat.
     </p>
     <p>
-      În multe cazuri, documentele pot fi recuperate din arhive sau prin
-      adeverințe.
+      Nu există o pensie „unitară” care să includă toate perioadele într-o
+      singură plată.
     </p>
     <p>
-      Este important să începi aceste demersuri din timp.
+      Acest lucru este normal și prevăzut de legislația internațională.
     </p>
-  </div>
 
-  {/* FAQ 7 */}
-  <div className="faq-box">
-    <h3>8.7 Pot primi pensie dacă am lucrat în străinătate?</h3>
+    {/* FAQ 6 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      8.6 Unde se depune cererea de pensionare?
+    </h3>
     <p>
-      Da. <strong>Anii lucrați în străinătate</strong> pot fi luați în calcul,
-      în anumite condiții.
+      Cererea se depune la Casa de Pensii din statul în care locuiești la
+      momentul pensionării.
     </p>
     <p>
-      Fiecare stat îți va plăti partea de pensie pentru anii lucrați acolo.
+      Instituția respectivă comunică apoi cu celelalte state implicate, dacă
+      este cazul.
     </p>
     <p>
-      Acest mecanism este cunoscut ca <strong>pensia comunitară</strong>.
+      Este important să păstrezi dovada depunerii cererii.
     </p>
-  </div>
 
-  {/* FAQ 8 */}
-  <div className="faq-box">
-    <h3>8.8 Pot primi pensia din străinătate în România?</h3>
+    {/* FAQ 7 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      8.7 Cât durează stabilirea pensiei?
+    </h3>
     <p>
-      Da. În majoritatea cazurilor, pensia din străinătate poate fi plătită
-      într-un cont bancar din România.
+      Durata poate varia de la câteva luni la peste un an, în funcție de
+      complexitatea dosarului.
     </p>
     <p>
-      Procedura poate diferi în funcție de statul plătitor.
+      Dosarele care implică muncă în străinătate durează, de regulă, mai mult.
     </p>
     <p>
-      Este posibil să fie necesare confirmări periodice de viață.
+      Comunicarea între instituții poate influența termenele.
     </p>
-  </div>
 
-  {/* FAQ 9 */}
-  <div className="faq-box">
-    <h3>8.9 Cât durează soluționarea dosarului de pensie?</h3>
+    {/* FAQ 8 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      8.8 Pot lucra după ce ies la pensie?
+    </h3>
     <p>
-      Durata soluționării depinde de complexitatea dosarului.
+      Da, pensionarii pot desfășura activități profesionale, în anumite
+      condiții.
     </p>
     <p>
-      Dosarele simple pot fi soluționate în câteva luni.
+      Tipul de pensie și natura activității pot influența acest drept.
     </p>
     <p>
-      Dosarele cu muncă în străinătate pot dura mai mult.
+      Este recomandat să verifici regulile aplicabile înainte de a începe
+      activitatea.
     </p>
-  </div>
 
-  {/* FAQ 10 */}
-  <div className="faq-box">
-    <h3>8.10 Unde pot găsi informații sigure despre pensie?</h3>
+    {/* FAQ 9 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      8.9 Pot cere recalcularea pensiei?
+    </h3>
     <p>
-      Informațiile sigure provin din surse oficiale și din
-      <strong> ghiduri specializate</strong>.
+      Da, recalcularea pensiei este posibilă dacă apar documente noi sau dacă
+      legislația permite acest lucru.
     </p>
     <p>
-      Este important să eviți zvonurile și informațiile neconfirmate.
+      Recalcularea poate duce la creșterea pensiei, dar nu întotdeauna.
     </p>
     <p>
-      Acest ghid este conceput pentru a oferi explicații clare și actualizate.
+      Cererea trebuie susținută cu acte justificative.
+    </p>
+
+    {/* FAQ 10 */}
+    <h3 className="text-xl font-semibold text-slate-900">
+      8.10 Ce fac dacă nu sunt de acord cu decizia de pensionare?
+    </h3>
+    <p>
+      Dacă nu ești de acord cu decizia primită, ai dreptul să o contești.
+    </p>
+    <p>
+      Contestația trebuie depusă în termenul legal prevăzut.
+    </p>
+    <p>
+      Este important să argumentezi clar și să atașezi documentele relevante.
     </p>
   </div>
 </section>
