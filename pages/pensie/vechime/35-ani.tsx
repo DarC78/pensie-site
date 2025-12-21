@@ -226,6 +226,12 @@ export default function TreizeciCinciAniVechimePensiePage() {
                 <div className="rounded-xl bg-softBg p-4 text-sm">
                   📈 Ani suplimentari = pensie mai mare
                 </div>
+                <a
+                  href="/pensie"
+                  className="text-xs sm:text-sm text-primary hover:text-primaryDark"
+                >
+                  Pentru mai multe detalii vezi ghidul general despre pensie
+                </a>
               </section>
 
               {/* 5 */}

@@ -116,7 +116,7 @@ export default function OptAniVechimePensiePage() {
               href="/pensie"
               className="text-xs sm:text-sm text-primary hover:text-primaryDark"
             >
-              ← Înapoi la ghidul principal
+              ← Înapoi la ghidul despre pensii
             </a>
           </div>
         </header>
@@ -190,6 +190,12 @@ export default function OptAniVechimePensiePage() {
                 <div className="rounded-xl bg-slate-50 p-4 text-sm">
                   ⚖️ Minim legal: 15 ani
                 </div>
+                <a
+                  href="/pensie"
+                  className="text-xs sm:text-sm text-primary hover:text-primaryDark"
+                >
+                  Pentru situațiile în care stagiul este sub minim, vezi ghidul general despre pensie
+                </a>
               </section>
 
               {/* 3 */}

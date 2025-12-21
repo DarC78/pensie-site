@@ -208,6 +208,12 @@ export default function TreizeciOptAniVechimePensiePage() {
                 <div className="rounded-xl bg-amber-50 p-4 text-sm">
                   ⚠️ Vechime mare = pensie confortabilă
                 </div>
+                <a
+                  href="/pensie"
+                  className="text-xs sm:text-sm text-primary hover:text-primaryDark"
+                >
+                  Pentru mai multe detalii vezi ghidul general despre pensie
+                </a>
               </section>
 
               {/* 4 */}

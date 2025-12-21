@@ -206,6 +206,12 @@ export default function SaptesprezeceAniVechimePensiePage() {
                 <div className="rounded-xl bg-amber-50 p-4 text-sm">
                   ⚠️ 17 ani = mai mult decât minimul, dar pensie modestă
                 </div>
+                <a
+                  href="/pensie"
+                  className="text-xs sm:text-sm text-primary hover:text-primaryDark"
+                >
+                  Pentru mai multe detalii vezi ghidul general despre pensie
+                </a>
               </section>
 
               {/* 4 */}

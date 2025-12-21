@@ -186,6 +186,12 @@ export default function NouasprezeceAniVechimePensiePage() {
                 <div className="rounded-xl bg-slate-50 p-4 text-sm">
                   ⚖️ Drept existent, pensie mai bună decât minim
                 </div>
+                <a
+                  href="/pensie"
+                  className="text-xs sm:text-sm text-primary hover:text-primaryDark"
+                >
+                  Pentru mai multe detalii vezi ghidul general despre pensie
+                </a>
               </section>
 
               {/* 3 */}

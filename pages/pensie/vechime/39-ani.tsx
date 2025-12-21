@@ -214,6 +214,12 @@ export default function TreizeciNouaAniVechimePensiePage() {
                 <div className="rounded-xl bg-emerald-50 p-4 text-sm">
                   ⚠️ Stagiu complet = pensie mare
                 </div>
+                <a
+                  href="/pensie"
+                  className="text-xs sm:text-sm text-primary hover:text-primaryDark"
+                >
+                  Pentru mai multe detalii vezi ghidul general despre pensie
+                </a>
               </section>
 
               {/* 4 */}

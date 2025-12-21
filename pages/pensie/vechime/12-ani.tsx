@@ -190,6 +190,12 @@ export default function DoisprezeceAniVechimePensiePage() {
                 <div className="rounded-xl bg-slate-50 p-4 text-sm">
                   ⚖️ Fără drept la pensie
                 </div>
+                <a
+                  href="/pensie"
+                  className="text-xs sm:text-sm text-primary hover:text-primaryDark"
+                >
+                  Pentru situațiile în care stagiul este sub minim, vezi ghidul general despre pensie
+                </a>
               </section>
 
               {/* 3 */}

@@ -171,6 +171,12 @@ export default function ZeceAniVechimePensiePage() {
                 <div className="rounded-xl bg-softBg p-4 text-sm">
                   👉 10 ani = sub pragul minim
                 </div>
+                <a
+                  href="/pensie"
+                  className="text-xs sm:text-sm text-primary hover:text-primaryDark"
+                >
+                  Pentru situațiile în care stagiul este sub minim, vezi ghidul general despre pensie
+                </a>
               </section>
 
               {/* 2 */}

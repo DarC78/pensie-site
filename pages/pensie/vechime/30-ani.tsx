@@ -227,6 +227,12 @@ export default function TreizeciAniVechimePensiePage() {
                 <div className="rounded-xl bg-softBg p-4 text-sm">
                   📈 Fiecare an contează
                 </div>
+                <a
+                  href="/pensie"
+                  className="text-xs sm:text-sm text-primary hover:text-primaryDark"
+                >
+                  Pentru mai multe detalii vezi ghidul general despre pensie
+                </a>
               </section>
 
               {/* 5 */}

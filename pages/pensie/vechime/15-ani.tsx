@@ -217,6 +217,12 @@ export default function CincisprezeceAniVechimePensiePage() {
                 <div className="rounded-xl bg-amber-50 p-4 text-sm">
                   ⚠️ Stagiu minim = pensie minimă
                 </div>
+                <a
+                  href="/pensie"
+                  className="text-xs sm:text-sm text-primary hover:text-primaryDark"
+                >
+                  Pentru situațiile în care stagiul este sub minim, vezi ghidul general despre pensie
+                </a>
               </section>
 
               {/* 4 */}

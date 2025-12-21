@@ -224,6 +224,12 @@ export default function DouazeciSiPatruAniVechimePensiePage() {
                 <div className="rounded-xl bg-softBg p-4 text-sm">
                   📈 Fiecare an suplimentar poate aduce beneficii
                 </div>
+                <a
+                  href="/pensie"
+                  className="text-xs sm:text-sm text-primary hover:text-primaryDark"
+                >
+                  Pentru mai multe detalii vezi ghidul general despre pensie
+                </a>
               </section>
 
               {/* 5 */}
