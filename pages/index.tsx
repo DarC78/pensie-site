@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { useState } from 'react'
+import Link from 'next/link'
 
 /* --------------------------------------------------
    CONSTANTE SEO
@@ -49,48 +50,40 @@ const mainSections = [
   'Pensie comunitară',
   'Recalculare pensie',
   'Pensie în străinătate',
-  'Pensie anticipată',
-  'Întrebări frecvente',
 ] as const
 
 type SectionKey = (typeof mainSections)[number]
 
-const subMenus: Record<SectionKey, string[]> = {
+type SubMenuItem = {
+  label: string
+  href: string
+}
+
+const subMenus: Record<SectionKey, SubMenuItem[]> = {
   'Ghiduri pensie': [
-    'Dosarul de pensionare',
-    'Tipuri de pensie în România',
-    'Vârsta de pensionare',
-    'Stagiul de cotizare',
+    { label: 'Ce este pensia?', href: `${SITE_URL}/pensie#sectiunea-1` },
+    { label: 'Tipuri de pensie în România', href: `${SITE_URL}/pensie#sectiunea-2` },
+    { label: 'Când te poți pensiona', href: `${SITE_URL}/pensie#sectiunea-3` },
+    { label: 'Cum se poate calcula', href: `${SITE_URL}/pensie#sectiunea-4` },
+    { label: 'Dosarul', href: `${SITE_URL}/pensie#sectiunea-5` },
+    { label: 'Greseli', href: `${SITE_URL}/pensie#sectiunea-7` },
   ],
   'Pensie comunitară': [
-    'Ce este pensia comunitară',
-    'Pașii pentru diaspora',
-    'Exemple România + UE',
-    'Întrebări frecvente',
+    { label: 'Ce este pensia comunitară', href: `${SITE_URL}/pensie-comunitara#ce-este` },
+    { label: 'Cine are dreptul?', href: `${SITE_URL}/pensie-comunitara#cine-are-dreptul` },
+    { label: 'Cum se calculeaza', href: `${SITE_URL}/pensie-comunitara#cum-se-calculeaza` },
+    { label: 'Exemple', href: `${SITE_URL}/pensie-comunitara#exemple` },
+    { label: 'Greseli', href: `${SITE_URL}/pensie-comunitara#greseli` },
   ],
   'Recalculare pensie': [
-    'Când merită recalcularea',
-    'Acte necesare',
-    'Modele de cereri',
-    'Decizii și contestații',
+    
   ],
   'Pensie în străinătate': [
-    'Locuiești în România',
-    'Locuiești în alt stat',
-    'Plata pensiei în cont',
-    'Modificări de adresă',
-  ],
-  'Pensie anticipată': [
-    'Condiții de acordare',
-    'Penalizări',
-    'Exemple de calcul',
-    'Transformarea în limită de vârstă',
-  ],
-  'Întrebări frecvente': [
-    'Ani lucrați în două țări',
-    'Pensie din UK după Brexit',
-    'Contribuții mici sau lipsă',
-    'Ce faci dacă nu găsești actele',
+    { label: 'Ce inseamna', href: `${SITE_URL}/pensie-strainatate#general` },
+    { label: 'Din Romania?', href: `${SITE_URL}/pensie-strainatate#romania-beneficiar` },
+    { label: 'Din strainatate', href: `${SITE_URL}pensie-strainatate#strainatate-beneficiar` },
+    { label: 'Tari populare', href: `${SITE_URL}/pensie-strainatate#tari-populare` },
+    { label: 'Intarzieri', href: `${SITE_URL}/pensie-strainatate#intarzieri` },
   ],
 }
 
@@ -288,15 +281,18 @@ export default function HomePage() {
         {/* BANDA 3 – SUBMENIU */}
         <div className="w-full border-b border-slate-200 bg-white">
           <div className="section-container flex overflow-x-auto gap-3 py-2 text-[12px] sm:text-[13px] text-slate-600">
+
             {subMenus[activeSection].map((item) => (
-              <button
-                key={item}
-                type="button"
+              <Link
+                key={item.href}
+                href={item.href.replace(SITE_URL, '')} // keep internal routing fast
                 className="whitespace-nowrap rounded-full border border-slate-200 bg-slate-50 px-3 py-1 hover:border-primary/40 hover:text-primary transition-colors"
               >
-                {item}
-              </button>
+                {item.label}
+              </Link>
             ))}
+
+            
           </div>
         </div>
 
