@@ -284,21 +284,13 @@ export default function HomePage() {
         <div className="w-full border-b border-slate-200 bg-white">
           <div className="section-container flex overflow-x-auto gap-3 py-2 text-[12px] sm:text-[13px] text-slate-600">
 
-            {subMenus[activeSection].map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="block px-3 py-2 hover:bg-slate-50"
-              >
-                {item.label}
-              </Link>
-            ))}
+            
 
             {subMenus[activeSection].map((item) => (
-  <Link key={item.href} href={item.href.replace(SITE_URL, '')} legacyBehavior>
-    <a className="block px-3 py-2 hover:bg-slate-50">{item.label}</a>
-  </Link>
-))}
+              <Link key={item.href} href={item.href.replace(SITE_URL, '')} legacyBehavior>
+                <a className="block px-3 py-2 hover:bg-slate-50">{item.label}</a>
+              </Link>
+            ))}
 
             
           </div>
