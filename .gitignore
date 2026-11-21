@@ -1,6 +1,7 @@
 .env
 .env.local
 .env.development
-.env.productionnode_modules/
+.env.production
+node_modules/
 .next/
 out/
